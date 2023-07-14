@@ -145,6 +145,10 @@
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
 	branch = master
+[submodule "extensions/TabberNeue"]
+	path = extensions/TabberNeue
+	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
+	branch = main
 
 # Skins
 [submodule "skins/Cosmos"]
