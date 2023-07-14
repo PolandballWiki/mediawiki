@@ -134,3 +134,7 @@
 	path = vendor
 	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
 	branch = REL1_39
+[submodule "extensions/DummyFandoomMainpageTags"]
+	path = extensions/DummyFandoomMainpageTags
+	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
+	branch = master
