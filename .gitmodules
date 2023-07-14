@@ -141,6 +141,10 @@
 	path = extensions/DummyFandoomMainpageTags
 	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
 	branch = master
+[submodule "extensions/EmbedVideo"]
+	path = extensions/EmbedVideo
+	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
+	branch = master
 
 # Skins
 [submodule "skins/Cosmos"]
