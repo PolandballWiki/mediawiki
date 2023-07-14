@@ -134,7 +134,20 @@
 	path = vendor
 	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
 	branch = REL1_39
+
+# End of bundled extensions and skins
+# Extensions
 [submodule "extensions/DummyFandoomMainpageTags"]
 	path = extensions/DummyFandoomMainpageTags
 	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
 	branch = master
+
+# Skins
+[submodule "skins/Cosmos"]
+	path = skins/Cosmos
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
+	branch = REL1_39
+[submodule "skins/Citizen"]
+	path = skins/Citizen
+	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
+	branch = main
