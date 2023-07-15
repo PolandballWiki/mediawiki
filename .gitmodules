@@ -175,3 +175,7 @@
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
 	branch = main
+[submodule "extensions/MsUpload"]
+	path = extensions/MsUpload
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
+	branch = REL1_39
