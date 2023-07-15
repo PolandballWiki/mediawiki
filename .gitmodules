@@ -145,6 +145,10 @@
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
 	branch = master
+[submodule "extensions/PortableInfobox"]
+	path = extensions/PortableInfobox
+	url = https://github.com/Universal-Omega/PortableInfobox.git
+	branch = REL1_39
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
