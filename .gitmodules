@@ -137,6 +137,10 @@
 
 # End of bundled extensions and skins
 # Extensions
+[submodule "extensions/AdminLinks"]
+	path = extensions/AdminLinks
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
+	branch = REL1_39
 [submodule "extensions/DummyFandoomMainpageTags"]
 	path = extensions/DummyFandoomMainpageTags
 	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
