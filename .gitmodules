@@ -141,6 +141,10 @@
 	path = extensions/AdminLinks
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
 	branch = REL1_39
+[submodule "extensions/AWS"]
+	path = extensions/AWS
+	url = https://github.com/edwardspec/mediawiki-aws-s3
+	branch = master
 [submodule "extensions/CodeMirror"]
 	path = extensions/CodeMirror
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror
@@ -156,6 +160,10 @@
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend
+	branch = REL1_39
+[submodule "extensions/MsUpload"]
+	path = extensions/MsUpload
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
 	branch = REL1_39
 [submodule "extensions/PortableInfobox"]
 	path = extensions/PortableInfobox
@@ -175,7 +183,3 @@
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
 	branch = main
-[submodule "extensions/MsUpload"]
-	path = extensions/MsUpload
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
-	branch = REL1_39
