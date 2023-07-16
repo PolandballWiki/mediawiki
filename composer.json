@@ -176,6 +176,7 @@
 		"merge-plugin": {
 			"include": [
 				"extensions/AbuseFilter/composer.json",
+				"extensions/AWS/composer.json",
         "extensions/OATHAuth/composer.json",
 				"composer.local.json"
 			],
