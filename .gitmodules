@@ -165,6 +165,10 @@
 	path = extensions/MsUpload
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
 	branch = REL1_39
+[submodule "extensions/OpenGraphMeta"]
+	path = extensions/OpenGraphMeta
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
+	branch = REL1_39
 [submodule "extensions/PortableInfobox"]
 	path = extensions/PortableInfobox
 	url = https://github.com/Universal-Omega/PortableInfobox.git
