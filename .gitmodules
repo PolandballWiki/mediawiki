@@ -153,6 +153,10 @@
 	path = extensions/DummyFandoomMainpageTags
 	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
 	branch = master
+[submodule "extensions/Echo"]
+	path = extensions/Echo
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo
+	branch = REL1_39
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
@@ -173,6 +177,10 @@
 	path = extensions/PortableInfobox
 	url = https://github.com/Universal-Omega/PortableInfobox.git
 	branch = REL1_39
+[submodule "extensions/SimpleBlogPage"]
+	path = extensions/SimpleBlogPage
+	url = https://github.com/Universal-Omega/SimpleBlogPage
+	branch = master
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
