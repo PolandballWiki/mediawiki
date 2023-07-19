@@ -149,6 +149,10 @@
 	path = extensions/CodeMirror
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror
 	branch = REL1_39
+[submodule "extensions/CommentStreams"]
+	path = extensions/CommentStreams
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
+	branch = master
 [submodule "extensions/DummyFandoomMainpageTags"]
 	path = extensions/DummyFandoomMainpageTags
 	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
