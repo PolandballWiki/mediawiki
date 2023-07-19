@@ -181,6 +181,10 @@
 	path = extensions/SimpleBlogPage
 	url = https://github.com/Universal-Omega/SimpleBlogPage
 	branch = master
+[submodule "extensions/SocialProfile"]
+	path = extensions/SocialProfile
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
+	branch = master
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
