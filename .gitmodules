@@ -173,6 +173,10 @@
 	path = extensions/TabberNeue
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
 	branch = main
+[submodule "extensions/VipsScaler"]
+	path = extensions/VipsScaler
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
+	branch = REL1_39
 
 # Skins
 [submodule "skins/Cosmos"]
