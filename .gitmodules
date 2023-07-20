@@ -153,6 +153,10 @@
 	path = extensions/CommentStreams
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
 	branch = master
+[submodule "extensions/DiscussionTools"]
+	path = extensions/DiscussionTools
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DiscussionTools
+	branch = REL1_39
 [submodule "extensions/DummyFandoomMainpageTags"]
 	path = extensions/DummyFandoomMainpageTags
 	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
@@ -165,6 +169,10 @@
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
 	branch = master
+[submodule "extensions/Linter"]
+	path = extensions/Linter
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
+	branch = REL1_39
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend
@@ -188,6 +196,10 @@
 [submodule "extensions/SocialProfile"]
 	path = extensions/SocialProfile
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
+	branch = master
+[submodule "extensions/StubUserWikiAuth"]
+	path = extensions/StubUserWikiAuth
+	url = https://github.com/PolandballWiki/mediawiki-extensions-StubUserWikiAuth
 	branch = master
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
