@@ -169,6 +169,10 @@
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
 	branch = master
+[submodule "extensions/GlobalUserrights"]
+	path = extensions/GlobalUserrights
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
+	branch = master
 [submodule "extensions/Linter"]
 	path = extensions/Linter
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
@@ -196,6 +200,10 @@
 [submodule "extensions/SocialProfile"]
 	path = extensions/SocialProfile
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
+	branch = master
+[submodule "extensions/StaffPowers"]
+	path = extensions/StaffPowers
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StaffPowers
 	branch = master
 [submodule "extensions/StubUserWikiAuth"]
 	path = extensions/StubUserWikiAuth
