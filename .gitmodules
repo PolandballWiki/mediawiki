@@ -165,6 +165,10 @@
 	path = extensions/Echo
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo
 	branch = REL1_39
+[submodule "extensions/EditAccount"]
+	path = extensions/EditAccount
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EditAccount
+	branch = REL1_39
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
