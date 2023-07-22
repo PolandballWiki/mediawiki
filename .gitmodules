@@ -205,6 +205,10 @@
 	path = extensions/TabberNeue
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
 	branch = main
+[submodule "extensions/VEForAll"]
+	path = extensions/VEForAll
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
+	branch = master
 [submodule "extensions/VipsScaler"]
 	path = extensions/VipsScaler
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
