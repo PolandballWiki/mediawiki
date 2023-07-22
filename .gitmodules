@@ -181,6 +181,10 @@
 	path = extensions/GlobalUserrights
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
 	branch = master
+[submodule "extensions/HAWelcome"]
+	path = extensions/HAWelcome
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
+	branch = master
 [submodule "extensions/Linter"]
 	path = extensions/Linter
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
