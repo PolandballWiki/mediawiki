@@ -169,6 +169,10 @@
 	path = extensions/EditAccount
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EditAccount
 	branch = REL1_39
+[submodule "extensions/Editcount"]
+	path = extensions/Editcount
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Editcount
+	branch = master
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
