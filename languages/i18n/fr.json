@@ -195,7 +195,8 @@
 			"아라",
 			"Gaultier",
 			"SleaY",
-			"Eleassar"
+			"Eleassar",
+			"Obscaeris"
 		]
 	},
 	"tog-underline": "Soulignement des liens :",
@@ -341,7 +342,7 @@
 	"help": "Aide",
 	"help-mediawiki": "Aide concernant MediaWiki",
 	"search": "Rechercher",
-	"search-ignored-headings": " #<!-- ne pas modifier cette ligne --><pre>\n# Titres des sections qui seront ignorés par la recherche.\n# Les changements effectués ici prennent effet dès lors que la page avec le titre est indexée.\n# Vous pouvez forcer la réindexation de la page en effectuant une modification vide.\n# La syntaxe est la suivante :\n#   * Toute ce qui suit un « # » jusqu’à la fin de la ligne est un commentaire.\n#   * Toute ligne non vide est le titre exact à ignorer, casse comprise.\nRéférences\nLiens externes\nVoir aussi\n #</pre><!-- ne pas modifier cette ligne -->",
+	"search-ignored-headings": " #<!-- ne pas modifier cette ligne --><pre>\n# Titres des sections qui seront ignorés par la recherche.\n# Les changements effectués ici prennent effet dès lors que la page avec le titre est indexée.\n# Vous pouvez forcer la réindexation de la page en effectuant une modification vide.\n# La syntaxe est la suivante :\n#   * Tout ce qui suit un « # » jusqu’à la fin de la ligne est un commentaire.\n#   * Toute ligne non vide est le titre exact à ignorer, casse comprise.\nRéférences\nLiens externes\nVoir aussi\n #</pre><!-- ne pas modifier cette ligne -->",
 	"searchbutton": "Rechercher",
 	"go": "Consulter",
 	"searcharticle": "Lire",
@@ -1183,7 +1184,7 @@
 	"searchrelated": "reliés",
 	"searchall": "tout",
 	"showingresults": "Affichage de <strong>$1</strong> résultat{{PLURAL:$1||s}} à partir du nº <strong>$2</strong>.",
-	"showingresultsinrange": "Afficher d’au maximum <strong>$1</strong> résultat{{PLURAL:$1||s}} du nº <strong>$2</strong> au nº <strong>$3</strong>.",
+	"showingresultsinrange": "Afficher au maximum <strong>$1</strong> résultat{{PLURAL:$1||s}} du nº <strong>$2</strong> au nº <strong>$3</strong>.",
 	"search-showingresults": "Résultat{{PLURAL:$4||s}} n<sup>o{{PLURAL:$4||s}}</sup> <strong>$1</strong> {{PLURAL:$4||à <strong>$2</strong>}} sur <strong>$3</strong>",
 	"search-nonefound": "Aucun résultat ne correspond à la requête.",
 	"search-nonefound-thiswiki": "Aucun résultat ne correspond à la requête sur ce site.",
@@ -1633,7 +1634,7 @@
 	"recentchanges-legend-watchlistexpiry": "Page suivie temporairement",
 	"recentchanges-submit": "Lister",
 	"rcfilters-tag-remove": "Retirer « $1 »",
-	"rcfilters-legend-heading": "<strong>Légende des abréviations :</strong>",
+	"rcfilters-legend-heading": "<strong>Liste des abréviations :</strong>",
 	"rcfilters-other-review-tools": "Autres outils de relecture",
 	"rcfilters-group-results-by-page": "Grouper les résultats par page",
 	"rcfilters-activefilters": "Filtres actifs",
@@ -2091,7 +2092,7 @@
 	"duplicatesoffile": "{{PLURAL:$1|Le fichier suivant est un doublon|Les $1 fichiers suivants sont des doublons}} de celui-ci ([[Special:FileDuplicateSearch/$2|plus de détails]]) :",
 	"sharedupload": "Ce fichier provient de $1 et peut être utilisé par d’autres projets.",
 	"sharedupload-desc-there": "Ce fichier provient de $1 et peut être utilisé par d’autres projets.\nVeuillez consulter [$2 sa page de description] pour plus d’informations.",
-	"sharedupload-desc-here": "Ce fichier provient de $1. Il peut être utilisé par d'autres projets.\nSa description sur sa [$2 page de description] est affichée ci-dessous.",
+	"sharedupload-desc-here": "Ce fichier provient de $1 et peut être utilisé par d'autres projets.\nSa description sur sa [$2 page de description] est affichée ci-dessous.",
 	"sharedupload-desc-edit": "Ce fichier provient de $1 et peut être utilisé par d’autres projets.\nVous voulez peut-être en modifier la description sur [$2 sa page de description].",
 	"sharedupload-desc-create": "Ce fichier provient de $1 et peut être utilisé par d’autres projets.\nVous voulez peut-être en modifier la description sur [$2 sa page de description].",
 	"filepage-nofile": "Aucun fichier de ce nom n’existe.",
@@ -2599,7 +2600,7 @@
 	"changecontentmodel-success-title": "Le modèle de contenu a été modifié",
 	"changecontentmodel-success-text": "Le modèle de contenu de [[:$1]] a été modifié.",
 	"changecontentmodel-cannot-convert": "Le contenu sur [[:$1]] n’a pas pu être converti en un type de $2.",
-	"changecontentmodel-nodirectediting": "Le modèle de contenu $1 ne permet pas la modification directe",
+	"changecontentmodel-nodirectediting": "Le modèle de contenu $1 ne prend pas en charge la modification directe",
 	"changecontentmodel-emptymodels-title": "Aucun modèle de contenu disponible",
 	"changecontentmodel-emptymodels-text": "Le contenu sur [[:$1]] ne peut être converti en aucun type.",
 	"log-name-contentmodel": "Journal des modifications de modèle de contenu",
@@ -4359,8 +4360,8 @@
 	"parsoid-stash-rate-limit-error": "La dissimulation a échoué parce que le taux limite d’utilisation a été dépassé. Veuillez essayer à nouveau plus tard.",
 	"parsoid-resource-limit-exceeded": "Limite de ressources de Parsoid dépassée : $1",
 	"parsoid-client-error": "Entrée de Parsoid non valide : $1",
-	"newpages-showhide-bots": "$1 robot(s)",
-	"newpages-showhide-patrolled": "$1 modification(s) patrouillée(s)",
-	"newpages-showhide-redirect": "$1 redirections(s)",
-	"newpages-showhide-registered": "$1 utilisateur(s) inscrit(s)"
+	"newpages-showhide-bots": "$1 les robots",
+	"newpages-showhide-patrolled": "$1 les modifications patrouillées",
+	"newpages-showhide-redirect": "$1 les redirections",
+	"newpages-showhide-registered": "$1 les utilisateurs inscrits"
 }
