@@ -181,7 +181,8 @@
 			"include": [
 				"extensions/AbuseFilter/composer.json",
 				"extensions/AWS/composer.json",
-        "extensions/OATHAuth/composer.json",
+				"extensions/CheckUser/composer.json",
+        		"extensions/OATHAuth/composer.json",
 				"composer.local.json"
 			],
 			"merge-dev": false
