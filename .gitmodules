@@ -145,6 +145,10 @@
 	path = extensions/AWS
 	url = https://github.com/edwardspec/mediawiki-aws-s3
 	branch = master
+[submodule "extensions/CheckUser"]
+	path = extensions/CheckUser
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
+	branch = REL1_39
 [submodule "extensions/CodeMirror"]
 	path = extensions/CodeMirror
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror
@@ -185,6 +189,9 @@
 	path = extensions/HAWelcome
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
 	branch = master
+[submodule "extensions/Less"]
+	path = extensions/Less
+	url = https://github.com/PolandballWiki/mediawiki-extensions-Less.git
 [submodule "extensions/Linter"]
 	path = extensions/Linter
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
@@ -243,7 +250,3 @@
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
 	branch = main
-[submodule "extensions/CheckUser"]
-	path = extensions/CheckUser
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
-	branch = REL1_39
