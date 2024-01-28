@@ -212,6 +212,10 @@
 	path = extensions/PortableInfobox
 	url = https://github.com/Universal-Omega/PortableInfobox.git
 	branch = REL1_39
+[submodule "extensions/RobotsTxt"]
+	path = extensions/RobotsTxt
+	url = https://github.com/PolandballWiki/RobotsTxt.git
+	branch = master
 [submodule "extensions/SimpleBlogPage"]
 	path = extensions/SimpleBlogPage
 	url = https://github.com/Universal-Omega/SimpleBlogPage
