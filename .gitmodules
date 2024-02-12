@@ -157,9 +157,17 @@
 	path = extensions/CommentStreams
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
 	branch = master
+[submodule "extensions/Description2"]
+	path = extensions/Description2
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
+	branch = REL1_39
 [submodule "extensions/DiscussionTools"]
 	path = extensions/DiscussionTools
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DiscussionTools
+	branch = REL1_39
+[submodule "extensions/DismissableSiteNotice"]
+	path = extensions/DismissableSiteNotice
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DismissableSiteNotice
 	branch = REL1_39
 [submodule "extensions/DummyFandoomMainpageTags"]
 	path = extensions/DummyFandoomMainpageTags
@@ -244,6 +252,10 @@
 	path = extensions/VipsScaler
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
 	branch = REL1_39
+[submodule "extensions/WikiSEO"]
+	path = extensions/WikiSEO
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiSEO
+	branch = REL1_39
 
 # Skins
 [submodule "skins/Cosmos"]
@@ -254,15 +266,3 @@
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
 	branch = main
-[submodule "extensions/DismissableSiteNotice"]
-	path = extensions/DismissableSiteNotice
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DismissableSiteNotice
-	branch = REL1_39
-[submodule "extensions/Description2"]
-	path = extensions/Description2
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
-	branch = REL1_39
-[submodule "extensions/WikiSEO"]
-	path = extensions/WikiSEO
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiSEO
-	branch = REL1_39
