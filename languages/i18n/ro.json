@@ -53,7 +53,8 @@
 			"Matěj Suchánek",
 			"Amire80",
 			"Alesaru",
-			"Heron702"
+			"Heron702",
+			"Iketsi"
 		]
 	},
 	"tog-underline": "Sublinierea legăturilor:",
@@ -3230,7 +3231,7 @@
 	"confirmrecreate-noreason": "Utilizatorul [[User:$1|$1]] ([[User talk:$1|discuție]]) {{GENDER:$1|a șters}} această pagină după ce dumneavoastră ați început să o modificați. Vă rugăm să confirmați faptul că într-adevăr doriți să recreați această pagină.",
 	"recreate": "Recreează",
 	"unit-pixel": "px",
-	"confirm-purge-title": "Regenerez această pagină",
+	"confirm-purge-title": "Regenerează această pagină",
 	"confirm_purge_button": "OK",
 	"confirm-purge-top": "Doriți să curățați cache-ul acestei pagini?",
 	"confirm-purge-bottom": "Actualizarea unei pagini șterge cache-ul și forțează cea mai recentă variantă să apară.",
@@ -3257,7 +3258,7 @@
 	"pipe-separator": "&#32;|&#32;",
 	"word-separator": "&#32;",
 	"ellipsis": "...",
-	"percent": "$1&#32;%",
+	"percent": "$1&#160;%",
 	"quotation-marks": "„$1”",
 	"formatnum-nan": "Nu un număr",
 	"imgmultipageprev": "← pagina anterioară",

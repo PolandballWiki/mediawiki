@@ -62,7 +62,9 @@
 			"아라",
 			"EdoAug",
 			"Amire80",
-			"TommyG"
+			"TommyG",
+			"Iketsi",
+			"Kimberli Mäkäräinen (WMNO)"
 		]
 	},
 	"tog-underline": "Strek under lenker:",
@@ -2089,7 +2091,7 @@
 	"protectedpages-cascade": "Kun dypbeskyttelse",
 	"protectedpages-noredirect": "Skjul omdirigeringer",
 	"cachedspecial-viewing-cached-ttl": "Du ser en mellomlagret versjon av denne siden, som kan være opp til $1 gammel.",
-	"protectedpagesempty": "Ingen sider er for øyeblikket låst med disse paramterne.",
+	"protectedpagesempty": "Ingen sider er for øyeblikket låst med disse parameterne.",
 	"protectedpages-timestamp": "Tidsstempel",
 	"protectedpages-page": "Side",
 	"protectedpages-expiry": "Utløper",
@@ -3242,7 +3244,7 @@
 	"mcrundo-changed": "Siden har blitt endret siden du sist så diffen. Sjekk også den nye endringen.",
 	"mcrundo-parse-failed": "Parsing av den nye sideversjonen mislyktes: $1",
 	"ellipsis": "…",
-	"percent": "$1&nbsp;%",
+	"percent": "$1&#160;%",
 	"quotation-marks": "«$1»",
 	"formatnum-nan": "Ikke et tall",
 	"imgmultipageprev": "← forrige side",
