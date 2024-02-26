@@ -252,6 +252,10 @@
 	path = extensions/SimpleBlogPage
 	url = https://github.com/Universal-Omega/SimpleBlogPage
 	branch = master
+[submodule "extensions/Sitenotice2"]
+	path = extensions/Sitenotice2
+	url = https://github.com/PolandballWiki/mediawiki-extensions-Sitenotice2
+	branch = main
 [submodule "extensions/SocialProfile"]
 	path = extensions/SocialProfile
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
