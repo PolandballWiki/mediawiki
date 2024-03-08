@@ -145,6 +145,10 @@
 	path = extensions/AWS
 	url = https://github.com/edwardspec/mediawiki-aws-s3
 	branch = master
+[submodule "extensions/BetaFeatures"]
+	path = extensions/BetaFeatures
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/BetaFeatures
+	branch = REL1_39
 [submodule "extensions/CheckUser"]
 	path = extensions/CheckUser
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
@@ -160,6 +164,14 @@
 [submodule "extensions/Description2"]
 	path = extensions/Description2
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
+	branch = REL1_39
+[submodule "extensions/Discord"]
+	path = extensions/Discord
+	url = https://github.com/jayktaylor/mw-discord
+	branch = REL1_39
+[submodule "extensions/DiscordRCFeed"]
+	path = extensions/DiscordRCFeed
+	url = https://github.com/femiwiki/DiscordRCFeed
 	branch = REL1_39
 [submodule "extensions/DiscussionTools"]
 	path = extensions/DiscussionTools
@@ -189,6 +201,10 @@
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
 	branch = master
+[submodule "extensions/EventLogging"]
+	path = extensions/EventLogging
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EventLogging
+	branch = REL1_39
 [submodule "extensions/GlobalUserrights"]
 	path = extensions/GlobalUserrights
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
@@ -204,6 +220,10 @@
 	path = extensions/Linter
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
 	branch = REL1_39
+[submodule "extensions/LoginNotify"]
+	path = extensions/LoginNotify
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LoginNotify
+	branch = REL1_39
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend
@@ -215,6 +235,10 @@
 [submodule "extensions/OpenGraphMeta"]
 	path = extensions/OpenGraphMeta
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
+	branch = REL1_39
+[submodule "extensions/Popups"]
+	path = extensions/Popups
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
 	branch = REL1_39
 [submodule "extensions/PortableInfobox"]
 	path = extensions/PortableInfobox
@@ -228,6 +252,10 @@
 	path = extensions/SimpleBlogPage
 	url = https://github.com/Universal-Omega/SimpleBlogPage
 	branch = master
+[submodule "extensions/Sitenotice2"]
+	path = extensions/Sitenotice2
+	url = https://github.com/PolandballWiki/mediawiki-extensions-Sitenotice2
+	branch = main
 [submodule "extensions/SocialProfile"]
 	path = extensions/SocialProfile
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
