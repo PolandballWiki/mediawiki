@@ -293,3 +293,6 @@
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
 	branch = REL1_39
+[submodule "mediawiki-extensions-StructuredData"]
+	path = mediawiki-extensions-StructuredData
+	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
