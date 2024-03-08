@@ -264,10 +264,6 @@
 	path = extensions/StaffPowers
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StaffPowers
 	branch = master
-[submodule "extensions/StructuredData"]
-	path = extensions/StructuredData
-	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
-	branch = master
 [submodule "extensions/StubUserWikiAuth"]
 	path = extensions/StubUserWikiAuth
 	url = https://github.com/PolandballWiki/mediawiki-extensions-StubUserWikiAuth
