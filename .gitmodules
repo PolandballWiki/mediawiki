@@ -296,3 +296,11 @@
 [submodule "mediawiki-extensions-StructuredData"]
 	path = mediawiki-extensions-StructuredData
 	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
+[submodule "extensions/RelatedArticles"]
+	path = extensions/RelatedArticles
+	url = https://github.com/wikimedia/mediawiki-extensions-RelatedArticles
+	branch = REL1_39
+[submodule "extensions/NativeSvgHandler"]
+	path = extensions/NativeSvgHandler
+	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler
+	branch = REL1_39
