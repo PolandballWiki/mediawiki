@@ -130,10 +130,6 @@
 	path = skins/Vector
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
 	branch = REL1_39
-[submodule "vendor"]
-	path = vendor
-	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
-	branch = REL1_39
 
 # End of bundled extensions and skins
 # Extensions
@@ -232,6 +228,10 @@
 	path = extensions/MsUpload
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
 	branch = REL1_39
+[submodule "extensions/NativeSvgHandler"]
+	path = extensions/NativeSvgHandler
+	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler
+	branch = REL1_39
 [submodule "extensions/OpenGraphMeta"]
 	path = extensions/OpenGraphMeta
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
@@ -243,6 +243,10 @@
 [submodule "extensions/PortableInfobox"]
 	path = extensions/PortableInfobox
 	url = https://github.com/Universal-Omega/PortableInfobox.git
+	branch = REL1_39
+[submodule "extensions/RelatedArticles"]
+	path = extensions/RelatedArticles
+	url = https://github.com/wikimedia/mediawiki-extensions-RelatedArticles
 	branch = REL1_39
 [submodule "extensions/RobotsTxt"]
 	path = extensions/RobotsTxt
@@ -296,15 +300,4 @@
 [submodule "skins/Cosmos"]
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
-	branch = REL1_39
-[submodule "mediawiki-extensions-StructuredData"]
-	path = mediawiki-extensions-StructuredData
-	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
-[submodule "extensions/RelatedArticles"]
-	path = extensions/RelatedArticles
-	url = https://github.com/wikimedia/mediawiki-extensions-RelatedArticles
-	branch = REL1_39
-[submodule "extensions/NativeSvgHandler"]
-	path = extensions/NativeSvgHandler
-	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler
 	branch = REL1_39
