@@ -236,6 +236,10 @@
 	path = extensions/OpenGraphMeta
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
 	branch = REL1_39
+[submodule "extensions/Plausible"]
+	path = extensions/Plausible
+	url = https://github.com/octfx/mediawiki-extension-Plausible
+	branch = master
 [submodule "extensions/Popups"]
 	path = extensions/Popups
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
