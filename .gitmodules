@@ -238,7 +238,7 @@
 	branch = REL1_39
 [submodule "extensions/Plausible"]
 	path = extensions/Plausible
-	url = https://github.com/octfx/mediawiki-extension-Plausible
+	url = https://github.com/PolandballWiki/mediawiki-extension-Plausible
 	branch = master
 [submodule "extensions/Popups"]
 	path = extensions/Popups
