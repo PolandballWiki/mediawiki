@@ -308,3 +308,7 @@
 	path = extensions/NativeSvgHandler
 	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler
 	branch = REL1_39
+[submodule "extensions/SearchDigest"]
+	path = extensions/SearchDigest
+	url = https://github.com/PolandballWiki/mediawiki-extensions-SearchDigest/
+	branch = REL1_39
