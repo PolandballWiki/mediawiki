@@ -4,12 +4,21 @@
 	"extends": [
 		"config:recommended"
 	],
+	"composer": {
+		"enabled": false
+	},
+	"docker-compose": {
+		"enabled": false
+	},
 	"git-submodules": {
 		"enabled": true,
 		"versioning": "git",
 		"fileMatch": [
 			"(^|/)\\.gitmodules$"
 		]
+	},
+	"npm": {
+		"enabled": false
 	},
 	"ignoreDeps": [
 		"extensions/AbuseFilter",
