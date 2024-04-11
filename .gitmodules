@@ -312,3 +312,7 @@
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
 	branch = REL1_39
+[submodule "extensions/TemplateWizard"]
+	path = extensions/TemplateWizard
+	url = https://github.com/wikimedia/mediawiki-extensions-TemplateWizard
+	branch = REL1_39
