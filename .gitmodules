@@ -313,3 +313,7 @@
 	path = extensions/TemplateWizard
 	url = https://github.com/wikimedia/mediawiki-extensions-TemplateWizard
 	branch = REL1_39
+[submodule "extensions/GlobalCssJs"]
+	path = extensions/GlobalCssJs
+	url = https://github.com/wikimedia/mediawiki-extensions-GlobalCssJs
+	branch = REL1_39
