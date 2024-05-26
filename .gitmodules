@@ -243,6 +243,7 @@
 [submodule "extensions/Plausible"]
 	path = extensions/Plausible
 	url = https://github.com/PolandballWiki/mediawiki-extension-Plausible
+	branch = master
 [submodule "extensions/Popups"]
 	path = extensions/Popups
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
