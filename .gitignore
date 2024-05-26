@@ -65,6 +65,7 @@ phpunit.xml
 /composer.lock
 /composer.local.json
 /composer.phar
+/vendor/
 
 # Operating systems
 ## Mac OS X

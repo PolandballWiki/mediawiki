@@ -130,10 +130,6 @@
 	path = skins/Vector
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
 	branch = REL1_39
-[submodule "vendor"]
-	path = vendor
-	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
-	branch = REL1_39
 
 # End of bundled extensions and skins
 # Extensions
@@ -204,6 +200,10 @@
 [submodule "extensions/EventLogging"]
 	path = extensions/EventLogging
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EventLogging
+	branch = REL1_39
+[submodule "extensions/GlobalCssJs"]
+	path = extensions/GlobalCssJs
+	url = https://github.com/wikimedia/mediawiki-extensions-GlobalCssJs
 	branch = REL1_39
 [submodule "extensions/GlobalUserrights"]
 	path = extensions/GlobalUserrights
@@ -291,6 +291,10 @@
 	path = extensions/TabberNeue
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
 	branch = main
+[submodule "extensions/TemplateWizard"]
+	path = extensions/TemplateWizard
+	url = https://github.com/wikimedia/mediawiki-extensions-TemplateWizard
+	branch = REL1_39
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
@@ -311,12 +315,4 @@
 [submodule "skins/Cosmos"]
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
-	branch = REL1_39
-[submodule "extensions/TemplateWizard"]
-	path = extensions/TemplateWizard
-	url = https://github.com/wikimedia/mediawiki-extensions-TemplateWizard
-	branch = REL1_39
-[submodule "extensions/GlobalCssJs"]
-	path = extensions/GlobalCssJs
-	url = https://github.com/wikimedia/mediawiki-extensions-GlobalCssJs
 	branch = REL1_39
