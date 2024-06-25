@@ -317,3 +317,7 @@
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
 	branch = REL1_39
+[submodule "extensions/GlobalMessages"]
+	path = extensions/GlobalMessages
+	url = https://github.com/PolandballWiki/mediawiki-extensions-GlobalMessages
+	branch = master
