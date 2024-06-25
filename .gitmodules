@@ -205,6 +205,10 @@
 	path = extensions/GlobalCssJs
 	url = https://github.com/wikimedia/mediawiki-extensions-GlobalCssJs
 	branch = REL1_39
+[submodule "extensions/GlobalMessages"]
+	path = extensions/GlobalMessages
+	url = https://github.com/PolandballWiki/mediawiki-extensions-GlobalMessages
+	branch = master
 [submodule "extensions/GlobalUserrights"]
 	path = extensions/GlobalUserrights
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
@@ -317,7 +321,3 @@
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
 	branch = REL1_39
-[submodule "extensions/GlobalMessages"]
-	path = extensions/GlobalMessages
-	url = https://github.com/PolandballWiki/mediawiki-extensions-GlobalMessages
-	branch = master
