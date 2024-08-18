@@ -325,3 +325,7 @@
 	path = extensions/Translate
 	url = https://github.com/wikimedia/mediawiki-extensions-Translate
 	branch = REL1_39
+[submodule "extensions/UniversalLanguageSelector"]
+	path = extensions/UniversalLanguageSelector
+	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector
+	branch = REL1_39
