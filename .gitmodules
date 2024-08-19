@@ -317,6 +317,7 @@
 [submodule "skins/Citizen"]
 	path = skins/Citizen
 	url = https://github.com/PolandballWiki/mediawiki-skins-Citizen
+	branch = master
 [submodule "skins/Cosmos"]
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
