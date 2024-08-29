@@ -326,3 +326,7 @@
 	path = skins/Cosmos
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
 	branch = REL1_39
+[submodule "skins/Citizen"]
+	path = skins/Citizen
+	url = https://github.com/PolandballWiki/mediawiki-skins-Citizen
+	branch = main
