@@ -312,15 +312,6 @@
 	path = extensions/WikiSEO
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiSEO
 	branch = REL1_39
-
-# Skins
-[submodule "skins/Citizen"]
-	path = skins/Citizen
-	url = https://github.com/PolandballWiki/mediawiki-skins-Citizen
-[submodule "skins/Cosmos"]
-	path = skins/Cosmos
-	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
-	branch = REL1_39
 [submodule "extensions/Translate"]
 	path = extensions/Translate
 	url = https://github.com/wikimedia/mediawiki-extensions-Translate
@@ -328,4 +319,10 @@
 [submodule "extensions/UniversalLanguageSelector"]
 	path = extensions/UniversalLanguageSelector
 	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector
+	branch = REL1_39
+
+# Skins
+[submodule "skins/Cosmos"]
+	path = skins/Cosmos
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
 	branch = REL1_39
