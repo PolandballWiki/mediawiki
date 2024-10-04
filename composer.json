@@ -212,6 +212,7 @@
 	"extra": {
 		"merge-plugin": {
 			"include": [
+				"composer.ikigai.json",
 				"composer.local.json"
 			],
 			"merge-dev": false
