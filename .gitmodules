@@ -324,6 +324,10 @@
     path = extensions/GlobalPreferences
     url = https://github.com/wikimedia/mediawiki-extensions-GlobalPreferences
 	branch = REL1_39
+[submodule "extensions/FloatingUI"]
+	path = extensions/FloatingUI
+	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
+	branch = main
 
 # Skins
 [submodule "skins/Citizen"]
@@ -334,11 +338,3 @@
 	path = skins/Cosmos
 	url = https://github.com/PolandballWiki/mediawiki-skins-Cosmos
 	branch = REL1_39
-[submodule "extensions/SemanticMediaWiki"]
-	path = extensions/SemanticMediaWiki
-	url = https://github.com/SemanticMediaWiki/SemanticMediaWiki.git
-	branch = master
-[submodule "extensions/FloatingUI"]
-	path = extensions/FloatingUI
-	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
-	branch = main
