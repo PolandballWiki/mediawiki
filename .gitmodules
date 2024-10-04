@@ -330,3 +330,7 @@
 	path = skins/Cosmos
 	url = https://github.com/PolandballWiki/mediawiki-skins-Cosmos
 	branch = REL1_39
+[submodule "extensions/SemanticMediaWiki"]
+	path = extensions/SemanticMediaWiki
+	url = https://github.com/SemanticMediaWiki/SemanticMediaWiki.git
+	branch = master
