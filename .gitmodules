@@ -320,6 +320,10 @@
 	path = extensions/UniversalLanguageSelector
 	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector
 	branch = REL1_39
+[submodule "extensions/GlobalPreferences"]
+    path = extensions/GlobalPreferences
+    url = https://github.com/wikimedia/mediawiki-extensions-GlobalPreferences
+	branch = REL1_39
 
 # Skins
 [submodule "skins/Citizen"]
