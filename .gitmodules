@@ -338,3 +338,7 @@
 	path = extensions/SemanticMediaWiki
 	url = https://github.com/SemanticMediaWiki/SemanticMediaWiki.git
 	branch = master
+[submodule "extensions/FloatingUI"]
+	path = extensions/FloatingUI
+	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
+	branch = main
