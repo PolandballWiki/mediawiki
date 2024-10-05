@@ -22,14 +22,6 @@
 	path = extensions/ConfirmEdit
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ConfirmEdit
 	branch = master
-[submodule "extensions/DiscussionTools"]
-	path = extensions/DiscussionTools
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DiscussionTools
-	branch = master
-[submodule "extensions/Echo"]
-	path = extensions/Echo
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo
-	branch = master
 [submodule "extensions/Gadgets"]
 	path = extensions/Gadgets
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets
@@ -45,14 +37,6 @@
 [submodule "extensions/Interwiki"]
 	path = extensions/Interwiki
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Interwiki
-	branch = master
-[submodule "extensions/Linter"]
-	path = extensions/Linter
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
-	branch = master
-[submodule "extensions/LoginNotify"]
-	path = extensions/LoginNotify
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LoginNotify
 	branch = master
 [submodule "extensions/Math"]
 	path = extensions/Math
@@ -86,6 +70,10 @@
 	path = extensions/Poem
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Poem
 	branch = master
+[submodule "extensions/Renameuser"]
+	path = extensions/Renameuser
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Renameuser
+	branch = master
 [submodule "extensions/ReplaceText"]
 	path = extensions/ReplaceText
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ReplaceText
@@ -113,10 +101,6 @@
 [submodule "extensions/TextExtracts"]
 	path = extensions/TextExtracts
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TextExtracts
-	branch = master
-[submodule "extensions/Thanks"]
-	path = extensions/Thanks
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Thanks
 	branch = master
 [submodule "extensions/TitleBlacklist"]
 	path = extensions/TitleBlacklist
@@ -146,7 +130,211 @@
 	path = skins/Vector
 	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
 	branch = master
-[submodule "vendor"]
-	path = vendor
-	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
+
+# End of bundled extensions and skins
+# Extensions
+[submodule "extensions/AdminLinks"]
+	path = extensions/AdminLinks
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
+	branch = master
+[submodule "extensions/AWS"]
+	path = extensions/AWS
+	url = https://github.com/edwardspec/mediawiki-aws-s3
+	branch = master
+[submodule "extensions/BetaFeatures"]
+	path = extensions/BetaFeatures
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/BetaFeatures
+	branch = master
+[submodule "extensions/CheckUser"]
+	path = extensions/CheckUser
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
+	branch = master
+[submodule "extensions/CodeMirror"]
+	path = extensions/CodeMirror
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror
+	branch = master
+[submodule "extensions/CommentStreams"]
+	path = extensions/CommentStreams
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
+	branch = master
+[submodule "extensions/Description2"]
+	path = extensions/Description2
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
+	branch = master
+[submodule "extensions/Discord"]
+	path = extensions/Discord
+	url = https://github.com/jayktaylor/mw-discord
+	branch = master
+[submodule "extensions/DiscordRCFeed"]
+	path = extensions/DiscordRCFeed
+	url = https://github.com/femiwiki/DiscordRCFeed
+	branch = master
+[submodule "extensions/DiscussionTools"]
+	path = extensions/DiscussionTools
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DiscussionTools
+	branch = master
+[submodule "extensions/DismissableSiteNotice"]
+	path = extensions/DismissableSiteNotice
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DismissableSiteNotice
+	branch = master
+[submodule "extensions/DummyFandoomMainpageTags"]
+	path = extensions/DummyFandoomMainpageTags
+	url = https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
+	branch = master
+[submodule "extensions/Echo"]
+	path = extensions/Echo
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo
+	branch = master
+[submodule "extensions/EditAccount"]
+	path = extensions/EditAccount
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EditAccount
+	branch = master
+[submodule "extensions/Editcount"]
+	path = extensions/Editcount
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Editcount
+	branch = master
+[submodule "extensions/EmbedVideo"]
+	path = extensions/EmbedVideo
+	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
+	branch = master
+[submodule "extensions/EventLogging"]
+	path = extensions/EventLogging
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EventLogging
+	branch = master
+[submodule "extensions/GlobalCssJs"]
+	path = extensions/GlobalCssJs
+	url = https://github.com/wikimedia/mediawiki-extensions-GlobalCssJs
+	branch = master
+[submodule "extensions/GlobalMessages"]
+	path = extensions/GlobalMessages
+	url = https://github.com/PolandballWiki/mediawiki-extensions-GlobalMessages
+	branch = master
+[submodule "extensions/GlobalUserrights"]
+	path = extensions/GlobalUserrights
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
+	branch = master
+[submodule "extensions/HAWelcome"]
+	path = extensions/HAWelcome
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
+	branch = master
+[submodule "extensions/Less"]
+	path = extensions/Less
+	url = https://github.com/PolandballWiki/mediawiki-extensions-Less.git
+[submodule "extensions/Linter"]
+	path = extensions/Linter
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
+	branch = master
+[submodule "extensions/LoginNotify"]
+	path = extensions/LoginNotify
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LoginNotify
+	branch = master
+[submodule "extensions/MobileFrontend"]
+	path = extensions/MobileFrontend
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend
+	branch = master
+[submodule "extensions/MsUpload"]
+	path = extensions/MsUpload
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
+	branch = master
+[submodule "extensions/NativeSvgHandler"]
+	path = extensions/NativeSvgHandler
+	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler
+	branch = master
+[submodule "extensions/OpenGraphMeta"]
+	path = extensions/OpenGraphMeta
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
+	branch = master
+[submodule "extensions/Plausible"]
+	path = extensions/Plausible
+	url = https://github.com/PolandballWiki/mediawiki-extension-Plausible
+	branch = master
+[submodule "extensions/Popups"]
+	path = extensions/Popups
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
+	branch = master
+[submodule "extensions/PortableInfobox"]
+	path = extensions/PortableInfobox
+	url = https://github.com/Universal-Omega/PortableInfobox.git
+	branch = master
+[submodule "extensions/RelatedArticles"]
+	path = extensions/RelatedArticles
+	url = https://github.com/wikimedia/mediawiki-extensions-RelatedArticles
+	branch = master
+[submodule "extensions/RobotsTxt"]
+	path = extensions/RobotsTxt
+	url = https://github.com/PolandballWiki/RobotsTxt.git
+	branch = master
+[submodule "extensions/SearchDigest"]
+	path = extensions/SearchDigest
+	url = https://github.com/PolandballWiki/mediawiki-extensions-SearchDigest/
+	branch = master
+[submodule "extensions/SimpleBlogPage"]
+	path = extensions/SimpleBlogPage
+	url = https://github.com/Universal-Omega/SimpleBlogPage
+	branch = master
+[submodule "extensions/Sitenotice2"]
+	path = extensions/Sitenotice2
+	url = https://github.com/PolandballWiki/mediawiki-extensions-Sitenotice2
+	branch = main
+[submodule "extensions/SocialProfile"]
+	path = extensions/SocialProfile
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
+	branch = master
+[submodule "extensions/StaffPowers"]
+	path = extensions/StaffPowers
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StaffPowers
+	branch = master
+[submodule "extensions/StructuredData"]
+	path = extensions/StructuredData
+	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
+	branch = master
+[submodule "extensions/StubUserWikiAuth"]
+	path = extensions/StubUserWikiAuth
+	url = https://github.com/PolandballWiki/mediawiki-extensions-StubUserWikiAuth
+	branch = master
+[submodule "extensions/TabberNeue"]
+	path = extensions/TabberNeue
+	url = https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
+	branch = main
+[submodule "extensions/TemplateWizard"]
+	path = extensions/TemplateWizard
+	url = https://github.com/wikimedia/mediawiki-extensions-TemplateWizard
+	branch = master
+[submodule "extensions/VEForAll"]
+	path = extensions/VEForAll
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
+	branch = master
+[submodule "extensions/VipsScaler"]
+	path = extensions/VipsScaler
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
+	branch = master
+[submodule "extensions/WikiSEO"]
+	path = extensions/WikiSEO
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiSEO
+	branch = master
+[submodule "extensions/Translate"]
+	path = extensions/Translate
+	url = https://github.com/wikimedia/mediawiki-extensions-Translate
+	branch = master
+[submodule "extensions/UniversalLanguageSelector"]
+	path = extensions/UniversalLanguageSelector
+	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector
+	branch = master
+[submodule "extensions/GlobalPreferences"]
+	path = extensions/GlobalPreferences
+	url = https://github.com/wikimedia/mediawiki-extensions-GlobalPreferences
+	branch = master
+[submodule "extensions/FloatingUI"]
+	path = extensions/FloatingUI
+	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
+	branch = main
+
+# Skins
+[submodule "skins/Citizen"]
+	path = skins/Citizen
+	url = https://github.com/PolandballWiki/mediawiki-skins-Citizen
+	branch = main
+[submodule "skins/Cosmos"]
+	path = skins/Cosmos
+	url = https://github.com/PolandballWiki/mediawiki-skins-Cosmos
 	branch = master
