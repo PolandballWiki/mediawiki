@@ -252,9 +252,9 @@
 	path = extensions/Popups
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
 	branch = master
-[submodule "extensions/PortableInfobox"]
-	path = extensions/PortableInfobox
-	url = https://github.com/Universal-Omega/PortableInfobox.git
+[submodule "extensions/PortableInfoboxNeue"]
+	path = extensions/PortableInfoboxNeue
+	url = https://github.com/PolandballWiki/mediawiki-extension-PortableInfoboxNeue
 	branch = master
 [submodule "extensions/RelatedArticles"]
 	path = extensions/RelatedArticles
