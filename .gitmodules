@@ -320,14 +320,6 @@
 	path = extensions/UniversalLanguageSelector
 	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector
 	branch = REL1_39
-[submodule "extensions/GlobalPreferences"]
-    path = extensions/GlobalPreferences
-    url = https://github.com/wikimedia/mediawiki-extensions-GlobalPreferences
-	branch = REL1_39
-[submodule "extensions/FloatingUI"]
-	path = extensions/FloatingUI
-	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
-	branch = main
 
 # Skins
 [submodule "skins/Citizen"]
@@ -338,7 +330,3 @@
 	path = skins/Cosmos
 	url = https://github.com/PolandballWiki/mediawiki-skins-Cosmos
 	branch = REL1_39
-[submodule "extensions/PortableInfoboxNeue"]
-	path = extensions/PortableInfoboxNeue
-	url = https://github.com/PolandballWiki/mediawiki-extension-PortableInfoboxNeue
-	branch = master
