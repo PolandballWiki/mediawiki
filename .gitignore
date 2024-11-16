@@ -65,7 +65,6 @@ phpunit.xml
 
 # Composer
 /composer.lock
-/composer.local.json
 /composer.phar
 
 # Operating systems
