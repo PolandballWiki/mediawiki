@@ -1,0 +1,19 @@
+skins:
+  Citizen:
+    repo_url: https://github.com/StarCitizenTools/mediawiki-skins-Citizen
+    branch: main
+  Cosmos:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
+    branch: __current__
+  MinervaNeue:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/skins/MinervaNeue
+    branch: __current__
+  MonoBook:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/skins/MonoBook
+    branch: __current__
+  Timeless:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/skins/Timeless
+    branch: __current__
+  Vector:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
+    branch: __current__
