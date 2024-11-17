@@ -128,6 +128,9 @@ extensions:
   EmbedVideo:
     repo_url: https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo
     branch: master
+  FloatingUI:
+    repo_url: https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
+    branch: main
   GlobalUserrights:
     repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
     branch: __current__
@@ -155,8 +158,8 @@ extensions:
   Popups:
     repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
     branch: __current__
-  PortableInfobox:
-    repo_url: https://github.com/Universal-Omega/PortableInfobox
+  PortableInfoboxNeue:
+    repo_url: https://github.com/PolandballWiki/mediawiki-extension-PortableInfoboxNeue
     branch: master
   RobotsTxt:
     repo_url: https://github.com/PolandballWiki/RobotsTxt.git
@@ -178,6 +181,9 @@ extensions:
     branch: main
   TemplateWizard:
     repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateWizard
+    branch: __current__
+  UniversalLanguageSelector:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/UniversalLanguageSelector
     branch: __current__
   VEForAll:
     repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
