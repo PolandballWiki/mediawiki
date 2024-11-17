@@ -1,0 +1,190 @@
+extensions:
+  # Bundled extensions
+  AbuseFilter:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/AbuseFilter
+    branch: __current__
+  CategoryTree:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/CategoryTree
+    branch: __current__
+  Cite:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Cite
+    branch: __current__
+  CiteThisPage:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/CiteThisPage
+    branch: __current__
+  CodeEditor:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeEditor
+    branch: __current__
+  ConfirmEdit:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/ConfirmEdit
+    branch: __current__
+  DiscussionTools:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/DiscussionTools
+    branch: __current__
+  Echo:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo
+    branch: __current__
+  Gadgets:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets
+    branch: __current__
+  ImageMap:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/ImageMap
+    branch: __current__
+  InputBox:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/InputBox
+    branch: __current__
+  Interwiki:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Interwiki
+    branch: __current__
+  Linter:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Linter
+    branch: __current__
+  LoginNotify:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/LoginNotify
+    branch: __current__
+  Math:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Math
+    branch: __current__
+  MultimediaViewer:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer
+    branch: __current__
+  Nuke:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Nuke
+    branch: __current__
+  OATHAuth:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth
+    branch: __current__
+  PageImages:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/PageImages
+    branch: __current__
+  ParserFunctions:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/ParserFunctions
+    branch: __current__
+  PdfHandler:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/PdfHandler
+    branch: __current__
+  Poem:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Poem
+    branch: __current__
+  ReplaceText:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/ReplaceText
+    branch: __current__
+  Scribunto:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Scribunto
+    branch: __current__
+  SecureLinkFixer:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/SecureLinkFixer
+    branch: __current__
+  SpamBlacklist:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/SpamBlacklist
+    branch: __current__
+  SyntaxHighlight_GeSHi:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/SyntaxHighlight_GeSHi
+    branch: __current__
+  TemplateData:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateData
+    branch: __current__
+  TextExtracts:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/TextExtracts
+    branch: __current__
+  Thanks:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Thanks
+    branch: __current__
+  TitleBlacklist:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/TitleBlacklist
+    branch: __current__
+  VisualEditor:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/VisualEditor
+    branch: __current__
+  WikiEditor:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiEditor
+    branch: __current__
+
+  # Custom extensions
+  AdminLinks:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
+    branch: __current__
+  AWS:
+    repo_url: https://github.com/edwardspec/mediawiki-aws-s3
+    branch: master
+  CheckUser:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
+    branch: __current__
+  CodeMirror:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror
+    branch: __current__
+  CommentStreams:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
+    branch: __current__
+  DummyFandoomMainpageTags:
+    repo_url: https://github.com/ciencia/mediawiki-extensions-DummyFandoomMainpageTags
+    branch: master
+  EditAccount:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/EditAccount
+    branch: __current__
+  Editcount:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Editcount
+    branch: __current__
+  EmbedVideo:
+    repo_url: https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo
+    branch: master
+  GlobalUserrights:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
+    branch: __current__
+  GlobalCssJs:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalCssJs
+    branch: __current__
+  GlobalMessages:
+    repo_url: https://github.com/PolandballWiki/mediawiki-extensions-GlobalMessages
+    branch: master
+  HAWelcome:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
+    branch: __current__
+  Less:
+    repo_url: https://github.com/PolandballWiki/mediawiki-extensions-Less
+    branch: master
+  MobileFrontend:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend
+    branch: __current__
+  MsUpload:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload
+    branch: __current__
+  OpenGraphMeta:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
+    branch: __current__
+  Popups:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups
+    branch: __current__
+  PortableInfobox:
+    repo_url: https://github.com/Universal-Omega/PortableInfobox
+    branch: master
+  RobotsTxt:
+    repo_url: https://github.com/PolandballWiki/RobotsTxt.git
+    branch: master
+  SimpleBlogPage:
+    repo_url: https://github.com/Universal-Omega/SimpleBlogPage
+    branch: master
+  Sitenotice2:
+    repo_url: https://github.com/PolandballWiki/mediawiki-extensions-Sitenotice2
+    branch: main
+  StaffPowers:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/StaffPowers
+    branch: __current__
+  StructuredData:
+    repo_url: https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
+    branch: master
+  TabberNeue:
+    repo_url: https://github.com/StarCitizenTools/mediawiki-extensions-TabberNeue
+    branch: main
+  TemplateWizard:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateWizard
+    branch: __current__
+  VEForAll:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
+    branch: __current__
+  VipsScaler:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
+    branch: __current__
+  WikiSEO:
+    repo_url: https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiSEO
+    branch: __current__
