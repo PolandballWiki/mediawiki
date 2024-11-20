@@ -1,6 +1,6 @@
 skins:
   Citizen:
-    repo_url: https://github.com/StarCitizenTools/mediawiki-skins-Citizen
+    repo_url: https://github.com/PolandballWiki/mediawiki-skins-Citizen
     branch: main
   Cosmos:
     repo_url: https://gerrit.wikimedia.org/r/mediawiki/skins/Cosmos
