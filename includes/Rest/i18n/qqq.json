@@ -6,7 +6,8 @@
 			"Matma Rex",
 			"McDutchie",
 			"Raymond",
-			"Tim Starling"
+			"Tim Starling",
+			"Mahabarata"
 		]
 	},
 	"rest-prefix-mismatch": "Error message for REST API debugging, shown if $wgRestPath is incorrect or otherwise not matched. Parameters:\n* $1: The requested path.\n* $2: The configured REST base path ($wgRestPath).",
@@ -68,7 +69,7 @@
 	"rest-transform-missing-title": "Error message for REST API debugging, shown when no title or wikitext is provided",
 	"rest-unsupported-target-format": "Error message for REST API debugging, shown when the requested target format is not supported",
 	"rest-parsoid-resource-exceeded": "Error message for REST API debugging, shown when a resource limit is exceeded while converting between wikitext and HTML.",
-	"rest-parsoid-error": "Error message for REST API debugging, indicating the an unspecified backend error occurred while converting between wikitext and HTML.\n\n[[:mw:Parsoid|Parsoid]] is the name of a software library; do not translate that name.",
+	"rest-parsoid-error": "Error message for REST API debugging, indicating an unspecified backend error occurred while converting between wikitext and HTML.\n\n[[:mw:Parsoid|Parsoid]] is the name of a software library; do not translate that name.",
 	"rest-bad-stash-key": "Error message for REST API debugging, shown when When the rednerid or etag given in the request is not a valid stash key.",
 	"rest-html-key-expected": "Error message for REST API debugging, shown when when the \"html\" key is missing from the request body",
 	"rest-invalid-transform": "Error message for REST API debugging, shown when an unsupported transformation is requested from the transform handler. Parameters:\n* $1: The source format \n* $2: The target format",
@@ -90,5 +91,5 @@
 	"rest-unsupported-language-conversion": "Error message for REST API debugging, shown when the language conversion is not supported. Parameters:\n* $1: The source format \n* $2: The target format",
 	"rest-unknown-content-model": "Error message for REST API debugging, shown when an unregistered content model is requested. Parameters:\n* $1: The name of the unknown content model",
 	"rest-page-bundle-validation-error": "Error message for REST API debugging, shown when PageBundle does not match the given contentVersion. Parameters:\n* $1: The error details",
-	"rest-param-desc-revision-id": "Revision id parameter description"
+	"rest-param-desc-revision-id": "{{notranslate}} Revision id parameter description"
 }
