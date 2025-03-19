@@ -320,6 +320,10 @@
 	path = extensions/UniversalLanguageSelector
 	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector
 	branch = REL1_39
+[submodule "extensions/FloatingUI"]
+	path = extensions/FloatingUI
+	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
+	branch = main
 
 # Skins
 [submodule "skins/Citizen"]
