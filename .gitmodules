@@ -213,6 +213,10 @@
 	path = extensions/GlobalUserrights
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
 	branch = master
+[submodule "extensions/GlobalPreferences"]
+	path = extensions/GlobalPreferences
+	url = https://github.com/wikimedia/mediawiki-extensions-GlobalPreferences
+	branch = REL1_39
 [submodule "extensions/HAWelcome"]
 	path = extensions/HAWelcome
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
