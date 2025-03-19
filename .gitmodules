@@ -328,6 +328,10 @@
 	path = extensions/FloatingUI
 	url = https://github.com/StarCitizenTools/mediawiki-extensions-FloatingUI
 	branch = main
+[submodule "extensions/PortableInfoboxNeue"]
+ 	path = extensions/PortableInfoboxNeue
+ 	url = https://github.com/PolandballWiki/mediawiki-extension-PortableInfoboxNeue
+ 	branch = master
 
 # Skins
 [submodule "skins/Citizen"]
