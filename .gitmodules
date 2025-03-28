@@ -156,7 +156,7 @@
 [submodule "extensions/CommentStreams"]
 	path = extensions/CommentStreams
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
-	branch = master
+	branch = REL1_39
 [submodule "extensions/Description2"]
 	path = extensions/Description2
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
@@ -192,7 +192,7 @@
 [submodule "extensions/Editcount"]
 	path = extensions/Editcount
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Editcount
-	branch = master
+	branch = REL1_39
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
@@ -212,11 +212,11 @@
 [submodule "extensions/GlobalUserrights"]
 	path = extensions/GlobalUserrights
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
-	branch = master
+	branch = REL1_39
 [submodule "extensions/HAWelcome"]
 	path = extensions/HAWelcome
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
-	branch = master
+	branch = REL1_39
 [submodule "extensions/Less"]
 	path = extensions/Less
 	url = https://github.com/PolandballWiki/mediawiki-extensions-Less.git
@@ -283,7 +283,7 @@
 [submodule "extensions/StaffPowers"]
 	path = extensions/StaffPowers
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StaffPowers
-	branch = master
+	branch = REL1_39
 [submodule "extensions/StructuredData"]
 	path = extensions/StructuredData
 	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
@@ -303,7 +303,7 @@
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
-	branch = master
+	branch = REL1_39
 [submodule "extensions/VipsScaler"]
 	path = extensions/VipsScaler
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
