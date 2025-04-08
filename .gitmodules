@@ -156,7 +156,7 @@
 [submodule "extensions/CommentStreams"]
 	path = extensions/CommentStreams
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommentStreams
-	branch = REL1_39
+	branch = master
 [submodule "extensions/Description2"]
 	path = extensions/Description2
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
@@ -192,7 +192,7 @@
 [submodule "extensions/Editcount"]
 	path = extensions/Editcount
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Editcount
-	branch = REL1_39
+	branch = master
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
 	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
@@ -212,11 +212,11 @@
 [submodule "extensions/GlobalUserrights"]
 	path = extensions/GlobalUserrights
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUserrights
-	branch = REL1_39
+	branch = master
 [submodule "extensions/HAWelcome"]
 	path = extensions/HAWelcome
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HAWelcome
-	branch = REL1_39
+	branch = master
 [submodule "extensions/Less"]
 	path = extensions/Less
 	url = https://github.com/PolandballWiki/mediawiki-extensions-Less.git
@@ -276,10 +276,14 @@
 	path = extensions/Sitenotice2
 	url = https://github.com/PolandballWiki/mediawiki-extensions-Sitenotice2
 	branch = main
+[submodule "extensions/SocialProfile"]
+	path = extensions/SocialProfile
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SocialProfile
+	branch = master
 [submodule "extensions/StaffPowers"]
 	path = extensions/StaffPowers
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StaffPowers
-	branch = REL1_39
+	branch = master
 [submodule "extensions/StructuredData"]
 	path = extensions/StructuredData
 	url = https://github.com/PolandballWiki/mediawiki-extensions-StructuredData
@@ -299,7 +303,7 @@
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VEForAll
-	branch = REL1_39
+	branch = master
 [submodule "extensions/VipsScaler"]
 	path = extensions/VipsScaler
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler
@@ -337,8 +341,4 @@
 [submodule "skins/Cosmos"]
 	path = skins/Cosmos
 	url = https://github.com/PolandballWiki/mediawiki-skins-Cosmos
-	branch = REL1_39
-[submodule "extensions/DynamicPageList3"]
-	path = extensions/DynamicPageList3
-	url = https://github.com/Universal-Omega/DynamicPageList3
 	branch = REL1_39
