@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahonc"
+		]
+	},
+	"editcount-desc": "Показує [[Special:Editcount|кількість редагувань]] користувача",
+	"editcount_username": "Користувач:",
+	"editcount_submit": "Порахувати",
+	"editcount_total": "Усього"
+}

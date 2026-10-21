@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Irwangatot"
+		]
+	},
+	"editcount-desc": "Tembongkeun [[Special:Editcount|jumlah éditan]] pamaké",
+	"editcount_username": "Pamaké:",
+	"editcount_submit": "Kintun",
+	"editcount_total": "Total"
+}

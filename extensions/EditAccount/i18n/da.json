@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"editaccount": "Rediger konto",
+	"editaccount-general-description": "Luk din brugerkonto",
+	"editaccount-user-id": "Bruger-id: $1",
+	"editaccount-frame-manage": "Rediger en konto",
+	"editaccount-label-select": "Vælg en brugerkonto",
+	"editaccount-label-reason": "Begrundelse:",
+	"editaccount-submit-button": "Gem",
+	"editaccount-success-close": "Deaktiver kontoen $1.",
+	"editaccount-nouser": "Kontoen \"$1\" findes ikke!",
+	"editaccount-status-confirmed": "Bekræftet",
+	"editaccount-status-unconfirmed": "Ubekræftet",
+	"editaccount-status-tempuser": "Midlertidig bruger",
+	"logentry-editaccnt-closeaccnt": "$1 deaktiverede kontoen $3"
+}

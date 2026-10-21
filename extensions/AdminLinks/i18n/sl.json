@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"adminlinks": "Skrbniške povezave",
+	"adminlinks-desc": "Doda [[Special:AdminLinks|posebno stran]], ki vsebuje uporabne povezave za administratorje",
+	"adminlinks_documentation": "Dokumentacija $1",
+	"adminlinks_general": "Splošno",
+	"adminlinks_editsidebar": "Uredi stransko letvico",
+	"adminlinks_editcss": "Uredi datoteko CSS",
+	"adminlinks_editmainpagename": "Uredi ime glavne strani",
+	"adminlinks_users": "Uporabniki",
+	"adminlinks_browsesearch": "Brskanje in iskanje",
+	"adminlinks_importexport": "Uvoz in izvoz",
+	"adminlinks_pagenotfound": "Nismo uspeli najti posebne strani z imenom: $1.",
+	"action-adminlinks": "glej administratorske povezave",
+	"right-adminlinks": "Ogled povezave na [[Special:AdminLinks|Administratorske povezave]]"
+}

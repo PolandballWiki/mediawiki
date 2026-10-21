@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dalibor Bosits",
+			"Dnik"
+		]
+	},
+	"editcount-desc": "Pokazuje [[Special:Editcount|brojač izmjena]] za suradnika",
+	"editcount_username": "Suradnik:",
+	"editcount_submit": "Podnesi",
+	"editcount_total": "Ukupno"
+}

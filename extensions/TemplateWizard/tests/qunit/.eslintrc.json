@@ -1,0 +1,7 @@
+{
+	"extends": [
+		"../../.eslintrc.json",
+		"wikimedia/qunit",
+		"wikimedia/language/es6"
+	]
+}

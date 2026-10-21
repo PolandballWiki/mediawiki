@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jack Phoenix",
+			"Liuxinyu970226",
+			"McDutchie"
+		]
+	},
+	"socialprofile-desc": "{{desc|name=Social Profile|url=https://www.mediawiki.org/wiki/Extension:SocialProfile}}",
+	"socialprofile-uploads-disabled": "Notification that the avatar upload feature is disabled shown to users on the avatar upload form.",
+	"apihelp-removeavatar-summary": "{{doc-apihelp-summary|removeavatar}}",
+	"apihelp-removeavatar-param-reason": "{{doc-apihelp-param|removeavatar|reason}}",
+	"apihelp-removeavatar-param-user": "{{doc-apihelp-param|removeavatar|user}}",
+	"apihelp-removeavatar-example-1": "{{doc-apihelp-example|removeavatar}}",
+	"apihelp-removeavatar-example-2": "{{doc-apihelp-example|removeavatar}}",
+	"apierror-avatar-is-default": "{{doc-apierror}}",
+	"apihelp-uploadavatar-summary": "{{doc-apihelp-summary|uploadavatar}}",
+	"apihelp-uploadavatar-example-url": "{{doc-apihelp-example|uploadavatar}}",
+	"apihelp-uploadavatar-param-file": "{{doc-apihelp-param|uploadavatar|file}}",
+	"apihelp-uploadavatar-param-url": "{{doc-apihelp-param|uploadavatar|url}}\n{{Identical|apihelp-upload-param-url}}",
+	"apihelp-smpuserprivacy-summary": "{{doc-apihelp-summary|smpuserprivacy}}",
+	"apihelp-smpuserprivacy-param-method": "{{doc-apihelp-param|smpuserprivacy|method}}",
+	"apihelp-smpuserprivacy-param-field_key": "{{doc-important|Do not translate \"up_movies\". The translation for \"Movies\" should be consistent with the messages {{msg-mw|user-profile-interests-movies}} and {{msg-mw|other-info-movies}}.}}\n{{doc-apihelp-param|smpuserprivacy|field_key}}",
+	"apihelp-smpuserprivacy-param-privacy": "{{doc-important|Do not translate \"public, hidden, friends, foaf\", though you may change commas here.}}\n{{doc-apihelp-param|smpuserprivacy|privacy}}"
+}

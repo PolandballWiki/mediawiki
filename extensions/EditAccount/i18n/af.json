@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Naudefj",
+			"Rooiratel"
+		]
+	},
+	"editaccount": "Wysig gebruiker",
+	"editaccount-frame-manage": "Wysig 'n rekening",
+	"editaccount-frame-usage": "Let op",
+	"editaccount-label-select": "Kies 'n gebruiker",
+	"editaccount-submit-account": "Bestuur gebruiker",
+	"editaccount-frame-close": "Deaktiveer gebruiker: $1",
+	"editaccount-label-email": "Stel nuwe e-posadres",
+	"editaccount-label-pass": "Stel nuwe wagwoord",
+	"editaccount-label-realname": "Stel nuwe regte naam",
+	"editaccount-label-reason": "Rede:",
+	"editaccount-submit-email": "Stoor E-pos",
+	"editaccount-submit-pass": "Stoor wagwoord",
+	"editaccount-submit-realname": "Stoor regte naam",
+	"editaccount-submit-close": "Sluit rekening",
+	"editaccount-status": "Statusboodskap",
+	"editaccount-invalid-email": "\"$1\" is nie 'n geldige e-posadres nie!",
+	"editaccount-nouser": "Die gebruiker \"$1\" bestaan nie."
+}

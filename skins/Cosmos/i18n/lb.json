@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Les Meloures",
+			"Robby"
+		]
+	},
+	"cosmos-adminlinks-edit-css": "CSS-Fichier änneren",
+	"cosmos-adminlinks-edit-js": "JS-Fichier änneren",
+	"cosmos-anonymous": "Anonym",
+	"cosmos-counter-label": "{{PLURAL:$1|Artikel|Artikelen}}",
+	"cosmos-createpage-header": "En neien Artikel uleeën",
+	"cosmos-personaltools-userpage": "Benotzersäit",
+	"cosmos-personaltools-usertalk": "Benotzerdiskussioun",
+	"cosmos-personaltools-anontalk": "Meng Diskussioun",
+	"cosmos-action-addsection": "Neit Theema",
+	"cosmos-action-cancel": "Ofbriechen",
+	"cosmos-action-backtopage": "Zréck op $1",
+	"cosmos-action-back": "Zréck",
+	"cosmos-add-new-page-title": "Net Säit derbäisetzen",
+	"cosmos-anon-add-new-page-text": "Nei Säit derbäisetzen",
+	"cosmos-newfiles": "Nei Fichieren",
+	"cosmos-article-header-categories-more": "an $1 méi"
+}

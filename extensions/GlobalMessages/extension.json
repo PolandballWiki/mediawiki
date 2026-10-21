@@ -1,0 +1,104 @@
+{
+	"name": "GlobalMessages",
+	"version": "1.0.0",
+	"author": [
+		"alex4401"
+	],
+	"url": "https://github.com/alex4401/mediawiki-extensions-GlobalMessages",
+	"descriptionmsg": "globalmsg-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "wikifarm",
+	"requires": {
+		"MediaWiki": ">= 1.39.0",
+		"platform": {
+			"php": ">= 8.1"
+		}
+	},
+	"MessagesDirs": {
+		"GlobalMessages.class": [
+			"i18n"
+		]
+	},
+	"AvailableRights": [
+		"editglobalinterface"
+	],
+	"namespaces": [
+		{
+			"id": 1730,
+			"constant": "NS_GLOBAL_MESSAGE",
+			"name": "Global_message",
+			"protection": "editglobalinterface",
+			"defaultcontentmodel": "wikitext",
+			"subpages": true,
+			"conditional": true
+		},
+		{
+			"id": 1731,
+			"constant": "NS_GLOBAL_MESSAGE_TALK",
+			"name": "Global_message_talk",
+			"subpages": true,
+			"conditional": true
+		}
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\GlobalMessages\\": "src/"
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"HookHandlers": {
+        "InitialisationHooks": {
+            "class": "MediaWiki\\Extension\\GlobalMessages\\Hooks\\InitialisationHooks",
+			"services": [
+				"MainConfig"
+			]
+        },
+        "PageHooks": {
+            "class": "MediaWiki\\Extension\\GlobalMessages\\Hooks\\PageHooks",
+			"services": [
+				"MainConfig",
+				"GlobalMessages.Registry"
+			]
+        },
+        "MessageCacheHooks": {
+            "class": "MediaWiki\\Extension\\GlobalMessages\\Hooks\\MessageCacheHooks",
+			"services": [
+				"GlobalMessages.Registry"
+			]
+        },
+		"UpdaterHooks": {
+			"class": "MediaWiki\\Extension\\GlobalMessages\\Hooks\\UpdaterHooks"
+		},
+		"EditorHooks": {
+			"class": "MediaWiki\\Extension\\GlobalMessages\\Hooks\\EditorHooks",
+			"services": [
+				"MessageCache",
+				"GlobalMessages.Registry"
+			]
+		}
+	},
+	"Hooks": {
+		"CanonicalNamespaces": "InitialisationHooks",
+		"MessagesPreLoad": "MessageCacheHooks",
+		"LoadExtensionSchemaUpdates": "UpdaterHooks",
+		"SetupAfterCache": "InitialisationHooks",
+		"PageDeleteComplete": "PageHooks",
+		"ArticleUndelete": "PageHooks",
+		"PageSaveComplete": "PageHooks",
+		"PageMoveComplete": "PageHooks",
+		"EditFormPreloadText": "EditorHooks",
+		"EditPage__showEditForm_initial": "EditorHooks",
+		"getUserPermissionsErrors": "EditorHooks"
+	},
+	"config_prefix": "wgGlobalMessages",
+	"config": {
+		"CentralWiki": {
+			"value": false,
+			"description": "Wiki ID of global message management wiki."
+		},
+		"ReadFromDb": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"editaccount-frame-usage": "గమనిక",
+	"editaccount-status": "స్థితి సందేశం",
+	"editaccount-invalid-email": "\"$1\" అనేది సరైన ఈ-మెయిలు చిరునామా కాదు!",
+	"editaccount-nouser": "\"$1\" అనే ఖాతా లేనే లేదు!",
+	"editaccount-label-account-status": "ఖాతా స్థితి: $1",
+	"log-name-editaccnt": "వాడుకరి ఖాతాల చిట్టా"
+}

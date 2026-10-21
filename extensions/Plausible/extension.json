@@ -1,0 +1,232 @@
+{
+	"name": "Plausible",
+	"version": "1.4.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Octfx Octfx]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Plausible",
+	"descriptionmsg": "ext-plausible-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0",
+		"platform": {
+			"php": ">=8.0"
+		}
+	},
+	"config": {
+		"PlausibleDomain": {
+			"description": "Plausible Domain",
+			"value": null
+		},
+		"PlausibleDomainKey": {
+			"description": "Domain Name",
+			"value": null
+		},
+		"PlausibleHonorDNT": {
+			"description": "Honor the Do Not Track header and disable tracking",
+			"value": true
+		},
+		"PlausibleTrackOutboundLinks": {
+			"description": "Enable Tracking of outbound link clicks",
+			"value": false
+		},
+		"PlausibleTrackFileDownloads": {
+			"description": "Enable Tracking of link clicks that lead to files. This needs a custom event goal called 'File Download'.",
+			"value": false
+		},
+		"PlausibleTrackFileDownloadExtensions": {
+			"description": "List of file extensions to additionally track, e.g. 'js'",
+			"value": []
+		},
+		"PlausibleTrackLoggedIn": {
+			"description": "Enable Tracking for logged in users",
+			"value": false
+		},
+		"PlausibleEnableTaggedEvents": {
+			"description": "Enable tracking clicks to tagged elements via css classes",
+			"value": false
+		},
+		"PlausibleIgnoredTitles": {
+			"description": "List of page titles that should not be tracked",
+			"value": []
+		},
+		"PlausibleTrackSearchInput": {
+			"description": "Send search form inputs to plausible",
+			"value": false
+		},
+		"PlausibleTrackEditButtonClicks": {
+			"description": "Track clicks to the edit button",
+			"value": false
+		},
+		"PlausibleTrack404": {
+			"description": "Tracks 404 pages. Does not actually check 404 responses, instead 404 = page is unknown.",
+			"value": false
+		},
+		"PlausibleTrackNavplateClicks": {
+			"description": "Tracks clicks to links inside .navplate elements",
+			"value": false
+		},
+		"PlausibleTrackInfoboxClicks": {
+			"description": "Tracks clicks to links inside .mw-capiunto-infobox and .infobox elements",
+			"value": false
+		},
+		"PlausibleTrackCitizenSearchLinks": {
+			"description": "Track search link clicks. Only works with skin citizen.",
+			"value": false
+		},
+		"PlausibleTrackCitizenMenuLinks": {
+			"description": "Track menu link clicks. Only works with skin citizen.",
+			"value": false
+		},
+		"PlausibleEnableOptOutTag": {
+			"description": "Enables the <plausible-opt-out /> tag",
+			"value": true
+		},
+		"PlausibleApiKey": {
+			"description": "API Key used for querying statistics when Extension:PageViewInfo is active",
+			"value": ""
+		},
+		"PlausibleServerSideTracking": {
+			"description": "Server side events that get sent as custom events to plausible",
+			"value": {
+				"pageview": false,
+				"page404": false,
+				"pageedit": true,
+				"pagedelete": true,
+				"pageundelete": true,
+				"pagemove": true,
+				"userregister": false,
+				"userlogin": false,
+				"userlogout":  false,
+				"fileupload": true,
+				"filedelete": true,
+				"fileundelete": true,
+				"searchnotfound": true,
+				"searchfound": true
+			},
+			"merge_strategy": "array_plus"
+		}
+	},
+	"ConfigRegistry": {
+		"Plausible": "GlobalVarConfig::newInstance"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Plausible/resources"
+	},
+	"MessagesDirs": {
+		"Plausible": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Plausible\\": "includes/"
+	},
+	"HookHandlers": {
+		"PageHooks": {
+			"class": "MediaWiki\\Extension\\Plausible\\Hooks\\PageHooks",
+			"services": [
+				"MainConfig",
+				"JobQueueGroup"
+			]
+		},
+		"UserHooks": {
+			"class": "MediaWiki\\Extension\\Plausible\\Hooks\\UserHooks",
+			"services": [
+				"MainConfig",
+				"JobQueueGroup"
+			]
+		},
+		"FileHooks": {
+			"class": "MediaWiki\\Extension\\Plausible\\Hooks\\FileHooks",
+			"services": [
+				"MainConfig",
+				"JobQueueGroup"
+			]
+		},
+		"SearchHooks": {
+			"class": "MediaWiki\\Extension\\Plausible\\Hooks\\SearchHooks",
+			"services": [
+				"MainConfig",
+				"JobQueueGroup"
+			]
+		},
+		"ParserHooks": {
+			"class": "MediaWiki\\Extension\\Plausible\\Hooks\\ParserHooks"
+		},
+		"MediaWikiServices": {
+			"class": "MediaWiki\\Extension\\Plausible\\Hooks\\MediaWikiServices"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "PageHooks",
+		"PageSaveComplete": "PageHooks",
+		"ArticleDeleteAfterSuccess": "PageHooks",
+		"ParserFirstCallInit": "ParserHooks",
+		"MediaWikiServices": "MediaWikiServices",
+		"LocalUserCreated": "UserHooks",
+		"UserLogoutComplete": "UserHooks",
+		"UserLoginComplete":  "UserHooks",
+		"UploadComplete":  "FileHooks",
+		"FileDeleteComplete": "FileHooks",
+		"SpecialSearchNogomatch": "SearchHooks",
+		"SpecialSearchGoResult": "SearchHooks",
+		"ScribuntoExternalLibraries": "MediaWiki\\Extension\\Plausible\\Hooks\\ScribuntoHooks::onScribuntoExternalLibraries"
+	},
+	"ResourceModules": {
+		"ext.plausible.opt-out": {
+			"scripts": [
+				"ext.plausible.scripts.opt-out/opt-out.js"
+			],
+			"styles": [
+				"ext.plausible.styles.opt-out/opt-out.less"
+			],
+			"messages": [
+				"ext-plausible-exclude-visits",
+				"ext-plausible-include-visits",
+				"ext-plausible-notification-visits-excluded",
+				"ext-plausible-notification-visits-included"
+			]
+		},
+		"ext.plausible.scripts.track-search": {
+			"scripts": [
+				"ext.plausible.scripts.track-search/track-search.js"
+			]
+		},
+		"ext.plausible.scripts.track-404": {
+			"scripts": [
+				"ext.plausible.scripts.track-404/track-404.js"
+			]
+		},
+		"ext.plausible.scripts.track-edit-btn": {
+			"scripts": [
+				"ext.plausible.scripts.track-edit-btn/track-edit-btn.js"
+			]
+		},
+		"ext.plausible.scripts.track-navplate-clicks": {
+			"scripts": [
+				"ext.plausible.scripts.track-navplate-clicks/track-navplate-clicks.js"
+			]
+		},
+		"ext.plausible.scripts.track-infobox-clicks": {
+			"scripts": [
+				"ext.plausible.scripts.track-infobox-clicks/track-infobox-clicks.js"
+			]
+		},
+		"ext.plausible.scripts.citizen.track-search-links": {
+			"scripts": [
+				"ext.plausible.scripts.citizen.track-search-links/track-search-links.js"
+			]
+		},
+		"ext.plausible.scripts.citizen.track-menu-links": {
+			"scripts": [
+				"ext.plausible.scripts.citizen.track-menu-links/track-menu-links.js"
+			]
+		}
+	},
+	"JobClasses": {
+		"PlausibleEvent": "MediaWiki\\Extension\\Plausible\\PlausibleEventJob"
+	},
+	"manifest_version": 2
+}

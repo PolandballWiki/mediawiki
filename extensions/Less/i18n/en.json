@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"less-desc": "Supports managing site styles using LESS",
+	"less-update-css": "Update CSS",
+    "less-dialog-title": "Compiling LESS",
+    "less-dialog-close": "Close",
+    "less-dialog-debug-enabled": "Debug mode enabled",
+    "less-dialog-getting-source": "Getting source file: [[$1]]",
+    "less-dialog-getting-mixins": "Getting standard mixins",
+    "less-dialog-attempt-parse": "Attempting to parse LESS",
+    "less-dialog-import-success": "Imported [[$1]] successfully",
+    "less-dialog-import-error": "Failed to import [[$1]]",
+    "less-dialog-formatting-css": "Formatting CSS",
+    "less-dialog-getting-header": "Getting header comment",
+    "less-dialog-edit-success": "Successfully updated [[$1]]",
+    "less-dialog-edit-summary": "Updating CSS from [[$1]]",
+    "less-dialog-internal-error": "Internal error",
+    "less-dialog-page-not-found": "Page not found, please check your configuration",
+    "less-dialog-check-imports": "One or more files could not be imported, please ensure all @import statements reference existing pages",
+    "less-dialog-parse-error-file": "Parse error on line $1 in [[$2]]",
+    "less-dialog-unknown-error": "An unknown error has occurred",
+    "less-dialog-error-persist": "If this error persists, please report it [[$1|here]]"
+}

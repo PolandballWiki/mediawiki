@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"editcount-desc": "Zwobraznja [[Special:Editcount|ličbu změnow]] wužiwarja",
+	"editcount_username": "Wužiwar:",
+	"editcount_submit": "OK",
+	"editcount_total": "dohromady"
+}

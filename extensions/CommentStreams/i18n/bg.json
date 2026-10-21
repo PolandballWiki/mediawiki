@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"StanProg",
+			"Ted Masters",
+			"Vlad5250"
+		]
+	},
+	"commentstreams-desc": "Позволява коментиране в уики страници",
+	"commentstreams-error-prohibitedaction": "Действието $1 не е разрешено на страници за коментари.",
+	"commentstreams-error-comment-on-deleted-page": "Страницата, към която е бил свързан коментарът, е изтрита.",
+	"commentstreams-author-anonymous": "анонимен",
+	"apihelp-csquerycomment-summary": "Връщане на информация за коментар. Трябва да се предостави или pageid, или заглавие.",
+	"commentstreams-buttontooltip-delete": "изтриване",
+	"commentstreams-buttontooltip-cancel": "Отказ",
+	"commentstreams-dialog-buttontext-cancel": "Отказ",
+	"commentstreams-dialog-buttontext-yes": "Да",
+	"commentstreams-dialog-buttontext-no": "Не",
+	"commentstreams-allcomments-label-author": "Автор"
+}

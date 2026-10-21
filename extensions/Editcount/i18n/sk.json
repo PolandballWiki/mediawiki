@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Helix84"
+		]
+	},
+	"editcount-desc": "Zobrazuje [[Special:Editcount|počet úprav]] používateľa",
+	"editcount_username": "Používateľ:",
+	"editcount_submit": "Odoslať",
+	"editcount_total": "Celkom"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liangent"
+		]
+	},
+	"ur-your-profile": "Namojai şumo",
+	"ur-add-friend": "Cun dūst ilova kuned",
+	"ur-add-foe": "Cun harif ilova kuned",
+	"ur-give-gift": "Hadja dihed",
+	"ur-remove-error-message-no-relationship": "Şumo munosibate bo $1 nadored.",
+	"ur-remove-error-message-remove-yourself": "Şumo xudro nametavoned pok kuned.",
+	"ur-remove": "Hazf",
+	"ur-add-error-message-no-user": "Korbari şumo kūşişi ilova kardani hasted vuçud nadorad.",
+	"ur-add-error-message-yourself": "Şumo xudro nametavoned cun dūst jo harif ilova kuned.",
+	"ur-add-error-message-pending-request-title": "Sabr!",
+	"ur-requests-title": "Darxosthoi irtibot",
+	"ur-accept": "Paziruftan",
+	"ur-reject": "Rad kardan",
+	"friend_request_subject": "$1 şumoro cun dūstaş dar {{SITENAME}} ilova kard!",
+	"friend_accept_subject": "$1 darxosti dūstiji şumoro dar {{SITENAME}} qabul kard!",
+	"foe_accept_subject": "Ana tamom! $1 darxosti harifiji şumoro dar {{SITENAME}} qabul kard!",
+	"friend_removed_subject": "Vah! $1 şumoro hamcun dūst dar {{SITENAME}} pok kard!",
+	"foe_removed_subject": "Uhu! $1 şumoro hamcun duşmani xud dar {{SITENAME}} pok kard!"
+}

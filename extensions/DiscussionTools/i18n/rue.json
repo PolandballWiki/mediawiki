@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gramo6",
+			"Constraque"
+		]
+	},
+	"discussiontools-autotopicsubpopup-dismiss": "Добре, зрозуміло",
+	"discussiontools-autotopicsubpopup-preferences": "Едітовати наставлїня",
+	"discussiontools-emptystate-button": "Зачати діскусію",
+	"discussiontools-emptystate-title": "Зачати діскусію о {{SUBJECTPAGENAME}}",
+	"discussiontools-findcomment-label-search": "Глядати",
+	"discussiontools-notification-subscribed-new-comment-view": "Зобразити повідомлїня",
+	"discussiontools-pageframe-latestcomment": "Послїдне повідомлїня: $1 од $2 в темі $3",
+	"discussiontools-pageframe-latestcomment-notopic": "Послїдне повідомлїня: $1 од $2",
+	"discussiontools-pagetitle-newtopic": "Заложіня новой темы на $1",
+	"discussiontools-pagetitle-reply": "Одповідь на $1",
+	"discussiontools-replylink": "одповісти",
+	"discussiontools-replywidget-cancel": "Зрушыти",
+	"discussiontools-replywidget-mode-source": "Жерело",
+	"discussiontools-replywidget-mode-visual": "Візуал",
+	"discussiontools-replywidget-placeholder-reply": "Одповідь {{BIDI:$1}}",
+	"discussiontools-replywidget-reply": "Одповісти",
+	"discussiontools-topicheader-latestcomment": "Послїднє повідомлїня: $1"
+}

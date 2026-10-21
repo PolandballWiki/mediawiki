@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Hedda",
+			"MuratTheTurkish",
+			"Uncitoyen"
+		]
+	},
+	"discordrcfeed-desc": "Discord için RCFeedEngine ve RCFeedFormatter sağlar.",
+	"discordrcfeed-line-edit-minor": "$1, $3 maddesinde küçük değişiklik {{GENDER:$2|yaptı}}",
+	"discordrcfeed-line-edit": "$1, $3 maddesini {{GENDER:$2|düzenledi}}"
+}

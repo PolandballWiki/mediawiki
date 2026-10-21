@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alma",
+			"Elisardojm",
+			"Toliño",
+			"Xosé"
+		]
+	},
+	"editcount": "Contador de edicións",
+	"editcount-desc": "Amosa o [[Special:Editcount|contador de edicións]] dun usuario determinado",
+	"editcount-before": "Esta ferramenta permíteche ver o contador de edicións dun usuario determinado en todos os espazos de nomes.",
+	"editcount_username": "Usuario:",
+	"editcount_submit": "Enviar",
+	"editcount_namespace": "Espazo de nomes",
+	"editcount_edits": "Edicións",
+	"editcount_percentage": "Porcentaxe",
+	"editcount_total": "Total"
+}

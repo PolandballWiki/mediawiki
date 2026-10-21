@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ghaly",
+			"Meno25"
+		]
+	},
+	"editcount-desc": "يعرض [[Special:Editcount|عداد المساهمات]] ليوزر",
+	"editcount_username": "يوزر:",
+	"editcount_submit": "تنفيذ",
+	"editcount_total": "الإجمالي"
+}

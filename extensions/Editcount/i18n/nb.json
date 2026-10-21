@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"editcount": "Redigeringsteller",
+	"editcount-desc": "Viser [[Special:Editcount|redigeringsteller]] for en bruker",
+	"editcount-before": "Dette verktøyet lar deg se antallet redigeringer en bruker har gjort på tvers av navnerom.",
+	"editcount_username": "Bruker:",
+	"editcount_submit": "OK",
+	"editcount_namespace": "Navnerom",
+	"editcount_edits": "Redigeringer",
+	"editcount_percentage": "Prosent",
+	"editcount_total": "Totalt"
+}

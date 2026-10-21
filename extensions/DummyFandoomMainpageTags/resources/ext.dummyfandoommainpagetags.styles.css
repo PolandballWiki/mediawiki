@@ -1,0 +1,11 @@
+.main-page-tag-lcs-exploded {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.main-page-tag-rcs {
+    position: relative;
+    width: 300px;
+    float: right;
+    clear: right;
+}

@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brenloch56",
+			"Gomoko",
+			"Marc MORA",
+			"Orlodrim",
+			"Thibaut120094",
+			"TomT0m",
+			"Windes",
+			"Wladek92",
+			"Yzelf",
+			"Verdy p"
+		]
+	},
+	"msu-desc": "Permet des téléversements faciles d’un ou plusieurs fichiers en même temps",
+	"msu-button-title": "Sélectionnez les fichiers",
+	"msu-insert-link": "Insérer le lien",
+	"msu-insert-gallery": "Insérer tout en tant que galerie",
+	"msu-insert-files": "Insérer tout en tant que fichiers",
+	"msu-insert-links": "Insérer tout en tant que liens",
+	"msu-insert-image": "Insérer en tant qu’image",
+	"msu-insert-video": "Insérer une vidéo",
+	"msu-cancel-upload": "Annuler le téléversement",
+	"msu-continue": "Continuer malgré tout ?",
+	"msu-clean-all": "Effacer la liste",
+	"msu-ext-not-allowed": "Le{{PLURAL:$1||s}} seul{{PLURAL:$1||s}} type{{PLURAL:$1||s}} de fichier autorisé{{PLURAL:$1||s}} {{PLURAL:$1|es|son}}t le{{PLURAL:$1||s}} suivant{{PLURAL:$1||s}} :",
+	"msu-upload-this": "Téléverser ce fichier",
+	"msu-upload-all": "Téléverser tous les fichiers",
+	"msu-upload-good": "Téléversement de $1 sur $2 fichier{{PLURAL:$2||s}}",
+	"msu-dropzone": "Glisser ici les fichiers",
+	"msu-comment": "Fichier téléversé avec MsUpload"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"Ата"
+		]
+	},
+	"discordrcfeed-desc": "Надає RCFeedEngine та RCFeedFormatter для Discord.",
+	"discordrcfeed-line-edit-minor": "$1 {{GENDER:$2|робить}} незначне редагування у статтю $3",
+	"discordrcfeed-line-edit": "$1 {{GENDER:$2|редагує}} статтю $3"
+}

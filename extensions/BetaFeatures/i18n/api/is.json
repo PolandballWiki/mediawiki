@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maxí",
+			"Stefán Örvar Sigmundsson"
+		]
+	},
+	"apihelp-query+betafeatures-description": "Birta alla prufueiginleika",
+	"apihelp-query+betafeatures-summary": "Lista alla Beta-eiginleika"
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Robertgarrigos"
+		]
+	},
+	"commentstreams-desc": "Permet comentar a les pàgines wiki",
+	"commentstreams-buttontext-add": "Afegeix-hi un comentari",
+	"commentstreams-buttontext-reply": "Respon",
+	"commentstreams-buttontooltip-add": "afegeix un comentari"
+}

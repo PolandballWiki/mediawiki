@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"01miki10",
+			"Korjaus1",
+			"MITO",
+			"Pyscowicz"
+		]
+	},
+	"cosmos-desc": "Cosmos on Fandomin Oasis-ulkoasuun perustuva ulkoasu. Se on suunniteltu sen parannukseksi ja tarjoamaan tehokkaan MediaWiki-ulkoasun Fandomin ulkopuolisille tai sieltä pois siirtyville käyttäjille. Voit halutessasi liittyä [https://discord.gg/GPVgFTaQTJ Cosmosin Discord-palvelimelle] jos tarvitset apua teemoinnissa tai muussa.",
+	"cosmos-adminlinks-edit-css": "Muokkaa CSS-tiedostoa",
+	"cosmos-adminlinks-edit-js": "Muokkaa JS-tiedostoa",
+	"cosmos-adminlinks-edit-navigation": "Muokkaa navigaatiota",
+	"cosmos-adminlinks-edit-tagline": "Muokkaa tunnuslausetta",
+	"cosmos-anonymous": "Anonyymi",
+	"cosmos-counter-label": "{{PLURAL:$1|artikkeli|artikkelia}}",
+	"cosmos-createpage-header": "Luo uusi artikkeli",
+	"cosmos-createpage-input-label": "Kirjoita sivun nimi tähän:",
+	"cosmos-createpage-next": "Seuraava",
+	"cosmos-personaltools-userpage": "Käyttäjäsivu",
+	"cosmos-personaltools-usertalk": "Keskustelu käyttäjästä",
+	"cosmos-personaltools-anontalk": "Keskustelusivuni",
+	"cosmos-action-addsection": "Uusi aihe",
+	"cosmos-action-cancel": "Peruuta",
+	"cosmos-action-back": "Takaisin",
+	"cosmos-add-new-image": "Lisää uusi kuva",
+	"cosmos-add-new-video": "Lisää uusi video",
+	"cosmos-add-new-page-title": "Lisää uusi sivu",
+	"cosmos-add-new-page-text": "Lisää",
+	"cosmos-anon-add-new-page-text": "Lisää uusi sivu",
+	"cosmos-explore": "Tutki",
+	"cosmos-newfiles": "Uudet tiedostot",
+	"cosmos-user-blocked": "Estetty",
+	"cosmos-search-loader": "Ladataan hakuehdotuksia",
+	"cosmos-article-header-categories-more": "ja $1 lisää",
+	"cosmos-themedesigner-text": "Mukauta teema ulkoasulle '''Cosmos'''.",
+	"right-themedesigner": "Käyttää Cosmos ThemeDesigneria",
+	"action-themedesigner": "käyttää Cosmos ThemeDesigneria",
+	"cosmos-themedesigner-help-6": "Linkkien väri."
+}

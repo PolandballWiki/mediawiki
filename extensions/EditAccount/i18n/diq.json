@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirzali"
+		]
+	},
+	"editaccount-label-email": "Adresa eposteyi cı kerê",
+	"editaccount-label-reason": "Sebeb:",
+	"editaccount-submit-button": "Qeyd ke",
+	"editaccount-label-email-status": "Weziyetê e-posteyi: $1"
+}

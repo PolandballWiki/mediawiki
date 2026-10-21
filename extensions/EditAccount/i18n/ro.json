@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stelistcristi"
+		]
+	},
+	"editaccount": "Modifică contul",
+	"editaccount-frame-manage": "Modifică un cont",
+	"editaccount-label-clearunsub": "Dezabonat",
+	"editaccount-submit-email": "Salvează adresa de e-mail",
+	"editaccount-submit-pass": "Salvează parola",
+	"editaccount-submit-realname": "Salvează numele real",
+	"editaccount-submit-close": "Închide contul",
+	"editaccount-status": "Mesaj de stare"
+}

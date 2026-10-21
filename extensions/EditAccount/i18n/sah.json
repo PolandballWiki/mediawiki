@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"editaccount": "Бэлиэтэммит ааккын уларытыы",
+	"editaccount-desc": "Бэлиэтэммит ааттары салайарга аналлаах",
+	"editaccount-frame-manage": "Бэлиэтэммит ааты уларытыы",
+	"editaccount-frame-usage": "Быһаарыы",
+	"editaccount-usage": "Дааннайдар хас биирдии биикигэ тус туспа кээштэнэллэр. Киирии тылгын уонна электроннай почтаҥ аадырыһын уларыттаххына, ол эрэ биикиҥ кээһиттэн сүтүө. Бука диэн, кыттааччыны саҥа киирии тылынан киирэрин көрдөс.",
+	"editaccount-label-select": "Кытааччы бэлиэтэммит аатын тал",
+	"editaccount-submit-account": "Ааты салайыы",
+	"editaccount-frame-account": "Бэлиэтэммит ааты уларытыы: $1",
+	"editaccount-frame-close": "Бэлиэтэммит ааты араарыы: $1",
+	"editaccount-label-email": "Электрон почта саҥа аадырыһын киллэрии",
+	"editaccount-label-pass": "Саҥа аһарыгы туруоруу",
+	"editaccount-label-realname": "Саҥа дьиҥнээх ааты суруйуу",
+	"editaccount-submit-email": "Электрон почтаны бигэргэтии",
+	"editaccount-submit-pass": "Аһарыгы бигэргэтии",
+	"editaccount-submit-realname": "Дьиҥнээх ааты бигэргэтии",
+	"editaccount-submit-close": "Бэлиэтэммит ааты суох оҥоруу",
+	"editaccount-warning-close": "<b>Болҕой!</b> Эн <b>$1</b> диэн ааты букатын сотон эрэҕин. Бу дьайыы төннөрүллэр кыаҕа суох. Инньэ гынаары гынаргын бигэргэтэҕин дуо?",
+	"editaccount-status": "Турук биллэриитэ",
+	"editaccount-success-email-blank": "Бэлиэтэммит $1 аат эл. почтата сотулунна.",
+	"editaccount-success-pass": "Бэлиэтэммит $1 аат киирии тыла уларыйда.",
+	"editaccount-success-realname": "Бэлиэтэммит $1 аат киһитин дьиҥнээх аата уларыйда.",
+	"editaccount-success-close": "Бэлиэтэммит $1 аат араарылынна.",
+	"editaccount-error-email": "Эл. почта уларыйбата. Өссө төгүл боруобалаа, эбэтэр көмөлөһөр сулууспаҕа таҕыс.",
+	"editaccount-error-pass": "Ааһарык уларыйбата. Өссө төгүл боруобалаа, эбэтэр көмөлөһөр сулууспаҕа таҕыс.",
+	"editaccount-error-realname": "Дьиҥнээх аат уларыйбата. Өссө төгүл боруобалаа, эбэтэр көмөлөһөр сулууспаҕа таҕыс.",
+	"editaccount-error-close": "Бэлиэтэммит ааты сабарга моһуок үөскээтэ. Өссө төгүл боруобалаа эбэтэр көмөлөһөр сулууспаҕа таҕыс.",
+	"editaccount-invalid-email": "«$1» эл. почта аадырыһа буолбатах!",
+	"editaccount-nouser": "Бэлиэммит «$1» аат суох эбит!",
+	"log-name-editaccnt": "Ааты бэлиэтиир сурунаал",
+	"log-description-editaccnt": "Бу сирэйгэ Викиа үлэһиттэрэ уларыппыт кыттааччы тус туруоруулара көрдөрүлүннүлэр",
+	"edit-account-closed-flag": "Бу аат араарыллыбыт.",
+	"right-editaccount": "Атын кыттааччылар туруорууларын уларытыы"
+}

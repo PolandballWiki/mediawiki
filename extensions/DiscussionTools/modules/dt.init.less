@@ -1,0 +1,701 @@
+/* stylelint-disable no-descending-specificity */
+
+@import 'mediawiki.ui/variables.less';
+
+span[ data-mw-comment-start ] {
+	// Give comment anchors a negative offset so we don't position
+	// them right at the edge of the page when jumping to them
+	position: relative;
+	top: -1em;
+}
+
+// stylelint-disable-next-line selector-list-comma-newline-after
+h1, h2, h3, h4, h5, h6 {
+	span[ data-mw-comment-end ] {
+		// Support: Safari
+		// Markers at the end of a line and before an inline-block (e.g. edit icon)
+		// can cause text to stop wrapping properly. (T298371)
+		display: inline-block;
+	}
+}
+
+.ext-discussiontools-init-replylink-buttons {
+	user-select: none;
+	display: none;
+
+	// If a site has text-indent set on content, it would be inherited here and cause excessive padding
+	text-indent: 0;
+
+	// Directional properties must be based on content direction.
+	.mw-content-ltr &,
+	.mw-content-rtl .mw-content-ltr & {
+		/* @noflip */
+		margin-left: 0.5em;
+	}
+
+	.mw-content-rtl,
+	.mw-content-ltr .mw-content-rtl & {
+		/* @noflip */
+		margin-right: 0.5em;
+	}
+
+	.ext-discussiontools-replytool-enabled & {
+		// Chromium bug (T260072): Element with `user-select: none` at the end of a paragraph causes
+		// triple-click (to select the paragraph) to also select the first character of the next paragraph
+		// https://bugs.chromium.org/p/chromium/issues/detail?id=1116214
+		/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+		display: inline-flex;
+
+		.client-nojs & {
+			display: none;
+		}
+	}
+
+	// No support for reply links in the mobile talk overlay
+	// stylelint-disable-next-line selector-class-pattern
+	.talk-overlay & {
+		display: none;
+	}
+
+	.ext-discussiontools-init-replylink {
+		&-reply {
+			cursor: pointer;
+		}
+
+		// Similar to mw-editsection-bracket
+		&-bracket {
+			color: #54595d;
+
+			.mw-content-ltr &:not( :last-child ),
+			.mw-content-rtl .mw-content-ltr &:not( :last-child ),
+			.mw-content-rtl &:last-child,
+			.mw-content-ltr .mw-content-rtl &:last-child {
+				/* @noflip */
+				margin-right: 0.25em;
+			}
+
+			.mw-content-ltr &:last-child,
+			.mw-content-rtl .mw-content-ltr &:last-child,
+			.mw-content-rtl &:not( :last-child ),
+			.mw-content-ltr .mw-content-rtl &:not( :last-child ), {
+				/* @noflip */
+				margin-left: 0.25em;
+			}
+		}
+
+		// Similar to mw-editsection-divider
+		&-divider {
+			color: #54595d;
+			// display:inline-flex causes whitespace to collapse
+			white-space: pre;
+		}
+	}
+
+	.ext-discussiontools-init-replylink-open & > .ext-discussiontools-init-replylink-reply {
+		color: #72777d;
+		pointer-events: none;
+	}
+
+	&.ext-discussiontools-init-replylink-active > .ext-discussiontools-init-replylink-reply {
+		color: #202122;
+		text-decoration: none;
+	}
+
+	.ext-discussiontools-init-replybutton .oo-ui-iconElement-icon.oo-ui-icon-share {
+		transform: scaleX( -1 );
+	}
+
+	@media print {
+		display: none;
+	}
+}
+
+.ext-discussiontools-init-noMarker {
+	list-style: none;
+}
+
+.ext-discussiontools-init-highlight {
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+@supports ( mix-blend-mode: darken ) {
+	.ext-discussiontools-init-highlight {
+		/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+		mix-blend-mode: darken;
+		// Support: Safari
+		// Safari doesn't blend this overlay with the text unless GPU rendering is forced.
+		transform: translateZ( 0 );
+	}
+}
+
+.ext-discussiontools-init-highlight-fadein {
+	opacity: 1;
+}
+
+.ext-discussiontools-init-highlight-fadeout {
+	opacity: 0;
+	transition: opacity 250ms ease-out;
+}
+
+.ext-discussiontools-init-publishedcomment {
+	// Support: IE11
+	// On supporting browsers, we instead use non-transparent color with mix-blend-mode.
+	// Identical to #ffe29e on white background.
+	background-color: rgba( 255, 198, 60, 0.5 );
+}
+
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+@supports ( mix-blend-mode: darken ) {
+	.ext-discussiontools-init-publishedcomment {
+		background-color: #ffe29e;
+	}
+}
+
+.ext-discussiontools-init-targetcomment {
+	// Support: IE11, see above
+	background-color: rgba( 216, 235, 255, 0.5 );
+}
+
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+@supports ( mix-blend-mode: darken ) {
+	.ext-discussiontools-init-targetcomment {
+		// Same color as the :target selector for references (from Cite).
+		// Not sure if that's a good idea, but it should be different from -publishedcomment.
+		background-color: #eaf3ff;
+	}
+}
+
+.ext-discussiontools-init-new-topic {
+	margin-top: 1em;
+}
+
+// Topic subscriptions (link)
+.ext-discussiontools-init-section-subscribe {
+	display: none;
+
+	.ext-discussiontools-topicsubscription-enabled & {
+		display: block;
+	}
+
+	// Directional properties must be based on content direction.
+	.mw-content-ltr &,
+	.mw-content-rtl .mw-content-ltr & {
+		/* @noflip */
+		float: right;
+	}
+
+	.mw-content-rtl &,
+	.mw-content-ltr .mw-content-rtl & {
+		/* @noflip */
+		float: left;
+	}
+
+	&.mw-editsection-like {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		margin-top: 0.7em;
+	}
+
+	.skin-minerva & {
+		// Subscribe button is used instead in Minerva
+		display: none;
+	}
+
+	// Similar to mw-editsection-bracket
+	&-bracket {
+		color: #54595d;
+
+		.mw-content-ltr &:first-child,
+		.mw-content-rtl .mw-content-ltr &:first-child,
+		.mw-content-rtl &:last-child,
+		.mw-content-ltr .mw-content-rtl &:last-child {
+			/* @noflip */
+			margin-right: 0.25em;
+		}
+
+		.mw-content-ltr &:last-child,
+		.mw-content-rtl .mw-content-ltr &:last-child,
+		.mw-content-rtl &:first-child,
+		.mw-content-ltr .mw-content-rtl &:first-child {
+			/* @noflip */
+			margin-left: 0.25em;
+		}
+	}
+
+	&-link&-link-pending {
+		color: #72777d;
+		pointer-events: none;
+	}
+}
+
+// Topic subscriptions (button)
+.ext-discussiontools-init-section-subscribeButton.oo-ui-buttonElement {
+	display: none;
+
+	> .oo-ui-buttonElement-button {
+		font-weight: normal;
+	}
+
+	.ext-discussiontools-topicsubscription-enabled.ext-discussiontools-visualenhancements-enabled & {
+		display: inline-block;
+	}
+
+	body:not( .skin-minerva ) & {
+		// stylelint-disable-next-line declaration-property-unit-disallowed-list
+		font-size: 14px;
+	}
+
+	// Directional properties must be based on content direction.
+	body:not( .skin-minerva ) .mw-content-ltr &,
+	body:not( .skin-minerva ) .mw-content-rtl .mw-content-ltr & {
+		/* @noflip */
+		float: right;
+		/* @noflip */
+		// stylelint-disable-next-line declaration-no-important
+		margin: -2px 0 0 1em !important;
+	}
+
+	body:not( .skin-minerva ) .mw-content-rtl &,
+	body:not( .skin-minerva ) .mw-content-ltr .mw-content-rtl & {
+		/* @noflip */
+		float: left;
+		/* @noflip */
+		// stylelint-disable-next-line declaration-no-important
+		margin: -2px 1em 0 0 !important;
+	}
+}
+
+// Visual enhancements disabled
+.ext-discussiontools-init-section-ellipsisButton.oo-ui-buttonElement,
+.ext-discussiontools-init-section-bar,
+.ext-discussiontools-init-replybutton.oo-ui-buttonElement,
+.ext-discussiontools-init-readAsWikiPage,
+.ext-discussiontools-init-pageframe-latestcomment,
+.ext-discussiontools-init-sidebar-meta {
+	display: none;
+}
+
+.ext-discussiontools-init-pageframe-latestcomment {
+	color: #666;
+}
+
+// Visual enhancements enabled
+// Reply sub-feature
+.ext-discussiontools-visualenhancements_reply-enabled {
+	// Handle cached HTML: don't hide if the button is missing (TODO remove the -replybutton selector)
+	.ext-discussiontools-init-replybutton ~ .ext-discussiontools-init-replylink-bracket,
+	.ext-discussiontools-init-replybutton ~ .ext-discussiontools-init-replylink-reply,
+	.ext-discussiontools-init-replybutton ~ .ext-discussiontools-init-replylink-divider {
+		display: none;
+	}
+
+	.ext-discussiontools-init-replybutton.oo-ui-buttonElement {
+		display: inline-block;
+	}
+
+	&:not( .skin-minerva ) .ext-discussiontools-init-replybutton.oo-ui-buttonElement {
+		// Slim height for inline placement. Minerva uses block placement.
+		padding-top: 0;
+		padding-bottom: 0;
+		min-height: 0;
+		margin-top: -8px;
+		margin-bottom: -6px;
+	}
+
+	&.skin-minerva .ext-discussiontools-init-replylink-buttons {
+		margin-left: 0;
+		display: block;
+	}
+}
+
+// Page frame sub-feature
+.ext-discussiontools-visualenhancements_pageframe-enabled {
+	.mw-page-title-separator {
+		// Support IE: We could use :after { content: ' '; } but IE doesn't follow
+		// the spec and inserts the space into the clipboard when copied.
+		margin-right: 0.25em;
+	}
+
+	.ext-discussiontools-init-pageframe-latestcomment {
+		display: block;
+	}
+
+	// stylelint-disable-next-line selector-class-pattern
+	.sidebar-toc .sidebar-toc-list-item {
+		margin: 8px 0;
+	}
+
+	.ext-discussiontools-init-sidebar-meta {
+		display: block;
+		color: #666;
+		white-space: nowrap;
+		font-size: 0.875em;
+	}
+}
+
+// Main feature (topic containers)
+.ext-discussiontools-visualenhancements-enabled {
+	.ext-discussiontools-init-section {
+		margin: 1em 0 0 0;
+		padding: 0.5em 0;
+		font-weight: bold;
+		// stylelint-disable-next-line declaration-no-important
+		font-family: sans-serif !important;
+		border: 0;
+		border-top: 1px solid #a2a9b1;
+
+		&:first-child {
+			border-top: 0;
+			margin-top: 0;
+		}
+
+		// Hide old subscribe link
+		&-subscribe {
+			display: none;
+		}
+
+		&-bar {
+			// stylelint-disable-next-line declaration-property-unit-disallowed-list
+			font-size: 14px;
+			margin-top: 5px;
+			display: flex;
+			// Use interface language direction (auto-flipped for RTL)
+			direction: ltr;
+		}
+
+		&-metadata {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&-metaitem {
+			font-weight: normal;
+			color: #666;
+			// Make same height as "unsubscribe" button
+			margin: 7px 0;
+
+			& + .ext-discussiontools-init-section-metaitem {
+				margin-left: 12px;
+				padding-left: 12px;
+				border-left: 1px solid #a2a9b1;
+			}
+		}
+
+		&-actions {
+			margin-left: auto;
+			// Prevent the focus outline from being cut off (T311662), do not set to negative values
+			margin-right: 0;
+		}
+	}
+
+	// HACK: Can be removed once T311502 is fixed
+	// stylelint-disable-next-line selector-type-no-unknown
+	mw\3Atocplace:first-child + .ext-discussiontools-init-section {
+		border-top: 0;
+		margin-top: 0;
+	}
+
+	// Also re-style topic header input in new topic tool
+	h2.ext-discussiontools-ui-newTopic-sectionTitle .oo-ui-inputWidget-input {
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+
+	// Mobile
+	&.skin-minerva .ext-discussiontools-init-section {
+		flex-wrap: wrap;
+		// stylelint-disable-next-line declaration-no-important
+		border-bottom: 0 !important;
+		margin: 12px 0 0 0;
+		padding-bottom: 0;
+		// The tap-highlight is an odd shape and shows even for cancelled events on -actions,
+		// just hide it.
+		-webkit-tap-highlight-color: transparent;
+		border-top: 1px solid #eaecf0;
+
+		> .mw-headline {
+			width: auto;
+			flex-grow: 1;
+			flex-basis: 0;
+		}
+
+		&:first-child {
+			border-top: 0;
+		}
+
+		&-bar {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+
+		&-actions {
+			width: 100%;
+			margin-left: 0;
+			padding-left: 24px;
+		}
+
+		// stylelint-disable-next-line selector-class-pattern
+		&.section-heading .ext-discussiontools-init-section-actions {
+			// Hidden until expanded
+			display: none;
+		}
+
+		&-ellipsisButton {
+			display: inline-block;
+			// stylelint-disable-next-line declaration-property-unit-disallowed-list
+			font-size: 14px;
+			margin-right: -5px;
+			// Fix height so MenuWidget appears in the correct place with wrapped text (T311558)
+			height: 32px;
+		}
+
+		&-metadata {
+			width: 100%;
+			padding-left: 24px;
+		}
+
+		&-authorCountLabel,
+		&-commentCountLabel {
+			display: none;
+		}
+
+		// stylelint-disable-next-line selector-class-pattern
+		&.open-block {
+			margin-bottom: 12px;
+
+			.ext-discussiontools-init-section-actions {
+				display: block;
+			}
+		}
+
+		.mw-editsection {
+			// stylelint-disable-next-line declaration-no-important
+			display: none !important;
+		}
+
+		.mw-ui-icon + span {
+			margin-left: 0;
+		}
+	}
+
+	&.skin-monobook .ext-discussiontools-init-section {
+		&-bar {
+			// stylelint-disable-next-line declaration-property-unit-disallowed-list
+			font-size: 12px;
+		}
+
+		&-actions {
+			// Prevent the Apex theme focus outline from being cut off (T311662)
+			margin-right: 4px;
+		}
+	}
+}
+
+.ext-discussiontools-emptystate {
+	display: flex;
+	justify-content: space-between;
+	// Add space between this and any existing page content above,
+	// or page-actions-menu in Minerva for non-existing pages
+	margin-top: 1em;
+	clear: both;
+
+	> img {
+		width: 250px;
+	}
+
+	// stylelint-disable-next-line selector-class-pattern
+	.mw-parser-output:not( .noarticletext ) & {
+		// Separate from existing (non-discussion) content
+		margin-top: 2em;
+		padding-top: 1em;
+		border-top: 1px solid #a2a9b1;
+	}
+}
+
+// Mobile
+@media ( max-width: 719px ) {
+	.ext-discussiontools-emptystate {
+		display: block;
+
+		.oo-ui-buttonElement {
+			display: block;
+			text-align: center;
+
+			> a {
+				width: 80%;
+			}
+		}
+
+		> img {
+			display: none;
+		}
+	}
+}
+
+.ext-discussiontools-init-replylink-open {
+	.ext-discussiontools-emptystate,
+	> .mw-message-box-warning {
+		display: none;
+	}
+}
+
+.skin-minerva.ext-discussiontools-emptystate-shown {
+	// The Minerva "Add topic" button is very eye-catching.
+	// No need to show it when the empty state banner is shown.
+	// stylelint-disable-next-line selector-class-pattern
+	.minerva-talk-add-button,
+	.ext-discussiontools-init-new-topic {
+		display: none;
+	}
+}
+
+// Styles inspired by the Popups extension
+// (and occasionally copypasted from there)
+.ext-discussiontools-autotopicsubpopup {
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	// Increase specificity to override .oo-ui-popupWidget
+	.oo-ui-popupWidget& {
+		// Animations
+		opacity: 0;
+		// Support: Safari
+		// 3D transform is needed to work around a Safari bug, which causes shadows to remain when the
+		// popup is removed (T297266, T226872). Otherwise this should just use 2D translate().
+		transform: translate3d( 0, -20px, 0 );
+		transition: opacity 0.2s, transform 0.2s;
+
+		&-fadein {
+			opacity: 1;
+			// Support: Safari
+			// 3D transform is needed to work around a Safari bug, which causes shadows to remain when the
+			// popup is removed (T297266, T226872). Otherwise this should just use 2D translate().
+			transform: translate3d( 0, 0, 0 );
+		}
+	}
+
+	.oo-ui-popupWidget-popup {
+		padding: 1.5em;
+		box-sizing: border-box;
+		// Center horizontally
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		// Position above the highlight
+		bottom: 3em;
+
+		&.ext-discussiontools-autotopicsubpopup-overlap {
+			// If there isn't enough space above, position on top of the highlight
+			top: -1em;
+			bottom: auto;
+		}
+	}
+
+	&-title {
+		font-weight: bold;
+		font-size: 1.2em;
+		display: block;
+	}
+
+	&-image {
+		/* @embed */
+		background: url( autotopicsubpopup-image.svg ) center center no-repeat;
+		width: 200px;
+		height: 200px;
+	}
+
+	// Desktop
+	@media ( min-width: 720px ) {
+		.oo-ui-popupWidget-popup {
+			width: 450px;
+			min-height: 200px;
+			padding-right: 0;
+		}
+
+		&-image {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			z-index: 1;
+		}
+
+		&-body {
+			margin-bottom: 1em;
+			margin-top: 1em;
+			margin-right: 200px;
+		}
+
+		&-title,
+		&-actions {
+			margin-right: 150px;
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	// Mobile
+	@media ( max-width: 719px ) {
+		.oo-ui-popupWidget-popup {
+			width: 320px;
+		}
+
+		&-image {
+			width: 100%;
+		}
+
+		&-body {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+// DiscussionToolsEnableMobile disables the Minerva simplified talk page
+// (SkinMinerva::isSimplifiedTalkPageEnabled). This is enabled on all pages
+// in the talk namespace (with wikitext content model, but this file is not
+// loaded on non-wikitext pages).
+//
+// DiscussionToolsEnableMobile enables multiple features, including the reply tool.
+//
+// Whenever we detect that DiscussionToolsEnableMobile is disabling the Minerva
+// simplified talk page, hide the lede section, and show a "Read as wiki page" button
+// to reveal it.
+//
+// The button will disable all DT features byt remove feature CSS classes.
+// stylelint-disable-next-line selector-class-pattern
+.skin-minerva.ns-talk.ext-discussiontools-replytool-enabled {
+	.mf-section-0 > *:not( .ext-discussiontools-emptystate ) {
+		display: none;
+	}
+
+	.mf-section-0 > .ext-discussiontools-emptystate {
+		border-top: 0;
+		margin-top: 0;
+	}
+
+	.ext-discussiontools-init-readAsWikiPage {
+		display: block;
+		/* Not sticky per T309889 */
+		width: 100%;
+		padding: 1em;
+		color: @colorProgressive;
+		background: @colorGray15;
+		border-top: 1px solid @colorGray14;
+		text-align: center;
+	}
+}
+
+// HACK: Fake disabled styles for the .mw-ui-button in Vector sticky header (T307726)
+.ext-discussiontools-fake-disabled {
+	// stylelint-disable-next-line plugin/no-unsupported-browser-features
+	filter: saturate( 0 );
+	opacity: 0.8;
+	pointer-events: none;
+}

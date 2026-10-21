@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+    "less-desc": "Permite gestionar los estilos del sitio utilizando LESS",
+    "less-update-css": "Actualizar CSS",
+    "less-dialog-title": "Compilando LESS",
+    "less-dialog-close": "Cerrar",
+    "less-dialog-debug-enabled": "Modo de depuración activado",
+    "less-dialog-getting-source": "Obteniendo archivo fuente: [[$1]]",
+    "less-dialog-getting-mixins": "Obteniendo mixins estándar",
+    "less-dialog-attempt-parse": "Intentando analizar LESS",
+    "less-dialog-import-success": "Importado [[$1]] exitosamente 🎉",
+    "less-dialog-import-error": "Error al importar [[$1]]",
+    "less-dialog-formatting-css": "Formateando CSS",
+    "less-dialog-getting-header": "Obteniendo comentario de cabecera",
+    "less-dialog-edit-success": "Actualizado correctamente [[$1]]",
+    "less-dialog-edit-summary": "Actualizando CSS desde [[$1]]",
+    "less-dialog-internal-error": "Error interno",
+    "less-dialog-page-not-found": "Página no encontrada, por favor verifica tu configuración",
+    "less-dialog-check-imports": "Uno o más archivos no pudieron ser importados, por favor asegúrate de que todas las declaraciones @import referencien páginas existentes",
+    "less-dialog-parse-error-file": "Error de análisis en la línea $1 en [[$2]]",
+    "less-dialog-unknown-error": "Ha ocurrido un error desconocido",
+    "less-dialog-error-persist": "Si este error persiste, por favor repórtalo [[$1|aquí]]"    
+}

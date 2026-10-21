@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"DCLXVI",
+			"Spiritia",
+			"StanProg"
+		]
+	},
+	"editcount-desc": "Показва [[Special:Editcount|броя редакции]] на даден потребител",
+	"editcount_username": "Потребител:",
+	"editcount_submit": "Проверяване",
+	"editcount_total": "Общо"
+}

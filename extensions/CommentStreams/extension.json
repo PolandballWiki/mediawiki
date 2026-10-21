@@ -1,0 +1,305 @@
+{
+	"name": "CommentStreams",
+	"version": "8.0.2",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Jji Jason Ji]",
+		"[https://www.mediawiki.org/wiki/User:Cindy.cicalese Cindy Cicalese]",
+		"[https://www.mediawiki.org/wiki/User:MarkAHershberger Mark A. Hershberger]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CommentStreams",
+	"descriptionmsg": "commentstreams-desc",
+	"manifest_version": 2,
+	"type": "parserhook",
+	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"SpecialPages": {
+		"CommentStreamsAllComments": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\CommentStreamsAllComments",
+			"services": [
+				"CommentStreamsStore",
+				"CommentStreamsFactory",
+				"LinkRenderer",
+				"WikiPageFactory"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"CommentStreams": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"CommentStreamsAlias": "includes/CommentStreams.alias.php"
+	},
+	"ResourceModules": {
+		"ext.CommentStreams": {
+			"styles": [
+				"CommentStreams.css"
+			],
+			"packageFiles": [
+				"CommentStreams.js",
+				"Querier.js",
+				"Block.js",
+				"Stream.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"oojs-ui.styles.icons-alerts",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui.styles.icons-editing-core",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-moderation",
+				"oojs-ui.styles.icons-movement"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": [
+				"commentstreams-api-error-invalid",
+				"commentstreams-api-error-notloggedin",
+				"commentstreams-api-error-commentnotfound",
+				"commentstreams-api-error-notacomment",
+				"commentstreams-api-error-notareply",
+				"commentstreams-api-error-post-permissions",
+				"commentstreams-api-error-post-parentpagedoesnotexist",
+				"commentstreams-api-error-post-associatedpagedoesnotexist",
+				"commentstreams-api-error-post",
+				"commentstreams-api-error-edit-notloggedin",
+				"commentstreams-api-error-edit-permissions",
+				"commentstreams-api-error-edit",
+				"commentstreams-api-error-delete-notloggedin",
+				"commentstreams-api-error-delete-permissions",
+				"commentstreams-api-error-delete-haschildren",
+				"commentstreams-api-error-delete",
+				"commentstreams-api-error-vote-notloggedin",
+				"commentstreams-api-error-vote-novoteonreply",
+				"commentstreams-api-error-vote",
+				"commentstreams-api-error-watch-notloggedin",
+				"commentstreams-api-error-watch-nowatchreply",
+				"commentstreams-api-error-watch",
+				"commentstreams-api-error-unwatch-notloggedin",
+				"commentstreams-api-error-unwatch-nounwatchreply",
+				"commentstreams-api-error-unwatch",
+				"commentstreams-validation-error-nocommenttitle",
+				"commentstreams-validation-error-nocommenttext",
+				"commentstreams-buttontext-add",
+				"commentstreams-buttontext-reply",
+				"commentstreams-buttontooltip-add",
+				"commentstreams-buttontooltip-reply",
+				"commentstreams-buttontooltip-edit",
+				"commentstreams-buttontooltip-moderator-edit",
+				"commentstreams-buttontooltip-delete",
+				"commentstreams-buttontooltip-moderator-delete",
+				"commentstreams-buttontooltip-history",
+				"commentstreams-buttontooltip-permalink",
+				"commentstreams-buttontooltip-collapse",
+				"commentstreams-buttontooltip-expand",
+				"commentstreams-buttontooltip-upvote",
+				"commentstreams-buttontooltip-downvote",
+				"commentstreams-buttontooltip-watch",
+				"commentstreams-buttontooltip-unwatch",
+				"commentstreams-buttontooltip-submit",
+				"commentstreams-buttontooltip-cancel",
+				"commentstreams-dialog-delete-message",
+				"commentstreams-dialog-anonymous-message",
+				"commentstreams-dialog-buttontext-ok",
+				"commentstreams-dialog-buttontext-cancel",
+				"commentstreams-dialog-buttontext-yes",
+				"commentstreams-dialog-buttontext-no",
+				"commentstreams-urldialog-instructions",
+				"commentstreams-datetext-postedon",
+				"commentstreams-datetext-lasteditedon",
+				"commentstreams-datetext-moderated",
+				"commentstreams-title-field-placeholder",
+				"commentstreams-body-field-placeholder",
+				"commentstreams-ve-conversion-error"
+			]
+		},
+		"ext.CommentStreamsAllComments": {
+			"styles": [
+				"CommentStreamsAllComments.css"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "CommentStreams/resources"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\CommentStreams\\": "includes/"
+	},
+	"AutoloadClasses": {
+		"MigrateToAbstractSchema": "maintenance/MigrateToAbstractSchema.php"
+	},
+	"APIModules": {
+		"cspostcomment": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSPostComment",
+			"services": [
+				"CommentStreamsFactory",
+				"CommentStreamsEchoInterface",
+				"MainConfig",
+				"WikiPageFactory"
+			]
+		},
+		"cspostreply": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSPostReply",
+			"services": [
+				"CommentStreamsFactory",
+				"CommentStreamsEchoInterface",
+				"MainConfig",
+				"WikiPageFactory"
+			]
+		},
+		"csquerycomment": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSQueryComment",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"csqueryreply": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSQueryReply",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"cseditcomment": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSEditComment",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"cseditreply": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSEditReply",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"csdeletecomment": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSDeleteComment",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"csdeletereply": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSDeleteReply",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"csvote": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSVote",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"cswatch": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSWatch",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		},
+		"csunwatch": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\ApiCSUnwatch",
+			"services": [
+				"CommentStreamsFactory",
+				"MainConfig"
+			]
+		}
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\MainHooks",
+			"services": [
+				"CommentStreamsHandler",
+				"CommentStreamsFactory",
+				"CommentStreamsStore",
+				"LinkRenderer",
+				"RevisionStore",
+				"PermissionManager",
+				"PageProps",
+				"WikiPageFactory"
+			]
+		},
+		"noservice": {
+			"class": "MediaWiki\\Extension\\CommentStreams\\NoServiceHooks"
+		}
+	},
+	"Hooks": {
+		"MediaWikiPerformAction": "main",
+		"MovePageIsValidMove": "main",
+		"GetUserPermissionsErrors": "main",
+		"BeforePageDisplay": "main",
+		"ShowSearchHitTitle": "main",
+		"ParserFirstCallInit": "main",
+		"SpecialExportGetExtraPages": "main",
+		"XmlDumpWriterOpenPage": "main",
+		"ImportHandlePageXMLTag": "main",
+		"AfterImportPage": "main",
+		"CanonicalNamespaces": "noservice",
+		"LoadExtensionSchemaUpdates": "noservice",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\CommentStreams\\EchoInterface::onBeforeCreateEchoEvent",
+		"SMW::Property::initProperties": "MediaWiki\\Extension\\CommentStreams\\SMWHooks::initProperties",
+		"SMWStore::updateDataBefore": "MediaWiki\\Extension\\CommentStreams\\SMWHooks::updateData",
+		"SMW::Settings::BeforeInitializationComplete": "MediaWiki\\Extension\\CommentStreams\\SMWHooks::onSMWInitialization"
+	},
+	"callback": "MediaWiki\\Extension\\CommentStreams\\MainHooks::onRegistration",
+	"config": {
+		"CommentStreamsNamespaceIndex": {
+			"value": 844
+		},
+		"CommentStreamsAllowedNamespaces": {
+			"value": null
+		},
+		"CommentStreamsNewestStreamsOnTop": {
+			"value": true
+		},
+		"CommentStreamsModeratorFastDelete": {
+			"value": false
+		},
+		"CommentStreamsShowLabels": {
+			"value": true
+		},
+		"CommentStreamsEnableVoting": {
+			"value": false
+		},
+		"CommentStreamsInitiallyCollapsedNamespaces": {
+			"value": []
+		},
+		"CommentStreamsUserRealNamePropertyName": {
+			"value": null
+		},
+		"CommentStreamsUserAvatarPropertyName": {
+			"value": null
+		},
+		"CommentStreamsEnableSearch": {
+			"value": true
+		},
+		"CommentStreamsExportCommentsAutomatically": {
+			"value": true
+		},
+		"CommentStreamsSuppressLogsFromRCs": {
+			"value": true
+		},
+		"CommentStreamsTimeFormat": {
+			"value": "M j, Y \\a\\t g:i a"
+		}
+	}
+}

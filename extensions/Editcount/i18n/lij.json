@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Giromin Cangiaxo"
+		]
+	},
+	"editcount-desc": "Mostra o [[Special:Editcount|contezzo de contribuçioin]] de 'n utente",
+	"editcount_username": "Utente:",
+	"editcount_submit": "Invia",
+	"editcount_total": "Totale"
+}

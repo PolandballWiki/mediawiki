@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Creepario",
+			"Metalhead64",
+			"Purodha",
+			"Umherirrender"
+		]
+	},
+	"socialprofile-desc": "Erweitert MediaWiki um einen Satz sozialer Werkzeuge",
+	"socialprofile-uploads-disabled": "Die Funktion zum Hochladen von Avatars ist deaktiviert",
+	"apihelp-removeavatar-summary": "Einen Avatar entfernen, entweder deine eigenen oder, wenn du berechtigt bist, auch den eines anderen Benutzers.",
+	"apihelp-removeavatar-param-reason": "Optionaler Grund, warum {{#formal|du|Sie}} den Avatar einer anderen Person {{#formal|entfernst|entfernen}}.",
+	"apihelp-removeavatar-param-user": "Name des Benutzers, dessen Avatar entfernt werden soll.",
+	"apihelp-removeavatar-example-1": "Entferne den Avatar des Benutzers mit dem Namen „Ashley“",
+	"apihelp-removeavatar-example-2": "Entfernen des Avatars des Benutzers „Elektra“ mit „Eindeutige Urheberrechtsverletzung“ als Löschungsgrund",
+	"apierror-avatar-is-default": "Der Avatar des Benutzers ist bereits als Standard festgelegt.",
+	"apihelp-uploadavatar-summary": "Einen Avatar hochladen",
+	"apihelp-uploadavatar-example-url": "Lade das Bild von https://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png als deinen Avatar hoch.",
+	"apihelp-uploadavatar-param-file": "Neuer Inhalt der Avatar-Bilddatei.",
+	"apihelp-uploadavatar-param-url": "URL, von der die Datei abgerufen werden soll.",
+	"apihelp-smpuserprivacy-summary": "Das API-Modul, welches die Sichtbarkeit („Privatsphäre“) eines Profilfeldes festlegt",
+	"apihelp-smpuserprivacy-param-method": "Aktion (entweder „get“ oder „set“)",
+	"apihelp-smpuserprivacy-param-field_key": "Zielfeldschlüssel, wie up_movies für das Feld „Filme“",
+	"apihelp-smpuserprivacy-param-privacy": "Neuer Privatsphärenwert (einer der folgenden Werte: public, hidden, friends, foaf)"
+}

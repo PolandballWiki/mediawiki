@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"commentstreams-author-anonymous": "nõõmteʹmes õõʹnni",
+	"commentstreams-api-error-notloggedin": "Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm.",
+	"commentstreams-api-error-edit-notloggedin": "Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm, jõs haaʹlääk mõõn-ne muʹtted.",
+	"commentstreams-api-error-delete-notloggedin": "Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm, jõs haaʹlääk mõõn-ne jaukkeed.",
+	"commentstreams-api-error-vote-notloggedin": "Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm, jõs haaʹlääk jiõnsted.",
+	"commentstreams-api-error-watch-notloggedin": "Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm, jõs haaʹlääk kommeeʹnt valvvâd.",
+	"commentstreams-api-error-unwatch-notloggedin": "Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm, jõs haaʹlääk kommeeʹnt valvvmest jõskkâd.",
+	"commentstreams-buttontext-add": "Lââʹzzet kommeeʹnt",
+	"commentstreams-buttontext-reply": "Vaʹstted",
+	"commentstreams-buttontooltip-add": "lââʹzzet kommeeʹnt",
+	"commentstreams-buttontooltip-reply": "vaʹstted",
+	"commentstreams-buttontooltip-edit": "muuʹtt",
+	"commentstreams-buttontooltip-delete": "jaukkâd",
+	"commentstreams-buttontooltip-history": "historia",
+	"commentstreams-buttontooltip-permalink": "põõšši liŋkk",
+	"commentstreams-buttontooltip-collapse": "čiõǥǥ",
+	"commentstreams-buttontooltip-expand": "čuäʹjet",
+	"commentstreams-buttontooltip-watch": "vaalv",
+	"commentstreams-buttontooltip-unwatch": "jõõsk valvvmest",
+	"commentstreams-buttontooltip-submit": "vuõlttâd",
+	"commentstreams-buttontooltip-cancel": "jõõsk",
+	"commentstreams-dialog-buttontext-cancel": "Jõõsk",
+	"commentstreamsallcomments": "Puk kommeeʹnt",
+	"commentstreams-allcomments-label-wikitext": "Teʹkstt",
+	"commentstreams-allcomments-label-reply": "Vaʹstted",
+	"commentstreams-allcomments-label-created": "Rajjum",
+	"commentstreams-allcomments-label-lastedited": "Mââimõssân muttum"
+}

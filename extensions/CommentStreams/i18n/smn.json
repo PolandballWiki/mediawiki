@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"commentstreams-buttontext-add": "Lasseet komment",
+	"commentstreams-buttontext-reply": "Västid",
+	"commentstreams-buttontooltip-add": "lasseet komment",
+	"commentstreams-buttontooltip-reply": "västid",
+	"commentstreams-buttontooltip-delete": "siho",
+	"commentstreams-buttontooltip-history": "historjá",
+	"commentstreams-buttontooltip-permalink": "avalâš liŋkkâ",
+	"commentstreams-buttontooltip-collapse": "čievâ",
+	"commentstreams-buttontooltip-expand": "čääiti",
+	"commentstreams-buttontooltip-watch": "tarkkuustâl",
+	"commentstreams-buttontooltip-unwatch": "jooskâ tarkkuustâllâm",
+	"commentstreams-buttontooltip-cancel": "jooskâ",
+	"commentstreams-dialog-buttontext-ok": "OK",
+	"commentstreams-dialog-buttontext-cancel": "Jooskâ",
+	"commentstreams-datetext-lasteditedon": "Majemustáá nubástittum",
+	"commentstreams-allcomments-label-reply": "Västid",
+	"commentstreams-allcomments-label-lastedited": "Majemustáá nubástittum"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaustubh"
+		]
+	},
+	"editcount-desc": "एखाद्या सदस्याची [[Special:Editcount|संपादन संख्या]] दर्शविते",
+	"editcount_username": "सदस्य:",
+	"editcount_submit": "पाठवा",
+	"editcount_total": "एकूण"
+}

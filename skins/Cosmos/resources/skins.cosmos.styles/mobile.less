@@ -1,0 +1,158 @@
+.cosmos-header__sitename a,
+.cosmos-header__local-navigation,
+.cosmos-header__wordmark,
+#cosmos-search-buttonContainer,
+.wds-button.wds-is-secondary.wds-dropdown__toggle {
+	display: none;
+}
+
+#cosmos-banner {
+	position: relative;
+}
+
+#cosmos-toolbar {
+	position: static;
+	width: 100%;
+	max-width: unset;
+	padding: 5px;
+	border-radius: 0;
+}
+
+body > #mw-content-container {
+	padding-top: 0;
+}
+
+/* Page header */
+h1.firstHeading {
+	clear: right;
+}
+
+/* Full-width thumbnails */
+div.thumb {
+	display: flex;
+	justify-content: center;
+	margin: 0.5em 0;
+	float: none;
+}
+
+.thumb {
+	margin: 1em auto;
+}
+
+.floatright,
+.tright {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.floatleft,
+.tleft {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.mw-body {
+	border: 0;
+
+	/* Keep images from overflowing */
+	a > img {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+}
+
+#mw-content {
+	padding: 0 20px;
+}
+
+/* Table of contents */
+.toc,
+.mw-warning {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* Misc */
+.nomobile {
+	display: none;
+}
+
+/* Mobile menu */
+.wds-tabs {
+	position: absolute !important;
+	z-index: 999999999999;
+	top: 100%;
+	right: 16px;
+	left: 16px;
+	display: none;
+	overflow: auto;
+	max-height: 300px;
+	padding: 7px 0;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.3 );
+
+	&__tab {
+		margin: 0 9px;
+
+		&-label {
+			border-bottom: 1px solid #eee;
+		}
+	}
+}
+
+.wds-dropdown {
+	flex-direction: column;
+}
+
+.wds-tabs__tab .wds-dropdown__content,
+.wds-dropdown-level-2__content {
+	position: relative !important;
+	display: block !important;
+	border: 0 !important;
+	background-color: transparent !important;
+}
+
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 .wds-dropdown-level-2__content {
+	left: 0 !important;
+}
+
+.wds-dropdown:not( .wds-is-touch-device ):not( .wds-is-not-hoverable ):hover:not( .wds-no-chevron )::before,
+.wds-dropdown:not( .wds-is-touch-device ):not( .wds-is-not-hoverable ):hover:not( .wds-no-chevron )::after,
+.wds-dropdown__toggle-chevron,
+.wds-dropdown-chevron {
+	display: none;
+}
+
+.wds-tabs__tab-label span {
+	color: #000;
+}
+
+.cosmos-mobile-menu-button {
+	font-size: 18px;
+	font-weight: bold;
+	transform: scale( 1.4, 1 );
+}
+
+.cosmos-mobile-navigation {
+	display: flex;
+}
+
+.cosmos-button.cosmos-button-primary.cosmos-mobile-menu-button {
+	background: transparent;
+}
+
+.wds-dropdown__content .wds-list.wds-is-linked > li:hover > a:not( .wds-button ) {
+	color: #088488;
+}
+
+#mw-content-wrapper {
+	padding: 0 !important;
+}
+
+.CosmosRail {
+	-moz-column-count: 1 !important;
+	-webkit-column-count: 1 !important;
+	column-count: 1 !important;
+}

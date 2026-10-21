@@ -1,0 +1,111 @@
+/*
+ * Citizen
+ *
+ * SkinStyles for Extension:PortableInfobox
+ * Module: ext.PortableInfobox.styles
+ * Version: 0.6 16a77dc
+ *
+ * Date: 2024-17-08
+ *
+ * User: Dark
+*/
+
+// Vars
+
+// LESS
+@filter-glass: blur(20px) saturate(180%);
+
+// CSS
+:root {
+	--pi-background: var( --color-surface-2 );
+	--pi-border-color: var( --border-color-base );
+	--pi-secondary-background: var( --color-surface-3 );
+}
+
+// Extension:PortableInfobox - WP
+.portable-infobox {
+    border-radius: var(--border-radius--medium);
+    border: 1px solid var(--border-color-base);
+    background: var(--border-color-base);
+    backdrop-filter: @filter-glass;
+    transition: all 0.3s;
+    margin-top: 10px;
+
+    .pi-title {
+        background: var(--color-surface-2);
+        border-radius: var(--border-radius--medium);
+        border: 1px solid var(--border-color-base) !important;
+        margin: 5px !important;
+    }
+
+    .pi-image-thumbnail {
+        padding: 5px;
+        align-self: center;
+        border-radius: var(--border-radius--large);
+    }
+
+    .pi-group > p {
+        text-align: center;
+        font-weight: 500;
+        padding: 5px;
+        border: 1px solid var(--border-color-base);
+        background: var(--color-surface-2);
+        font-size: 18px;
+        border-radius: var(--border-radius--medium);
+        margin: 0 4px;
+    }
+    .pi-data-label {
+        display: none; // TODO: Check element
+    }
+    .pi-secondary-background {
+        background: none !important;
+    }
+    .pi-data-value {
+        padding: 8px 5px;
+    }
+
+    .pi-data > p {
+        padding: 0 5px;
+        width: fit-content;
+        white-space: nowrap;
+    }
+}
+
+.portable-infobox p {
+	margin: var( --space-xs ) 0; // More akin to Vector
+}
+
+.portable-infobox .pi-horizontal-group {
+	margin-top: 0;
+}
+
+.portable-infobox .pi-section-navigation,
+.portable-infobox .pi-media-collection-tabs {
+	padding-bottom: 0;
+	background-color: var( --color-surface-3 );
+}
+
+.pi-section-navigation .pi-section-tab.pi-section-active,
+.pi-section-navigation .pi-section-tab.current,
+.pi-media-collection .pi-tab-link.current {
+	background: var( --color-surface-2 );
+	border-color: var( --color-primary );
+	border-bottom-width: 0;
+}
+
+.pi-section-navigation .pi-section-tab,
+.pi-media-collection .pi-tab-link {
+	margin: 0 4px;
+	background: var( --color-surface-2 );
+	border-width: 2px;
+	border-top-left-radius: var( --border-radius--medium );
+	border-top-right-radius: var( --border-radius--medium );
+
+	&:hover {
+		border-color: var( --color-primary--hover );
+	}
+
+	&:active {
+		border-color: var( --color-primary--active );
+	}
+}

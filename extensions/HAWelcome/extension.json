@@ -1,0 +1,68 @@
+{
+	"name": "Highly Automated Welcome Tool",
+	"namemsg": "welcome-user-name",
+	"version": "0.8.4",
+	"author": [
+		"Krzysztof Krzyżaniak",
+		"Maciej Błaszkowski",
+		"Jack Phoenix",
+		"Mainframe98"
+	],
+	"license-name": "GPL-2.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:HAWelcome",
+	"descriptionmsg": "welcome-user-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"HAWelcome": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"HAWelcomeJob": "HAWelcome.class.php",
+		"HAWelcomeHooks": "HAWelcome.hooks.php"
+	},
+	"JobClasses": {
+		"HAWelcome": "HAWelcomeJob"
+	},
+	"HookHandlers": {
+		"default": {
+			"class": "HAWelcomeHooks",
+			"services": [
+				"ReadOnlyMode",
+				"UserGroupManager",
+				"UserFactory"
+			]
+		}
+	},
+	"Hooks": {
+		"PageSaveComplete": "default",
+		"UserGroupsChanged": "HAWelcomeHooks::onUserGroupsChanged",
+		"UserGetReservedNames": "HAWelcomeHooks::onUserGetReservedNames"
+	},
+	"GroupPermissions": {
+		"bot": {
+			"welcomeexempt": true
+		},
+		"staff": {
+			"welcomeexempt": true
+		},
+		"sysop": {
+			"welcomeexempt": true
+		},
+		"bureaucrat": {
+			"welcomeexempt": true
+		}
+	},
+	"AvailableRights": [
+		"welcomeexempt"
+	],
+	"config": {
+		"HAWelcomeWelcomeUsername": "ShoutWiki",
+		"HAWelcomeStaffGroupName": "staff",
+		"HAWelcomeSignatureFromPreferences": false
+	},
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,17 @@
+{
+	"extends": [
+		"stylelint-config-idiomatic-order",
+		"stylelint-config-wikimedia/support-modern",
+		"stylelint-config-wikimedia/mediawiki"
+	],
+	"reportNeedlessDisables": true,
+	"rules": {
+		"declaration-no-important": null,
+		"declaration-property-unit-disallowed-list": null,
+		"no-descending-specificity": null,
+		"no-duplicate-selectors": null,
+		"selector-class-pattern": null,
+		"selector-max-id": null,
+		"plugin/no-unsupported-browser-features": null
+	}
+}

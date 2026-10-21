@@ -1,0 +1,171 @@
+/*  🎨 Vars 
+    ---------  */
+    :root {
+        --filter-glass: blur(20px) saturate(180%);
+        --sitenotice2-border-radius: 4px;
+        --sitenotice2-border: #000;
+
+        --sitenotice2-background: rgba(251,251,251,0.4);
+        --sitenotice2-background--header: rgba(192,192,192,0.4);
+        --sitenotice2-background--secondary: #000;
+
+        --sitenotice2-transitions: box-shadow 0.5s, left 0.3s, bottom 0.3s, width 0.3s, height 0.3s, font-size 0.3s, border-radius 0.3s, padding-top 0.3s, border 0.5s;
+    }
+    
+/* 🔁 Animation */
+@keyframes slide-right {
+    0% {
+        transform: translateX(-600px) scale(.2);
+        transform-origin: top left;
+    }
+    100% {
+        transform: translateX(0px) scale(1);
+        transform-origin: top left;
+    }
+}
+    /* Sitenotice wrapper */
+    #siteNotice {
+        position: absolute;
+    }
+    
+    /* 👀 Sitenotice position */
+    #cosmos-content-siteNotice {
+        animation: slide-right 0.5s ease-in-out both;
+        position: fixed !important;
+        /* 👀 Cancelar cualquier otro valor */
+        width: 420px;
+        height: auto;
+        max-height: 232px;
+        inset: auto auto -20px -10px;
+        padding: 0 !important;
+        z-index: 10;
+        transition: var(--sitenotice2-transitions);
+        background: none !important;
+        border: 0 !important;
+        min-height: 0;
+    }
+    #cosmos-content-siteNotice .cosmos-button-primary { display: none; }
+    /* 🎆 Effects for container */
+    .mw-sitenotice2 {
+        transition: var(--sitenotice2-transitions);
+    }
+    .mw-sitenotice2:hover {
+        border: 1px solid var(--sitenotice2-background--secondary);
+        box-shadow: 2px -2px 35px 0 var(--sitenotice2-background--secondary);
+     }
+    
+    @media only screen and (max-width: 1135px) {
+        #cosmos-content-siteNotice {
+            width: 100% !important;
+            bottom: -70px;
+            left: -17px;
+            font-size: 110%;
+        }
+        #siteNotice, .mw-sitenotice2 {
+            width: 100% !important;
+        }
+        .mw-sitenotice2,
+        .mw-sitenotice2-header {
+            border-radius: 0 !important;
+        }
+    }
+    
+    /* ⬅️ Text align to left */
+    #siteNotice p {
+        text-align: left;
+        padding: 10px 18px;
+    }
+    
+    /* 🚀 Container */
+    .mw-sitenotice2 {
+        width: 420px;
+        height: auto;
+        max-height: 232px;
+        padding: 0;
+        white-space: normal;
+        text-wrap: pretty;
+        background-color: var(--sitenotice2-background);
+        backdrop-filter: var(--filter-glass);
+        border-radius: var(--sitenotice2-border-radius);
+        box-shadow: 0 3px 12px 0 #0000004d;
+        overflow: hidden;
+        border: 1px solid var(--sitenotice2-border);
+        display: flex;
+        flex-direction: column;
+        transition: opacity 0.2s;
+        transition: left 0.3s, bottom 0.3s, width 0.3s, height 0.3s, font-size 0.3s, border-radius 0.3s;
+        margin-inline: 0;
+    }
+    
+    /* 📏 Border left with color */
+    .mw-sitenotice2:before {
+        background-color: var(--sitenotice2-background--secondary);
+        border-radius: var(--sitenotice2-border-radius);
+        content: "";
+        display: block;
+        height: 95%;
+        left: 0 !important;
+        position: absolute;
+        top: 0;
+        width: 6px;
+    }
+    
+    /* 📓 Header Container */
+    .mw-sitenotice2-header {
+        text-align: left;
+        background: var(--sitenotice2-background--header);
+        border-radius: var(--sitenotice2-border-radius) var(--sitenotice2-border-radius) 0 0;
+        padding: 10px 15px;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: auto 1fr auto;
+        gap: 6px;
+    }
+    
+    /* 🎀 Icon */
+    .mw-sitenotice-icon img {
+        display: block;
+        max-height: 30px;
+        max-width: 75px;
+        object-fit: scale-down;
+    }
+    /* 📖 h2 styles */
+    .mw-sitenotice2-header h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1 !important;
+        border: 0 !important;
+        padding-bottom: 5px;
+        width: fit-content;
+    }
+    
+    /* ❌ Close button */
+    .mw-dismissable-notice-close {
+        cursor: pointer;
+        transition: opacity 0.2s;
+        opacity: 0.8;
+    }
+    .mw-dismissable-notice-close:hover {
+        opacity: 1;
+        fill: #cc1b1b;
+    }
+    
+    /* 🧪 Other styles */
+        .client-js .mw-sitenotice2 {
+            display: none;
+        }
+    
+    .mw-sitenotice2-close {
+        visibility: hidden;
+    }
+    /* @noflip */
+    .sitedir-ltr .mw-sitenotice2-body {
+        text-align: left;
+    }
+    /* @noflip */
+    .sitedir-rtl .mw-sitenotice2-body {
+        text-align: right;
+    }
+    

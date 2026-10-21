@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Comp1089",
+			"Рустам Нурыев",
+			"З. ӘЙЛЕ"
+		]
+	},
+	"adminlinks": "Хакимдар өсөн һылтанмалар",
+	"adminlinks-desc": "Хакимдәр өсөн файҙалы һылтанмалары булған [[Special:AdminLinks|ярҙамсы бит]] өҫтәй",
+	"adminlinks_documentation": "$1 документацияһы",
+	"adminlinks_general": "Дөйөм",
+	"adminlinks_editsidebar": "Ҡабырғалағы менюҙы үҙгәртергә",
+	"adminlinks_editcss": "CSS-файлды үҙгәртергә",
+	"adminlinks_editmainpagename": "Баш биттең исемен үҙгәртергә",
+	"adminlinks_users": "Ҡатнашыусылар",
+	"adminlinks_browsesearch": "Ҡарау һәм эҙләү",
+	"adminlinks_importexport": "Индереү һәм сығарыу",
+	"right-adminlinks": "[[Special:AdminLinks|Хакимдар өсөн һылтанмалар]] битен ҡарарға рөхсәт"
+}

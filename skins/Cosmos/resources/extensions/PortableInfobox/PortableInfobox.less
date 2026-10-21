@@ -1,0 +1,80 @@
+// **********  Error handling styles  ********** //
+
+#mw-content {
+	.pi-error-info {
+		padding: 30px 50px;
+		margin: 0;
+		background-color: #f33;
+		color: #fff;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.pi-debug {
+		width: 100%;
+		margin: 0;
+		background-color: mix( @content-background-color, @alt-font-color, 90% );
+		font-family: monospace;
+		list-style: none;
+
+		li {
+			margin: 0;
+		}
+
+		.error {
+			font-size: inherit;
+		}
+	}
+}
+
+.pi-debug-line {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.pi-debug-line-number,
+.pi-debug-line-code {
+	box-sizing: border-box;
+}
+
+.pi-debug-line-number {
+	-webkit-flex-basis: 50px;
+	-moz-flex-basis: 50px;
+	flex-basis: 50px;
+	-webkit-flex-shrink: 0;
+	-moz-flex-shrink: 0;
+	flex-shrink: 0;
+	padding-left: 10px;
+	-ms-flex-negative: 0;
+	-ms-flex-preferred-size: 50px;
+}
+
+.pi-debug-error-message {
+	position: relative;
+	width: 400px;
+	padding: 10px 15px;
+	margin: 20px 0 10px 25px;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+
+	&::before {
+		position: absolute;
+		top: -15px;
+		left: 25px;
+		display: block;
+		width: 0;
+		height: 0;
+		border-right: 15px solid transparent;
+		border-bottom: 15px solid #000;
+		border-left: 15px solid transparent;
+		content: '';
+	}
+
+	.pi-debug-error-message-item {
+		margin: 5px 0;
+	}
+}

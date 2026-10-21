@@ -1,0 +1,447 @@
+{
+  "context": "prod-legacy",
+  "namespace": "mediawiki-production",
+  "image": "ghcr.io/polandballwiki/mediawiki:REL1_39-172",
+  "image_digest": "sha256:487e50bd4d9be846028d7fcc03dce77b41c7395c623c66e0f13d4d2a03325db1",
+  "target_base": "19ddcf09181a8b7d2837b4c99e11184c53047697",
+  "inventory": [
+    "extensions/AWS",
+    "extensions/AbuseFilter",
+    "extensions/AdminLinks",
+    "extensions/BetaFeatures",
+    "extensions/CategoryTree",
+    "extensions/CheckUser",
+    "extensions/Cite",
+    "extensions/CiteThisPage",
+    "extensions/CodeEditor",
+    "extensions/CodeMirror",
+    "extensions/CommentStreams",
+    "extensions/ConfirmEdit",
+    "extensions/Description2",
+    "extensions/Discord",
+    "extensions/DiscordRCFeed",
+    "extensions/DiscussionTools",
+    "extensions/DismissableSiteNotice",
+    "extensions/DummyFandoomMainpageTags",
+    "extensions/Echo",
+    "extensions/EditAccount",
+    "extensions/Editcount",
+    "extensions/EmbedVideo",
+    "extensions/EventLogging",
+    "extensions/Gadgets",
+    "extensions/GlobalCssJs",
+    "extensions/GlobalMessages",
+    "extensions/GlobalUserrights",
+    "extensions/HAWelcome",
+    "extensions/ImageMap",
+    "extensions/InputBox",
+    "extensions/Interwiki",
+    "extensions/Less",
+    "extensions/Linter",
+    "extensions/LoginNotify",
+    "extensions/Math",
+    "extensions/MobileFrontend",
+    "extensions/MsUpload",
+    "extensions/MultimediaViewer",
+    "extensions/NativeSvgHandler",
+    "extensions/Nuke",
+    "extensions/OATHAuth",
+    "extensions/OpenGraphMeta",
+    "extensions/PageImages",
+    "extensions/ParserFunctions",
+    "extensions/PdfHandler",
+    "extensions/Plausible",
+    "extensions/Poem",
+    "extensions/Popups",
+    "extensions/PortableInfobox",
+    "extensions/RelatedArticles",
+    "extensions/Renameuser",
+    "extensions/ReplaceText",
+    "extensions/RobotsTxt",
+    "extensions/Scribunto",
+    "extensions/SearchDigest",
+    "extensions/SecureLinkFixer",
+    "extensions/SimpleBlogPage",
+    "extensions/Sitenotice2",
+    "extensions/SocialProfile",
+    "extensions/SpamBlacklist",
+    "extensions/StaffPowers",
+    "extensions/StructuredData",
+    "extensions/StubUserWikiAuth",
+    "extensions/SyntaxHighlight_GeSHi",
+    "extensions/TabberNeue",
+    "extensions/TemplateData",
+    "extensions/TemplateWizard",
+    "extensions/TextExtracts",
+    "extensions/TitleBlacklist",
+    "extensions/Translate",
+    "extensions/UniversalLanguageSelector",
+    "extensions/VEForAll",
+    "extensions/VipsScaler",
+    "extensions/VisualEditor",
+    "extensions/WikiEditor",
+    "extensions/WikiSEO",
+    "skins/Citizen",
+    "skins/Cosmos",
+    "skins/MinervaNeue",
+    "skins/MonoBook",
+    "skins/Timeless",
+    "skins/Vector"
+  ],
+  "recovered_on": "2026-10-21",
+  "source_pod": "mediawiki-67db6b867-lc7s9",
+  "verification_pod": "mediawiki-67db6b867-8ccrz",
+  "format": "source snapshots; upstream Git metadata absent from image",
+  "restored_components": [
+    {
+      "path": "extensions/AWS",
+      "manifest_name": "AWS",
+      "manifest_version": "0.13.0",
+      "files": 93,
+      "sha256": "9b8ef8c9f08e79f486596891d6088655fd5c6aceba59ad218a9dea715cba7530"
+    },
+    {
+      "path": "extensions/AdminLinks",
+      "manifest_name": "Admin Links",
+      "manifest_version": "0.6",
+      "files": 197,
+      "sha256": "f4d7bb870367f256da392fd4cb2ed13ffe90a254540a5a6e65a94aacda029750"
+    },
+    {
+      "path": "extensions/BetaFeatures",
+      "manifest_name": "BetaFeatures",
+      "manifest_version": "0.1",
+      "files": 542,
+      "sha256": "1233fc2a576437f51c80b943001b43fa680f58a4cad5085bd616f97790e54791"
+    },
+    {
+      "path": "extensions/CheckUser",
+      "manifest_name": "CheckUser",
+      "manifest_version": "2.5",
+      "files": 431,
+      "sha256": "36f35cc40a2bf88d53e612681e3fa0a2a305e6f403cd17087731947f4e2cebad"
+    },
+    {
+      "path": "extensions/CodeMirror",
+      "manifest_name": "CodeMirror",
+      "manifest_version": "4.0.0",
+      "files": 145,
+      "sha256": "e1aad264483b565373ecc74f794f6c7aa803c97a4dd54b0fc978baa2d73d03e6"
+    },
+    {
+      "path": "extensions/CommentStreams",
+      "manifest_name": "CommentStreams",
+      "manifest_version": "8.0.2",
+      "files": 220,
+      "sha256": "e4e8344b96e4113483425707f423d5b7bc15973c4c366faad96aac42b9d17e18"
+    },
+    {
+      "path": "extensions/Description2",
+      "manifest_name": "Description2",
+      "manifest_version": "0.4.1",
+      "files": 67,
+      "sha256": "cb7bdb483056c3f88fbb1f51899dca9e8434c1762c57805f7cda21fac33ca2b0"
+    },
+    {
+      "path": "extensions/Discord",
+      "manifest_name": "Discord",
+      "manifest_version": "1.0.13",
+      "files": 19,
+      "sha256": "6ccccb375d4a65a6844bef3c39afdf73b45e58cce5c9552e5301e2c75ade9dd9"
+    },
+    {
+      "path": "extensions/DiscordRCFeed",
+      "manifest_name": "DiscordRCFeed",
+      "manifest_version": "1.0.3",
+      "files": 61,
+      "sha256": "1b0dc6c0720633af275dd0816782c96883a8a514f3340ecdc9791488b14eab4b"
+    },
+    {
+      "path": "extensions/DiscussionTools",
+      "manifest_name": "DiscussionTools",
+      "manifest_version": "0.0.0",
+      "files": 898,
+      "sha256": "b900d9f3d46429b7f142eb844b62f1a3fa0b1b310bcedebbb87356f6fa2e4929"
+    },
+    {
+      "path": "extensions/DismissableSiteNotice",
+      "manifest_name": "DismissableSiteNotice",
+      "manifest_version": "1.0.1",
+      "files": 198,
+      "sha256": "e5a9b72bee41e52565af9e94da3ee64a0bd77da6d9d0236b7710cd5403387fba"
+    },
+    {
+      "path": "extensions/DummyFandoomMainpageTags",
+      "manifest_name": "DummyFandoomMainpageTags",
+      "manifest_version": "1.0.0",
+      "files": 6,
+      "sha256": "7535810d21ce373df90ce1c8b5cfd8b2cda59a77a0b45f62aa44263d09740561"
+    },
+    {
+      "path": "extensions/Echo",
+      "manifest_name": "Echo",
+      "manifest_version": null,
+      "files": 778,
+      "sha256": "34225f81d27dc34f567122b35da7d37765c2532316ba89e4a61d5af324bbe12a"
+    },
+    {
+      "path": "extensions/EditAccount",
+      "manifest_name": "EditAccount",
+      "manifest_version": "1.3.5",
+      "files": 101,
+      "sha256": "1111bedecce921e7231806b334ed9bb489eef7d5a26a666624de99665b3b7964"
+    },
+    {
+      "path": "extensions/Editcount",
+      "manifest_name": "Editcount",
+      "manifest_version": null,
+      "files": 184,
+      "sha256": "1995429d40179f392d2dc0d430d568f508927f364f22434a65ca3aad2e5ad923"
+    },
+    {
+      "path": "extensions/EmbedVideo",
+      "manifest_name": "EmbedVideo",
+      "manifest_version": "3.4.2",
+      "files": 143,
+      "sha256": "822acc49fa0e73f0c887dab416a9cf60f8203e304083b9d01d69471dec869b51"
+    },
+    {
+      "path": "extensions/EventLogging",
+      "manifest_name": "EventLogging",
+      "manifest_version": null,
+      "files": 197,
+      "sha256": "3bb1cdd1c511db8c7e3885a3d6d2ac3411d52d4428c689619b4066a3463e91ff"
+    },
+    {
+      "path": "extensions/GlobalCssJs",
+      "manifest_name": "GlobalCssJs",
+      "manifest_version": "3.4.0",
+      "files": 125,
+      "sha256": "025b14589d814bf4ceeb1df6e8154982c175baa7650cf66c1322f45895691257"
+    },
+    {
+      "path": "extensions/GlobalMessages",
+      "manifest_name": "GlobalMessages",
+      "manifest_version": "1.0.0",
+      "files": 20,
+      "sha256": "5762dcd4814e2efa4f13d1c042f87a38fd746d74d73765ade2efe93693f35bc2"
+    },
+    {
+      "path": "extensions/GlobalUserrights",
+      "manifest_name": "GlobalUserrights",
+      "manifest_version": "1.5.3",
+      "files": 105,
+      "sha256": "5f77fd39b498b498d000fa0adf1144298bc919507103a3e747c1701d1550b11f"
+    },
+    {
+      "path": "extensions/HAWelcome",
+      "manifest_name": "Highly Automated Welcome Tool",
+      "manifest_version": "0.8.4",
+      "files": 65,
+      "sha256": "2558d802a89fa153a8b87caaae86459437bae1eda89ffb7b456382f1fe24c8a1"
+    },
+    {
+      "path": "extensions/Less",
+      "manifest_name": "Less",
+      "manifest_version": "0.1",
+      "files": 8,
+      "sha256": "564059ec0c1a72da7fdb674fb4e32f9f474ad2ebdc6f8a5d8455d7166972f4f8"
+    },
+    {
+      "path": "extensions/Linter",
+      "manifest_name": "Linter",
+      "manifest_version": null,
+      "files": 246,
+      "sha256": "33e72459d36ceb43d3d2c034d568d9f925c7254d232af6680e5ae839141f3a6d"
+    },
+    {
+      "path": "extensions/LoginNotify",
+      "manifest_name": "LoginNotify",
+      "manifest_version": "0.1",
+      "files": 136,
+      "sha256": "6b0398f74d35309f8cef4b26a289c5ffbf7c0d16b2907edea7bc3aa03dd1026f"
+    },
+    {
+      "path": "extensions/MobileFrontend",
+      "manifest_name": "MobileFrontend",
+      "manifest_version": "2.4.0",
+      "files": 913,
+      "sha256": "8056b277800111901b4873df0498f014557a3ce850f6483ea3b962cac0abdcfd"
+    },
+    {
+      "path": "extensions/MsUpload",
+      "manifest_name": "MsUpload",
+      "manifest_version": "13.5",
+      "files": 104,
+      "sha256": "9ab83e6f3b7b54f114dbfd8d46fd00354547780238579f2d4c61bf192526db05"
+    },
+    {
+      "path": "extensions/NativeSvgHandler",
+      "manifest_name": "NativeSvgHandler",
+      "manifest_version": "1.4.0",
+      "files": 16,
+      "sha256": "cb8691964e2ba3739cb2dc987068cca1374d4f68c4e312bbd95d30866ad6f585"
+    },
+    {
+      "path": "extensions/OpenGraphMeta",
+      "manifest_name": "OpenGraphMeta",
+      "manifest_version": "0.5.6",
+      "files": 59,
+      "sha256": "4fd030c6136898093653bd4dcf08c94ccd45eddb4f601e4996b4b9620926e24a"
+    },
+    {
+      "path": "extensions/Plausible",
+      "manifest_name": "Plausible",
+      "manifest_version": "1.4.0",
+      "files": 66,
+      "sha256": "eb2ccc6da206b84f38f6ce984abf9d02ed04a23dc3b7653ad40fdb4e61928ced"
+    },
+    {
+      "path": "extensions/Popups",
+      "manifest_name": "Popups",
+      "manifest_version": null,
+      "files": 380,
+      "sha256": "8f3aad89927ec3524795ae6895d076e96ae5aa70b45ee781f41c6d5885058d45"
+    },
+    {
+      "path": "extensions/PortableInfobox",
+      "manifest_name": "Portable Infobox",
+      "manifest_version": "0.6",
+      "files": 108,
+      "sha256": "6c49f8a3ef2597c69d155eaf6b3d545374982edb44b10564158bcd588eace223"
+    },
+    {
+      "path": "extensions/RelatedArticles",
+      "manifest_name": "RelatedArticles",
+      "manifest_version": "3.1.0",
+      "files": 142,
+      "sha256": "2408e0019ccebb8fa76ba484b6086686dacb27f8cd4a4162aded7d82cb3e55d4"
+    },
+    {
+      "path": "extensions/RobotsTxt",
+      "manifest_name": "RobotsTxt",
+      "manifest_version": "1.0.0",
+      "files": 12,
+      "sha256": "56755a96cf9f9d997ec61d8b92c1ceae9e79606f5ced075291f22ce8d5d8bce3"
+    },
+    {
+      "path": "extensions/SearchDigest",
+      "manifest_name": "SearchDigest",
+      "manifest_version": "1.5",
+      "files": 28,
+      "sha256": "9d7f3b49948d1a97f12293eeb537c0d38bbeac03e46b8cef777852e2069f3761"
+    },
+    {
+      "path": "extensions/SimpleBlogPage",
+      "manifest_name": "SimpleBlogPage",
+      "manifest_version": "3.0.1",
+      "files": 48,
+      "sha256": "86cbb7286fecf47e7023c369fa85b59092d6163515fc75d6eb329b411ec24c14"
+    },
+    {
+      "path": "extensions/Sitenotice2",
+      "manifest_name": "SiteNotice2",
+      "manifest_version": "1.3.0",
+      "files": 24,
+      "sha256": "bcc62e0d09c242d5ae2318c733f82700b2e778871b39510f0faa70f161171c4b"
+    },
+    {
+      "path": "extensions/SocialProfile",
+      "manifest_name": null,
+      "manifest_version": null,
+      "files": 1309,
+      "sha256": "a7345759cb201fd9fc011bccff82c986b3fad1af60af875cd304668340621c0f"
+    },
+    {
+      "path": "extensions/StaffPowers",
+      "manifest_name": "StaffPowers",
+      "manifest_version": "1.4",
+      "files": 39,
+      "sha256": "9c58586b5b0b53c7376a1dc04df4a7f2ce37f49b2edcb74d4e25642c88980c2b"
+    },
+    {
+      "path": "extensions/StructuredData",
+      "manifest_name": "StructuredData",
+      "manifest_version": "0.1.0",
+      "files": 8,
+      "sha256": "a0eff5323fcae321852113c71511e25b859516d9d1f4ba7fbb19e2a743077230"
+    },
+    {
+      "path": "extensions/StubUserWikiAuth",
+      "manifest_name": "StubUserWikiAuth",
+      "manifest_version": "1.2.1",
+      "files": 9,
+      "sha256": "b9d2571e1dbe7a9776c240cfa13d2425b27de75d90a2e9060f49c67b6944fa6a"
+    },
+    {
+      "path": "extensions/TabberNeue",
+      "manifest_name": "TabberNeue",
+      "manifest_version": "2.5.0",
+      "files": 97,
+      "sha256": "fe5074b646efe6a1f4f9479b766be4af960c0aa776cc0a686da9003670229a9e"
+    },
+    {
+      "path": "extensions/TemplateWizard",
+      "manifest_name": "TemplateWizard",
+      "manifest_version": "0.1.0",
+      "files": 141,
+      "sha256": "6934dbe50692d7509982204f1c98fcb68531cc7951ec031a59e5711ae4f1dbde"
+    },
+    {
+      "path": "extensions/Translate",
+      "manifest_name": "Translate",
+      "manifest_version": "2022-07-28",
+      "files": 1878,
+      "sha256": "f5001d4319ba239f97af55f2d00297e5d6324a98e75b070ff822c5313c803ab9"
+    },
+    {
+      "path": "extensions/UniversalLanguageSelector",
+      "manifest_name": "UniversalLanguageSelector",
+      "manifest_version": "2022-07-28",
+      "files": 1473,
+      "sha256": "7237e4fcc6deb9ba4246cbbbd2d6ed822ed610df4c1a9ba8977603ce661695b3"
+    },
+    {
+      "path": "extensions/VEForAll",
+      "manifest_name": "VEForAll",
+      "manifest_version": "0.5.2",
+      "files": 59,
+      "sha256": "fe9268bfa1ac1e9cfbfbc6696ab0d848f8c071753e06d7d528092d39a3915be3"
+    },
+    {
+      "path": "extensions/VipsScaler",
+      "manifest_name": "VipsScaler",
+      "manifest_version": null,
+      "files": 125,
+      "sha256": "1a9f66bd7c246e5ccb128ea3b8ba0de29cbe030fd198408207f53c0895b1e44a"
+    },
+    {
+      "path": "extensions/WikiSEO",
+      "manifest_name": "WikiSEO",
+      "manifest_version": "2.6.6",
+      "files": 117,
+      "sha256": "a5cb47860fced6957e1561d82e8453b847d7c1f7b284e611a5987485e52b2787"
+    },
+    {
+      "path": "skins/Citizen",
+      "manifest_name": "Citizen - WP",
+      "manifest_version": "2.27.0",
+      "files": 1040,
+      "sha256": "ac8b28b69620adc1dc77506b17206ebee87f6fd0ed4e787b03773cd9bb0181a7"
+    },
+    {
+      "path": "skins/Cosmos",
+      "manifest_name": "Cosmos",
+      "manifest_version": "7.0.0",
+      "files": 166,
+      "sha256": "78c1fe6ef81421aacdadec9a61fb7550568ffc1a4a4ea5ee139963924e7cbe19"
+    }
+  ],
+  "visualeditor": {
+    "source_commit": "668ed3ab2851ddf758d3a878f98d61aba33707fa",
+    "source_repository": "wikimedia/mediawiki-extensions-VisualEditor",
+    "format": "tracked source, preserving current core pin; only .gitmodules URL changed",
+    "library_commit": "36dd2f97210d2707117a6f47bcaa1dc14f8ee233",
+    "library_url": "https://github.com/wikimedia/VisualEditor.git"
+  }
+}

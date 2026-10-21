@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Iwan Novirion"
+		]
+	},
+	"editcount-desc": "Tampilkan [[Special:Editcount|jumlah suntiangan]] pangguno",
+	"editcount_username": "Pangguno:",
+	"editcount_submit": "Kirim",
+	"editcount_total": "Total"
+}

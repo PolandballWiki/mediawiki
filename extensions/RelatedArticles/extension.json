@@ -1,0 +1,147 @@
+{
+	"name": "RelatedArticles",
+	"version": "3.1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/Reading/Web/Team Readers Web Team]",
+		"Roland Unger",
+		"Hans Musil",
+		"Matthias Mullie",
+		"Sam Smith"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:RelatedArticles",
+	"descriptionmsg": "relatedarticles-desc",
+	"license-name": "GPL-2.0-only",
+	"type": "betafeatures",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"AutoloadNamespaces": {
+		"RelatedArticles\\": "includes/"
+	},
+	"ExtensionMessagesFiles": {
+		"RelatedArticlesMagic": "RelatedArticles.i18n.magic.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "RelatedArticles\\Hooks::onParserFirstCallInit",
+		"OutputPageParserOutput": "RelatedArticles\\Hooks::onOutputPageParserOutput",
+		"MakeGlobalVariablesScript": "RelatedArticles\\Hooks::onMakeGlobalVariablesScript",
+		"BeforePageDisplay": "RelatedArticles\\Hooks::onBeforePageDisplay",
+		"ResourceLoaderGetConfigVars": "RelatedArticles\\Hooks::onResourceLoaderGetConfigVars",
+		"SkinAfterContent": "RelatedArticles\\Hooks::onSkinAfterContent"
+	},
+	"MessagesDirs": {
+		"RelatedArticles": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2,
+	"ResourceModules": {
+		"ext.relatedArticles.styles": {
+			"styles": "resources/ext.relatedArticles.styles.less",
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		},
+		"ext.relatedArticles.readMore.bootstrap": {
+			"es6": true,
+			"localBasePath": "resources/ext.relatedArticles.readMore.bootstrap/",
+			"remoteExtPath": "RelatedArticles",
+			"packageFiles": [
+				"index.js",
+				"RelatedPagesGateway.js",
+				{
+					"name": "data.json",
+					"config": {
+						"searchUrl": "RelatedArticlesUseCirrusSearchApiUrl",
+						"useCirrusSearch": "RelatedArticlesUseCirrusSearch",
+						"onlyUseCirrusSearch": "RelatedArticlesOnlyUseCirrusSearch",
+						"descriptionSource": "RelatedArticlesDescriptionSource"
+					}
+				}
+			],
+			"dependencies": [
+				"mediawiki.user",
+				"mediawiki.api",
+				"mediawiki.Uri",
+				"mediawiki.util"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		},
+		"ext.relatedArticles.readMore": {
+			"es6": true,
+			"dependencies": [
+				"mediawiki.util",
+				"oojs"
+			],
+			"packageFiles": [
+				"resources/ext.relatedArticles.readMore/index.js",
+				"resources/ext.relatedArticles.readMore/CardModel.js",
+				"resources/ext.relatedArticles.readMore/CardView.js",
+				"resources/ext.relatedArticles.readMore/CardListView.js"
+			],
+			"styles": [
+				"resources/ext.relatedArticles.readMore/styles.less",
+				"resources/ext.relatedArticles.readMore/readMore.less"
+			],
+			"skinStyles": {
+				"default": "resources/ext.relatedArticles.readMore/readMore.default.less",
+				"minerva": "resources/ext.relatedArticles.readMore/readMore.minerva.less"
+			},
+			"messages": [
+				"relatedarticles-read-more-heading"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "RelatedArticles",
+		"packageFiles": [
+			"tests/qunit/index.js",
+			"resources/ext.relatedArticles.readMore.bootstrap/RelatedPagesGateway.js",
+			"resources/ext.relatedArticles.readMore/CardView.js",
+			"resources/ext.relatedArticles.readMore/CardModel.js",
+			"tests/qunit/CardModel.test.js",
+			"tests/qunit/CardView.test.js",
+			"tests/qunit/RelatedPagesGateway.test.js"
+		]
+	},
+	"config": {
+		"RelatedArticlesUseCirrusSearchApiUrl": {
+			"description": "During development use a different API for sourcing related articles.",
+			"value": "/w/api.php"
+		},
+		"RelatedArticlesCardLimit": {
+			"description": "Maximum number of articles that should be shown in RelatedArticles widget. This limit is derived from limits in TextExtracts and PageImages extensions. Number should be between 1 and 20.",
+			"value": 3
+		},
+		"RelatedArticlesUseCirrusSearch": {
+			"value": false
+		},
+		"RelatedArticlesOnlyUseCirrusSearch": {
+			"value": false
+		},
+		"RelatedArticlesDescriptionSource": {
+			"description": "Source to get the page description from (string, or false to not fetch the description). Possible values: wikidata, textextracts, pagedescription.",
+			"value": false
+		},
+		"RelatedArticlesFooterAllowedSkins": {
+			"description": "List of skin names (e.g. 'minerva') where related articles will be shown in the footer.",
+			"value": []
+		}
+	},
+	"ConfigRegistry": {
+		"RelatedArticles": "GlobalVarConfig::newInstance"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "RelatedArticles"
+	}
+}

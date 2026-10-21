@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras",
+			"VasilievVV",
+			"Александр Сигачёв"
+		]
+	},
+	"editcount-desc": "Показывает [[Special:Editcount|количество правок]] данного участника",
+	"editcount_username": "Участник:",
+	"editcount_submit": "Посчитать",
+	"editcount_total": "Всего"
+}

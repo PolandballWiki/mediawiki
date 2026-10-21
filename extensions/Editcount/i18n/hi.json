@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro",
+			"Kaustubh",
+			"Saurmandal"
+		]
+	},
+	"editcount-desc": "सदस्य द्वारा [[Special:Editcount|संपादनों की संख्या]] दर्शाता हैं",
+	"editcount_username": "सदस्य:",
+	"editcount_submit": "भेजें",
+	"editcount_namespace": "नामस्थान",
+	"editcount_edits": "सम्पादन",
+	"editcount_total": "कुल"
+}

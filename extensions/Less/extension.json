@@ -1,0 +1,69 @@
+{
+	"name": "Less",
+	"author": [
+		"Cqm",
+		"TehKittyCat"
+	],
+	"url": "https://runescape.wiki",
+	"descriptionmsg": "less-desc",
+	"version": "0.1",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AutoloadClasses": {
+		"LessIntegrationContent": "includes/LessIntegrationContent.php",
+		"LessIntegrationContentHandler": "includes/LessIntegrationContentHandler.php",
+		"LessIntegrationHooks": "includes/LessIntegrationHooks.php"
+	},
+	"ContentHandlers": {
+		"less": "LessIntegrationContentHandler"
+	},
+	"Hooks": {
+		"CodeEditorGetPageLanguage": [
+			"LessIntegrationHooks::onCodeEditorGetPageLanguage"
+		],
+		"ContentHandlerDefaultModelFor": [
+			"LessIntegrationHooks::onContentHandlerDefaultModelFor"
+		]
+	},
+	"SyntaxHighlightModels": {
+		"less": "less"
+	},
+	"MessagesDirs": {
+		"less": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "less/modules"
+	},
+	"ResourceModules": {
+		"ext.less.messages": {
+			"messages": [
+				"less-update-css",
+				"less-dialog-title",
+				"less-dialog-close",
+				"less-dialog-debug-enabled",
+				"less-dialog-getting-source",
+				"less-dialog-getting-mixins",
+				"less-dialog-attempt-parse",
+				"less-dialog-import-success",
+				"less-dialog-import-error",
+				"less-dialog-formatting-css",
+				"less-dialog-getting-header",
+				"less-dialog-edit-success",
+				"less-dialog-edit-summary",
+				"less-dialog-internal-error",
+				"less-dialog-page-not-found",
+				"less-dialog-check-imports",
+				"less-dialog-parse-error-file",
+				"less-dialog-unknown-error",
+				"less-dialog-error-persist"
+			]
+		}
+	},
+	"manifest_version": 1
+}

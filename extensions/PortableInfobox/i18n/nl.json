@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie"
+		]
+	},
+	"portable-infobox-desc": "Maakt overdraagbare infoboxen die kunnen worden weergegeven met behulp van zuivere semantische HTML-opmaak, op iedere vormgeving en op ieder platform, met behulp van een eenvoudig te begrijpen, krachtige, XML-achtige notatie. Bevat ook een bouwprogramma voor overdraagbare infoboxen op [[Special:PortableInfoboxBuilder]].",
+	"portable-infobox-unimplemented-infobox-tag": "Niet-geïmplementeerde infobox-tag: <$1>",
+	"portable-infobox-xml-parse-error-info": "Er is een probleem met het interpreteren van de infobox.",
+	"portable-infobox-xml-parse-error": "Onjuiste XML-opmaak. Valideer uw XML.",
+	"portable-infobox-xml-parse-error-document-end": "Extra inhoud aan het einde van het document.",
+	"portable-infobox-xml-parse-error-undeclared-entity": "Niet-gedeclareerde entiteit (bijvoorbeeld: &nbsp;)",
+	"portable-infobox-xml-parse-error-attribute-not-started": "De attribuutwaarde moet tussen aanhalingstekens staan.",
+	"portable-infobox-xml-parse-error-attribute-without-value": "Het tag-attribuut moet een waarde hebben.",
+	"portable-infobox-xml-parse-error-space-required": "Constructiefout attributen",
+	"portable-infobox-xml-parse-error-name-required": "Fout bij interpreteren attribuutnaam.",
+	"portable-infobox-xml-parse-error-gt-required": "Tagdefinitie is niet juist afgesloten.",
+	"portable-infobox-xml-parse-error-tag-name-mismatch": "Openings- en eindtag komen niet overeen.",
+	"portable-infobox-xml-parse-error-tag-not-finished": "Voortijdig einde van tag.",
+	"portable-infobox-xml-parse-error-infobox-tag-attribute-unsupported": "Het attribuut \"$1\" wordt niet ondersteund bij de tag <infobox>.",
+	"infoboxbuilder-node-title": "Titel",
+	"infoboxbuilder-node-title-value-pagename": "Paginanaam",
+	"infoboxbuilder-node-media": "Afbeelding",
+	"infoboxbuilder-nodeparam-default": "Standaardwaarde",
+	"infoboxbuilder-templatename": "Sjabloonnaam"
+}

@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "npm -s run lint",
+    "lint": "npm -s run lint:prettier",
+    "lint:prettier": "prettier . --check",
+    "fix": "prettier . --write"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^2.2.0",
+    "prettier": "2.7.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kusavica"
+		]
+	},
+	"editaccount": "Upraviť účet",
+	"editaccount-frame-usage": "Poznámka",
+	"editaccount-submit-account": "Spravovať účet",
+	"editaccount-label-email": "Nastaviť novú e-mailovú adresu",
+	"editaccount-label-pass": "Nastaviť nové heslo",
+	"editaccount-label-realname": "Nastaviť nové skutočné meno",
+	"editaccount-label-clearunsub": "Odber zrušený",
+	"editaccount-submit-email": "Uložiť a potvrdiť e-mailovú adresu",
+	"editaccount-submit-pass": "Uložiť heslo",
+	"editaccount-submit-realname": "Uložiť skutočné meno"
+}

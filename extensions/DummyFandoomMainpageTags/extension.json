@@ -1,0 +1,38 @@
+{
+	"name": "DummyFandoomMainpageTags",
+	"version": "1.0.0",
+	"author": [
+		"Jesús Martínez"
+	],
+	"descriptionmsg": "dummyfandoommainpagetags-desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"DummyFandoomMainpageTags": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"DummyFandoomMainpageTags": "DummyFandoomMainpageTags.class.php"
+	},
+	"ResourceModules": {
+		"ext.dummyfandoommainpagetags.styles": {
+			"styles": "ext.dummyfandoommainpagetags.styles.css",
+			"position": "top",
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "DummyFandoomMainpageTags/resources"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"DummyFandoomMainpageTags::onParserFirstCallInit"
+		]
+	},
+	"manifest_version": 2
+}

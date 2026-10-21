@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"គីមស៊្រុន"
+		]
+	},
+	"editaccount": "កែប្រែគណនី​",
+	"editaccount-desc": "អនុញ្ញាតអោយបុគ្គលិកគ្រប់គ្រងព័ត៌មានគណនីអ្នកប្រើប្រាស់របស់អ្នក",
+	"editaccount-frame-manage": "កែប្រែគណនី​មួយ",
+	"editaccount-frame-usage": "កំណត់សម្គាល់",
+	"editaccount-label-select": "ជ្រើសរើសគណនីអ្នកប្រើប្រាស់មួយ",
+	"editaccount-submit-account": "គ្រប់គ្រងគណនី",
+	"editaccount-frame-account": "កំពុងកែប្រែគណនីអ្នកប្រើប្រាស់៖ $1",
+	"editaccount-frame-close": "បិទគណនីរបស់អ្នកប្រើប្រាស់៖ $1",
+	"editaccount-label-email": "ដូរអាសយដ្ឋានអ៊ីមែលថ្មី",
+	"editaccount-label-pass": "ដូរពាក្យសំងាត់ថ្មី",
+	"editaccount-label-realname": "ដូរឈ្មោះពិតថ្មី",
+	"editaccount-label-clearunsub": "ឈប់ជាវ",
+	"editaccount-submit-email": "រក្សាទុកអាសយដ្ឋានអ៊ីមែល",
+	"editaccount-submit-pass": "រក្សាទុកពាក្យសំងាត់",
+	"editaccount-submit-realname": "រក្សាទុកឈ្មោះពិត",
+	"editaccount-submit-clearunsub": "សំអាតការឈប់ជាវ",
+	"editaccount-submit-close": "បិទគណនី",
+	"editaccount-status": "សារស្ថានភាព",
+	"editaccount-success-email": "បានប្ដូរអាសយដ្ឋានអ៊ីមែលសំរាប់គណនី $1 ទៅជា $2 បានសំរេច។",
+	"editaccount-success-email-blank": "បានដកចេញអាសយដ្ឋានអ៊ីមែលសំរាប់គណនី $1 បានសំរេច។",
+	"editaccount-success-pass": "បានប្ដូរពាក្យសំងាត់សំរាប់គណនី $1 បានសំរេច។",
+	"editaccount-success-realname": "បានប្ដូរឈ្មោះពិតសំរាប់គណនី $1 បានសំរេច។",
+	"editaccount-success-close": "បានបិទគណនី $1 បានសំរេច។",
+	"editaccount-error-email": "អ៊ីមែលមិនត្រូវបានប្ដូរទេ។ សូមសាកល្បងម្ដងទៀតឬទាក់ទងទៅក្រុមបច្ចេកទេស។",
+	"editaccount-error-pass": "ពាក្យសម្ងាត់មិនត្រូវបានប្ដូរទេ។ សូមសាកល្បងម្ដងទៀតឬទាក់ទងទៅក្រុមបច្ចេកទេស។",
+	"editaccount-error-realname": "ឈ្មោះពិតមិនត្រូវបានប្ដូរទេ។ សូមសាកល្បងម្ដងទៀតឬទាក់ទងទៅក្រុមបច្ចេកទេស។",
+	"editaccount-error-close": "មានបញ្ហាកើតឡើងពេលកំពុងបិទគណនី។ សូមសាកល្បងម្ដងទៀតឬទាក់ទងទៅក្រុមបច្ចេកទេស។",
+	"editaccount-invalid-email": "\"$1\" មិនមែនជាអាសយដ្ឋានអ៊ីមែលមានសុពលភាពទេ!",
+	"editaccount-nouser": "គណនី \"$1\" មិនមានទេ!",
+	"log-name-editaccnt": "កំណត់ត្រាស្ដីពីគណនីអ្នកប្រើប្រាស់",
+	"log-description-editaccnt": "ទំព័រនេះជាបញ្ជីបន្លាស់ប្ដូរព័ត៌មានអ្នកប្រើប្រាស់ ធ្វើដោយបុគ្គលិក ShoutWiki។",
+	"right-editaccount": "កែប្រែចំណង់ចំណូលចិត្តរបស់អ្នកប្រើប្រាស់ដទៃ"
+}

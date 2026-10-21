@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dani",
+			"Glanthor Reviol"
+		]
+	},
+	"editcount-desc": "Megjeleníti egy szerkesztő [[Special:Editcount|szerekesztésszámát]]",
+	"editcount_username": "Szerkesztő:",
+	"editcount_submit": "Elküld",
+	"editcount_total": "Összesen"
+}

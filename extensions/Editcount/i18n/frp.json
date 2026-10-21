@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31",
+			"ChrisPtDe"
+		]
+	},
+	"editcount-desc": "Fât vêre lo [[Special:Editcount|comptor de changements]] d’un utilisator",
+	"editcount_username": "Usanciér :",
+	"editcount_submit": "Sometre",
+	"editcount_total": "Soma"
+}

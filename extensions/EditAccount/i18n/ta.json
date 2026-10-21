@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mahir78",
+			"TRYPPN",
+			"Fahimrazick"
+		]
+	},
+	"editaccount": "கணக்கில் மாற்றங்கள் செய்",
+	"editaccount-desc": "பயனர் கணக்குகளை பற்றிய விவரங்களை எமது பணியாளர்கள் நிர்வகிக்க வசதி செய்யப்பட்டுள்ளது",
+	"editaccount-frame-manage": "ஒரு கணக்கை தொகு",
+	"editaccount-frame-usage": "குறிப்பு",
+	"editaccount-label-select": "ஒரு பயனர் கணக்கைத் தெரிவு செய்",
+	"editaccount-submit-account": "கணக்கை நிர்வகி",
+	"editaccount-frame-account": "பயனர் கணக்கு தொகுக்கப்படுகிறது: $1",
+	"editaccount-frame-close": "பயனர் கணக்கை நிறுத்திவை: $1",
+	"editaccount-label-email": "புதிய மின்னஞ்சல் முகவரியை செலுத்து",
+	"editaccount-label-pass": "புதிய கடவுச்சொல்லை செலுத்து",
+	"editaccount-label-realname": "புதிய சரியான பெயரை உள்ளிடு",
+	"editaccount-submit-email": "மின்னஞ்சலை சேமி",
+	"editaccount-submit-pass": "கடவுச்சொல்லை சேமி",
+	"editaccount-submit-realname": "உண்மையான பெயரை சேமி",
+	"editaccount-submit-close": "கணக்கை முடுக",
+	"editaccount-status": "தற்போதைய நிலைமை பற்றிய செய்தி",
+	"editaccount-success-email": "கணக்கு $1 லிருந்து $2 க்கு மின்னஞ்சல் வெற்றிகரமாக மாற்றப்பட்டது.",
+	"editaccount-success-email-blank": "கணக்கு $1 க்கான மின்னஞ்சல் வெற்றிகரமாக நீக்கப்பட்டது",
+	"editaccount-success-pass": "கணக்கு $1க்கான கடவுச்சொல் வெற்றிகரமாக மாற்றப்பட்டது",
+	"editaccount-success-realname": "கணக்கு $1க்கான உண்மையான பெயர் வெற்றிகரமாக மாற்றப்பட்டது",
+	"editaccount-success-close": "$1 இந்த கணக்கை வெற்றிகரமாக செயலிழக்கச் செய்யப்பட்டுள்ளது.",
+	"editaccount-error-email": "மின்னஞ்சல் மாற்றப்படவில்லை. மீண்டும் முயற்சிக்கவும் அல்லது தொழில்நுட்ப குழுவை அனுகவும்.",
+	"editaccount-error-pass": "கடவுச்சொல் மாற்றப்படவில்லை. மீண்டும் முயற்சிக்கவும் அல்லது தொழில்நுட்ப குழுவை அனுகவும்.",
+	"editaccount-error-realname": "உண்மையான பெயர் மாற்றப்படவில்லை. மீண்டும் முயற்சிக்கவும் அல்லது தொழில்நுட்ப குழுவை அனுகவும்.",
+	"editaccount-error-close": "கணக்கு மூடும்போது ஒரு பிரச்சினை உள்ளது. மீண்டும் முயற்சிக்கவும் அல்லது தொழில்நுட்ப குழுவை அனுகவும்",
+	"editaccount-invalid-email": "\"$1\" சரியான மின்னஞ்சல் இல்லை!",
+	"editaccount-nouser": "\"$1\" - அப்படியொரு கணக்கு இல்லை!",
+	"log-name-editaccnt": "பயனர் கணக்கு log",
+	"log-description-editaccnt": "இப்பக்கம் {{SITENAME}} அலுவலரால் மாற்றப்பட்ட பயனர் தகவல்களைப் பட்டியலிடுகிறது.",
+	"right-editaccount": "மற்றப் பயனர்களின் தகவல்களைத் தொகு"
+}

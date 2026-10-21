@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"editcount-desc": "Juri l-[[Special:Editcount|kont tal-modifiki]] ta' utent",
+	"editcount_username": "Utent:",
+	"editcount_submit": "Ibgħat",
+	"editcount_total": "Total"
+}

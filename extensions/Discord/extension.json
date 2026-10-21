@@ -1,0 +1,80 @@
+{
+	"name": "Discord",
+	"author": [
+		"[https://github.com/jayktaylor Jayden Bailey]"
+	],
+	"url": "https://github.com/jayktaylor/mw-discord",
+	"version": "1.0.13",
+	"descriptionmsg": "discord-desc",
+	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"manifest_version": 1,
+	"config": {
+		"DiscordWebhookURL": [],
+		"DiscordNoBots": true,
+		"DiscordNoMinor": false,
+		"DiscordNoNull": true,
+		"DiscordSuppressPreviews": true,
+		"DiscordMaxChars": null,
+		"DiscordMaxCharsUsernames": 25,
+		"DiscordDisabledHooks": [],
+		"DiscordDisabledNS": [],
+		"DiscordDisabledUsers": [],
+		"DiscordPrependTimestamp": false,
+		"DiscordUseFileGetContents": false,
+		"DiscordUseEmojis": false,
+		"DiscordEmojis": {
+			"PageSaveComplete": ":pencil2:",
+			"PageDeleteComplete": ":wastebasket:",
+			"ArticleUndelete": ":wastebasket:",
+			"ArticleRevisionVisibilitySet": ":spy:",
+			"ArticleProtectComplete": ":lock:",
+			"PageMoveComplete": ":truck:",
+			"LocalUserCreated": ":wave:",
+			"BlockIpComplete": ":no_entry_sign:",
+			"UnblockUserComplete": ":no_entry_sign:",
+			"UserGroupsChanged": ":people_holding_hands:",
+			"UploadComplete": ":inbox_tray:",
+			"FileDeleteComplete": ":wastebasket:",
+			"FileUndeleteComplete": ":wastebasket:",
+			"AfterImportPage": ":books:",
+			"ArticleMergeComplete": ":card_box:",
+			"ApprovedRevsRevisionApproved": ":white_check_mark:",
+			"ApprovedRevsRevisionUnapproved": ":white_check_mark:",
+			"ApprovedRevsFileRevisionApproved": ":white_check_mark:",
+			"ApprovedRevsFileRevisionUnapproved": ":white_check_mark:",
+			"RenameUserComplete": ":people_holding_hands:"
+		}
+	},
+	"AutoloadClasses": {
+		"DiscordHooks": "src/DiscordHooks.php",
+		"DiscordUtils": "src/Utils.php"
+	},
+	"MessagesDirs": {
+		"mw-discord": "i18n"
+	},
+	"Hooks": {
+		"PageSaveComplete": "DiscordHooks::onPageSaveComplete",
+		"PageDeleteComplete": "DiscordHooks::onPageDeleteComplete",
+		"ArticleUndelete": "DiscordHooks::onArticleUndelete",
+		"ArticleRevisionVisibilitySet": "DiscordHooks::onArticleRevisionVisibilitySet",
+		"ArticleProtectComplete": "DiscordHooks::onArticleProtectComplete",
+		"PageMoveComplete": "DiscordHooks::onPageMoveComplete",
+		"LocalUserCreated": "DiscordHooks::onLocalUserCreated",
+		"BlockIpComplete": "DiscordHooks::onBlockIpComplete",
+		"UnblockUserComplete": "DiscordHooks::onUnblockUserComplete",
+		"UserGroupsChanged": "DiscordHooks::onUserGroupsChanged",
+		"UploadComplete": "DiscordHooks::onUploadComplete",
+		"FileDeleteComplete": "DiscordHooks::onFileDeleteComplete",
+		"FileUndeleteComplete": "DiscordHooks::onFileUndeleteComplete",
+		"AfterImportPage": "DiscordHooks::onAfterImportPage",
+		"ArticleMergeComplete": "DiscordHooks::onArticleMergeComplete",
+		"ApprovedRevsRevisionApproved": "DiscordHooks::onApprovedRevsRevisionApproved",
+		"ApprovedRevsRevisionUnapproved": "DiscordHooks::onApprovedRevsRevisionUnapproved",
+		"ApprovedRevsFileRevisionApproved": "DiscordHooks::onApprovedRevsFileRevisionApproved",
+		"ApprovedRevsFileRevisionUnapproved": "DiscordHooks::onApprovedRevsFileRevisionUnapproved",
+		"RenameUserComplete": "DiscordHooks::onRenameUserComplete"
+	}
+}

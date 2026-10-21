@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akpan Ndifreke",
+			"Anietie2",
+			"Bernardgift",
+			"Esther605",
+			"Uduakj",
+			"Okon Ibiono",
+			"Effiong badi",
+			"Ekemini5"
+		]
+	},
+	"discussiontools-defaultsummary-reply": "Yie",
+	"discussiontools-replywidget-advanced": "Ikpo mkpo",
+	"discussiontools-replywidget-cancel": "Kpọñ",
+	"discussiontools-replywidget-mode-source": "Ntak",
+	"discussiontools-replywidget-mode-visual": "Use mkpo",
+	"discussiontools-replywidget-preview": "Wọọt",
+	"discussiontools-replywidget-summary": "Biere",
+	"discussiontools-replywidget-watchthis": "Dian ikpa nwed adam ke [[Special:Watchlist|nwed ndise]]",
+	"discussiontools-topicheader-authorcount": "$1 {{PLURAL:$1|mmon}} si neme",
+	"discussiontools-topicheader-commentcount": "$1 {{PLURAL:$1|iko mfo}}",
+	"discussiontools-topicheader-latestcomment": "Ufa iko: $1",
+	"discussiontools-topicsubscription-button-subscribe": "sin aying",
+	"discussiontools-topicsubscription-button-subscribe-label": "Sin aying",
+	"discussiontools-topicsubscription-button-unsubscribe": "sio aying",
+	"discussiontools-topicsubscription-button-unsubscribe-label": "Sio aying"
+}

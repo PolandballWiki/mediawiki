@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"editcount-desc": "Pokazujo [[Special:Editcount|licbu změnow]] wužywarja",
+	"editcount_username": "Wužywaŕ:",
+	"editcount_submit": "Wótpósłaś",
+	"editcount_total": "Dogromady"
+}

@@ -1,0 +1,144 @@
+{
+	"name": "Portable Infobox",
+	"author": [
+		"Universal Omega",
+		"Luqgreg (Łukasz K.)",
+		"..."
+	],
+	"url": "https://github.com/Universal-Omega/PortableInfobox",
+	"descriptionmsg": "portable-infobox-desc",
+	"version": "0.6",
+	"type": "parserhook",
+	"license-name": "GPL-3.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.39.0",
+		"platform": {
+			"php": ">= 7.3"
+		}
+	},
+	"config": {
+		"AllInfoboxesSubpagesBlacklist": {
+			"value": [ "doc", "draft", "test" ]
+		},
+		"PortableInfoboxCacheRenderers": {
+			"value": false
+		},
+		"PortableInfoboxCustomImageWidth": {
+			"value": 300
+		},
+		"PortableInfoboxUseHeadings": {
+			"value": true
+		},
+		"PortableInfoboxUseTidy": {
+			"value": true
+		},
+		"PortableInfoboxResponsiblyOpenCollapsed": {
+			"value": true
+		}
+	},
+	"MessagesDirs": {
+		"PortableInfobox": "i18n"
+	},
+	"ExtensionMessagesFiles": {
+		"PortableInfoboxAliases": "includes/PortableInfoboxAliases.php",
+		"PortableInfoboxMagic": "includes/PortableInfoboxMagic.php"
+	},
+	"ResourceModules": {
+		"ext.PortableInfobox.scripts": {
+			"scripts": "resources/PortableInfobox.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.PortableInfobox.styles": {
+			"class": "PortableInfoboxResourceLoaderModule",
+			"styles": "resources/PortableInfobox.less",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.PortableInfoboxBuilder": {
+			"scripts": [
+				"resources/PortableInfoboxBuilderNodes.js",
+				"resources/PortableInfoboxBuilder.js"
+			],
+			"styles": "resources/PortableInfoboxBuilder.less",
+			"dependencies": [
+				"mediawiki.jqueryMsg",
+				"jquery.ui",
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui-windows"
+			],
+			"messages": [
+				"confirmable-confirm",
+				"infoboxbuilder-action-addnode",
+				"infoboxbuilder-action-clear",
+				"infoboxbuilder-action-deletenode",
+				"infoboxbuilder-action-publish",
+				"infoboxbuilder-editerror",
+				"infoboxbuilder-editerrorunknown",
+				"infoboxbuilder-editsummary",
+				"infoboxbuilder-node-title",
+				"infoboxbuilder-node-title-value",
+				"infoboxbuilder-node-title-value-pagename",
+				"infoboxbuilder-node-data",
+				"infoboxbuilder-node-data-value-source",
+				"infoboxbuilder-node-media",
+				"infoboxbuilder-nodeerror-invalidsource",
+				"infoboxbuilder-nodeerror-nosourceordefault",
+				"infoboxbuilder-nodeparam-default",
+				"infoboxbuilder-nodeparam-label",
+				"infoboxbuilder-nodeparam-source",
+				"infoboxbuilder-templatename"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "PortableInfobox"
+	},
+	"AutoloadNamespaces": {
+		"PortableInfobox\\Helpers\\": "includes/services/Helpers/",
+		"PortableInfobox\\Parser\\": "includes/services/Parser/",
+		"PortableInfobox\\Parser\\Nodes\\": "includes/services/Parser/Nodes/"
+	},
+	"AutoloadClasses": {
+		"PortableInfoboxHooks": "includes/PortableInfoboxHooks.php",
+		"PortableInfoboxDataService": "includes/services/PortableInfoboxDataService.php",
+		"PortableInfoboxRenderService": "includes/services/PortableInfoboxRenderService.php",
+		"PortableInfoboxResourceLoaderModule": "includes/resourceloader/PortableInfoboxResourceLoaderModule.php",
+		"PortableInfoboxErrorRenderService": "includes/services/PortableInfoboxErrorRenderService.php",
+		"PortableInfoboxParserTagController": "includes/controllers/PortableInfoboxParserTagController.php",
+		"ApiPortableInfobox": "includes/controllers/ApiPortableInfobox.php",
+		"ApiQueryPortableInfobox": "includes/controllers/ApiQueryPortableInfobox.php",
+		"ApiQueryAllInfoboxes": "includes/controllers/ApiQueryAllInfoboxes.php",
+		"AllInfoboxesQueryPage": "includes/querypage/AllInfoboxesQueryPage.php",
+		"SpecialPortableInfoboxBuilder": "includes/specials/SpecialPortableInfoboxBuilder.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PortableInfoboxParserTagController::parserTagInit",
+		"AfterParserFetchFileAndTitle": "PortableInfoboxHooks::onAfterParserFetchFileAndTitle",
+		"wgQueryPages": "PortableInfoboxHooks::onWgQueryPages",
+		"AllInfoboxesQueryRecached": "PortableInfoboxHooks::onAllInfoboxesQueryRecached",
+		"ArticlePurge": "PortableInfoboxHooks::onArticlePurge",
+		"MultiContentSave": "PortableInfoboxHooks::onMultiContentSave",
+		"ResourceLoaderRegisterModules": "PortableInfoboxHooks::onResourceLoaderRegisterModules"
+	},
+	"SpecialPages": {
+		"AllInfoboxes": "AllInfoboxesQueryPage",
+		"PortableInfoboxBuilder": "SpecialPortableInfoboxBuilder"
+	},
+	"APIModules": {
+		"infobox": "ApiPortableInfobox"
+	},
+	"APIPropModules": {
+		"infobox": "ApiQueryPortableInfobox"
+	},
+	"APIListModules": {
+		"allinfoboxes": "ApiQueryAllInfoboxes"
+	},
+	"manifest_version": 2
+}

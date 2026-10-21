@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rancher",
+			"Verlor",
+			"BadDog",
+			"Milicevic01"
+		]
+	},
+	"editaccount": "Измена налога",
+	"editaccount-frame-manage": "Уреди налог",
+	"editaccount-frame-usage": "Белешка",
+	"editaccount-label-select": "Изаберите кориснички налог",
+	"editaccount-frame-close": "Онемогући кориснички налог: $1",
+	"editaccount-label-email": "Постави нову имејл адресу",
+	"editaccount-label-pass": "Постави нову лозинку",
+	"editaccount-label-realname": "Унесите право име",
+	"editaccount-submit-email": "Сачувај и потврди имејл адресу",
+	"editaccount-submit-pass": "Сачувај лозинку",
+	"editaccount-submit-realname": "Сачувај право име",
+	"editaccount-submit-close": "Затвори налог",
+	"editaccount-status": "Статусна порука",
+	"editaccount-success-email": "Промењена имејл адреса за налог $1 у $2.",
+	"editaccount-success-email-blank": "Уклоњена имејл адреса за налог $1.",
+	"editaccount-success-pass": "Лозинка за налог $1 је измењена.",
+	"editaccount-success-realname": "Право име за налог $1 је измењено.",
+	"editaccount-success-close": "Налог $1 је успешно затворен.",
+	"editaccount-error-email": "Имејл није промењен. Покушајте касније.",
+	"editaccount-error-pass": "Лозинка није промењена. Покушајте касније.",
+	"editaccount-error-realname": "Право име није промењено. Покушајте касније.",
+	"editaccount-invalid-email": "„$1“ није важећа имејл адреса!",
+	"editaccount-nouser": "„$1“ налог не постоји!",
+	"editaccount-label-email-status": "Статус имејла: $1",
+	"editaccount-error-tempuser-email": "Привремени корисници морају унети имејл адресу.",
+	"log-name-editaccnt": "Дневник корисничких налога",
+	"logentry-editaccnt-mailchange": "$1 је променио имејл за корисника $3",
+	"edit-account-closed-flag": "Овај налог је глобално онемогућио {{SITENAME}}.",
+	"action-editaccount": "уређујете информације других корисника"
+}
