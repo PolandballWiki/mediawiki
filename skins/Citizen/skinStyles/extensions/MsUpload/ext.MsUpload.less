@@ -3,10 +3,43 @@
  *
  * SkinStyles for Extension:MsUpload
  * Module: ext.MsUpload
- * Version: REL1_35 32eb420
+ * Version: REL1_39
  *
- * Date: 2021-08-25
+ * Date: 2024-24-2
+ *
+ * User: Dark
 */
+
+// Extension:MSUpload - WP
+#msupload-container {
+    margin-right: 8px;
+    min-width: 42px;
+     min-height: 42px;
+    border-radius: var(--border-radius--small);
+    opacity: var(--opacity-icon-base);
+    transition: background 0.1s;
+
+    	#msupload-select {
+            margin: 7px;
+        }
+        &:hover {
+            background-color: var(--background-color-quiet--hover);
+            opacity: var(--opacity-icon-hover);
+
+        }
+    }
+
+#msupload-div {
+    background: var(--color-primary--hsl);
+    border-radius: @border-radius;
+    backdrop-filter: @filter-glass;
+    border-top: 0;
+}
+
+#msupload-dropzone {
+    margin: 5px 2px;
+    border-radius: @border-radius;
+}
 
 #msupload {
 	&-div {

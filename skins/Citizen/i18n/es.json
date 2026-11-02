@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alistair3149",
+			"EmicraftNoob",
 			"Eulalio",
 			"Fitoschido",
 			"Galahad",
@@ -15,6 +16,8 @@
 	"citizen-drawer-toggle": "Menú alternativo",
 	"citizen-usermenu-toggle": "Menú alternativo personal",
 	"citizen-search-toggle": "Búsqueda alternativa",
+	"citizen-search-keyhint-exit": "Salir de la búsqueda",
+	"citizen-search-keyhint-open": "Abrir búsqueda",
 	"citizen-languages-toggle": "Más idiomas",
 	"citizen-actions-more-toggle": "Más acciones",
 	"citizen-sitestats-articles-label": "artículos",
@@ -61,6 +64,7 @@
 	"citizen-feature-custom-font-size-large-label": "Grande",
 	"citizen-feature-custom-width-name": "Anchura",
 	"citizen-feature-custom-width-standard-label": "Estándar",
+	"prefs-citizen-lineheight-label": "Altura de líneas",
 	"citizen-feature-custom-width-wide-label": "Ancho",
 	"citizen-feature-custom-width-full-label": "Lleno",
 	"citizen-user-info-text-anon": "Tu dirección IP será visible si haces alguna edición",

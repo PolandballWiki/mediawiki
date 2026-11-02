@@ -8,6 +8,8 @@ const
 	DROPDOWN_SUMMARY_SELECTOR = '.citizen-dropdown-summary',
 	DROPDOWN_TARGET_SELECTOR = '.citizen-menu__card';
 
+const isPointerDevice = window.matchMedia( '(hover: hover) and (pointer: fine)' ).matches;
+
 /**
  * Represents a Dropdown menu with enhanced functionality.
  * This class handles the behavior of a dropdown menu, including dismissing the menu when clicking outside,
@@ -98,11 +100,34 @@ class Dropdown {
 		}
 	}
 
+	addKeyhint() {
+		if ( !isPointerDevice ) {
+			return;
+		}
+
+		const links = this.target.querySelectorAll( '.mw-list-item > a[accesskey]' );
+		links.forEach( ( link ) => {
+			const keyhintText = window.jQuery.fn.updateTooltipAccessKeys.getAccessKeyPrefix() + link.getAttribute( 'accesskey' );
+			if ( !keyhintText ) {
+				return;
+			}
+			const keyhint = document.createElement( 'span' );
+			keyhint.classList.add( 'citizen-keyboard-hint-key' );
+			keyhint.innerText = keyhintText
+				.replace( /-/g, ' ' )
+				.replace( 'ctrl', '⌃' )
+				.replace( 'shift', '⇧' )
+				.replace( 'option', '⌥' );
+			link.append( keyhint );
+		} );
+	}
+
 	init() {
 		this.details.addEventListener( 'toggle', this.onDetailsToggle );
 		// T295085: Close all dropdown menus when page is unloaded to prevent them
 		// from being open when navigating back to a page.
-		window.addEventListener( 'beforeunload', () => this.dismiss );
+		window.addEventListener( 'beforeunload', this.dismiss.bind( this ) );
+		this.addKeyhint();
 	}
 }
 

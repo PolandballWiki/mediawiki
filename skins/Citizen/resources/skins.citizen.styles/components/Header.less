@@ -13,8 +13,6 @@
 	padding: var( --space-xs );
 	background-color: var( --color-surface-0 );
 	border-top: var( --border-width-base ) solid var( --border-color-base );
-	transition: var( --transition-menu );
-	transition-property: transform;
 
 	&__item {
 		display: flex;
@@ -82,12 +80,21 @@
 		img {
 			margin: auto;
 		}
+
+		.citizen-ui-icon {
+			position: absolute;
+			inset: 0;
+
+			&::before {
+				opacity: 0;
+			}
+		}
 	}
 
 	&__inner {
 		display: flex;
-		flex-direction: var( --header-direction );
 		flex-grow: 1;
+		flex-direction: var( --header-direction );
 		gap: var( --space-xxs );
 		justify-content: space-between;
 		min-width: 0;
@@ -97,8 +104,8 @@
 	&__start,
 	&__end {
 		display: flex;
-		flex-direction: var( --header-direction );
 		flex-shrink: 0; // let _inner handle the overflow
+		flex-direction: var( --header-direction );
 		gap: var( --space-xxs );
 
 		// Hide top-level menu header labels
@@ -138,6 +145,14 @@
 		.citizen-ui-icon + span {
 			.sr-only;
 		}
+	}
+}
+
+.client-nojs {
+	// Hide preferences button completely when JS is not supported
+	// Since it won't do anything
+	.citizen-preferences {
+		display: none;
 	}
 }
 

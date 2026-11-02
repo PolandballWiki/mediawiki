@@ -2,37 +2,22 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Components;
+namespace MediaWiki\Skins\Citizen\Tests\Components;
+
+use MediaWikiUnitTestCase;
 
 /**
- * CitizenComponentMenuListItem component
+ * @group Citizen
+ * @group Components
+ * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentMenuListItem
  */
-class CitizenComponentMenuListItem implements CitizenComponent {
-	/** @var CitizenComponentLink */
-	private $link;
-	/** @var string */
-	private $class;
-	/** @var string */
-	private $id;
+class CitizenComponentMenuListItemTest extends MediaWikiUnitTestCase {
 
 	/**
-	 * @param CitizenComponentLink $link
-	 * @param string $class
-	 * @param string $id
+	 * @covers ::getTemplateData
 	 */
-	public function __construct( CitizenComponentLink $link, string $class = '', string $id = '' ) {
-		$this->link = $link;
-		$this->class = $class;
-		$this->id = $id;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getTemplateData(): array {
-		return $this->link->getTemplateData() + [
-			'item-class' => $this->class,
-			'item-id' => $this->id,
-		];
+	public function testGetTemplateData(): void {
+		// TODO: Add tests
+		$this->expectNotToPerformAssertions();
 	}
 }

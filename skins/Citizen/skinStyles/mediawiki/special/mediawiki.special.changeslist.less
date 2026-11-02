@@ -46,6 +46,21 @@
 		&-inner {
 			color: var( --color-subtle );
 		}
+
+		/* Add nested indent line */
+		> td:first-child {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 5px;
+				width: 2px;
+				content: '';
+				background: var( --border-color-base );
+			}
+		}
 	}
 
 	&-separator {
@@ -68,14 +83,6 @@
 		background: var( --color-surface-2 );
 		border-radius: var( --border-radius-medium );
 	}
-}
-
-/* Skeleton screen loading */
-body:not( .mw-rcfilters-ui-initialized ) .mw-rcfilters-head {
-	padding: var( --space-md );
-	font-size: var( --font-size-small );
-	background: var( --color-surface-2 );
-	border-radius: var( --border-radius-medium );
 }
 
 .client-js {
@@ -118,6 +125,11 @@ body:not( .mw-rcfilters-ui-initialized ) .mw-rcfilters-head {
  * Sometimes wiki transclude those pages and these styles will break regular pages
  */
 .ns-special {
+	/* Disable sticky header due to performance issue on long RC */
+	#citizen-page-header-sticky-sentinel {
+		display: none;
+	}
+
 	.mw-changeslist h4 {
 		.citizen-sticky-header( false, false );
 	}
@@ -176,6 +188,7 @@ body:not( .mw-rcfilters-ui-initialized ) .mw-rcfilters-head {
 		content: '';
 		background-color: var( --color-subtle );
 		border-radius: 100%;
+		outline: 4px solid var( --color-surface-0 );
 	}
 
 	.comment {

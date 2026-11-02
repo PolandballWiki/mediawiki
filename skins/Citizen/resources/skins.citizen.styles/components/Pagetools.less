@@ -149,6 +149,14 @@
 	}
 }
 
+.client-nojs {
+	// Hide share button completely when JS is not supported
+	// Since it won't do anything
+	.citizen-share {
+		display: none;
+	}
+}
+
 // To avoid more menu from overflow in narrow screen
 @media ( max-width: @max-width-breakpoint-tablet ) {
 	.page-actions {
@@ -158,6 +166,7 @@
 		height: var( --toolbar-size );
 		margin: var( --space-xs );
 		background: var( --color-surface-1 );
+		border: 1px solid var( --border-color-base );
 		border-radius: var( --border-radius-medium );
 		box-shadow: var( --box-shadow-drop-xx-large );
 
@@ -175,10 +184,12 @@
 
 		.citizen-menu__card {
 			bottom: 100%;
+			/* Fix card width issue when the page tool bar is narrow */
+			width: max-content;
 		}
 	}
 
-	.citizen-page-languages > .citizen-dropdown-summary::after {
+	.citizen-page-languages .citizen-dropdown-summary::after {
 		// Blend with background
 		background: var( --color-surface-1 );
 	}

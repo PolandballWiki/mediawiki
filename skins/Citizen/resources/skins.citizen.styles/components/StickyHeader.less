@@ -1,13 +1,8 @@
 #citizen-page-header-sticky-sentinel {
-	grid-area: afterHeader; // align right above content
 	height: 1px;
 	margin-top: -1px;
 	visibility: hidden;
 	contain: strict;
-}
-
-#citizen-page-header-sticky-placeholder {
-	grid-area: afterHeader;
 }
 
 .ve-activated,
@@ -21,26 +16,16 @@
 .citizen-page-header {
 	position: -webkit-sticky;
 	position: sticky;
+	.citizen-sticky-header-background;
 
 	&::before {
-		position: absolute;
-		top: 0;
-		right: ~'calc( var(--padding-page ) * -1 )';
-		left: ~'calc( var(--padding-page ) * -1 )';
-		z-index: @z-index-bottom;
-		height: 100%;
-		content: '';
-		background-color: var( --color-surface-0 );
-		filter: opacity( 0.9 );
-		-webkit-backdrop-filter: saturate( 50% ) blur( 16px );
-		backdrop-filter: saturate( 50% ) blur( 16px );
 		opacity: 0;
 		transition: var( --transition-hover );
 		transition-property: opacity;
 	}
 }
 
-.citizen-page-header--sticky {
+.citizen-sticky-header-visible {
 	.citizen-page-header {
 		top: 0;
 		z-index: @z-index-stacking-3;
@@ -83,31 +68,31 @@
 			background-color: var( --background-color-button-quiet--active );
 		}
 	}
+
+	// Collapse page tools label in sticky header
+	.page-actions > .mw-portlet li > a {
+		gap: 0;
+		font-size: 0;
+	}
 }
 
-// Hide sticky header on scroll down on smaller screens
-@media ( max-width: @max-width-breakpoint-tablet ) {
-	.citizen-page-header {
-		.citizen-page-header--sticky & {
-			transition: var( --transition-menu );
-			transition-property: transform;
+html {
+	scroll-padding-top: ~'calc( var( --height-sticky-header ) + var( --space-xl ) )';
+}
 
-			.citizen-page-heading {
-				opacity: 1;
-				transition: var( --transition-menu );
-				transition-delay: var( --transition-delay-menu );
-				transition-property: opacity;
-			}
-		}
-	}
+/*
+ * T289817 `.mw-sticky-header-element` provides an API for template developers
+ * to make their templates compatible with the Citizen sticky header.
+ */
+.mw-sticky-header-element {
+	.sticky-header-element;
 }
 
 // Make sticky header more compact if there are less screen estate
 @media ( max-height: 800px ) {
-	.citizen-page-header--sticky {
-		.citizen-page-header {
-			padding-top: var( --space-sm );
-			padding-bottom: var( --space-sm );
+	.citizen-sticky-header-visible {
+		.citizen-page-header-inner {
+			padding-block: var( --space-sm );
 		}
 
 		.firstHeading,

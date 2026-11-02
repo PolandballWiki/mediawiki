@@ -1,5 +1,14 @@
-# Citizen
-[![](https://img.shields.io/github/contributors/StarCitizenTools/mediawiki-skins-Citizen?style=flat-square&logo=github)](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/graphs/contributors) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square&logo=GNU)](https://www.gnu.org/licenses/gpl-3.0) [![MediaWiki: >=1.39.4](https://img.shields.io/badge/MediaWiki-%3E%3D1.39.4-%2336c?style=flat-square&logo=Wikipedia)](https://www.mediawiki.org) [![](https://img.shields.io/badge/translations-translatewiki-%23013467?style=flat-square&logo=GoogleTranslate)](https://translatewiki.net/w/i.php?title=Special:Translate&group=mwgithub-star-citizen)
+<div align="center">
+👋
+<h1>Citizen</h1>
+<p>
+
+[![](https://img.shields.io/github/contributors/StarCitizenTools/mediawiki-skins-Citizen?style=flat-square&logo=github)](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/graphs/contributors)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square&logo=GNU)](https://www.gnu.org/licenses/gpl-3.0)
+[![MediaWiki: >=1.39.4](https://img.shields.io/badge/MediaWiki-%3E%3D1.39.4-%2336c?style=flat-square&logo=Wikipedia)](https://www.mediawiki.org)
+[![](https://img.shields.io/badge/translations-translatewiki-%23013467?style=flat-square&logo=GoogleTranslate)](https://translatewiki.net/w/i.php?title=Special:Translate&group=mwgithub-star-citizen)
+</p>
+</div>
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/07/Screenshot-skin-citizen.png)
 
@@ -18,6 +27,70 @@ For the old design, [click here](https://github.com/StarCitizenTools/mediawiki-s
 - **Persistent ToC**: Access ToC anywhere in the article. 🔍📖
 - **Rich search suggestions**: More helpful search suggestions with images and descriptions. 🔍👀
 - **Progressive Web App**: Give a more app-like experience when user add your wiki to their home screen. 📱
+
+## Installation
+1. [Download](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/archive/main.zip) place the file(s) in a directory called `Citizen` in your `skins/` folder.
+2. Add the following code at the bottom of your LocalSettings.php and **after all other extensions**:
+```php
+wfLoadSkin( 'Citizen' );
+```
+3. **✔️Done** - Navigate to Special:Version on your wiki to verify that the skin is successfully installed.
+
+## Configurations
+**The skin works out of the box without any configurations.**
+The config flags allow more customization on the specific features in the skin.
+Check out [this wiki page](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/wiki/Using-Citizen-styles) on how to adapt Citizen styles on your wiki.
+
+### Appearance
+Name | Description | Values | Default
+:--- | :--- | :--- | :---
+`$wgCitizenThemeDefault` | The default theme of the skin | `auto` - switch between light and dark according to OS/browser settings; `light`; `dark` | `auto`
+`$wgCitizenEnableCollapsibleSections` | Enables or disable collapsible sections on content pages | `true` - enable; `false` - disable | `true`
+`$wgCitizenShowPageTools` | The condition of page tools visibility | `true` - always visible; `login` - visible to logged-in users; `permission` - visible to users with the right permissions | `true`
+`$wgCitizenGlobalToolsPortlet` | ID of the portlet to attach the global tools | string |
+`$wgCitizenEnableDrawerSiteStats` | Enables the site statistics in drawer menu | `true` - enable; `false` - disable | `true`
+`$wgCitizenUseNumberFormatter` | Use NumberFormatter for site statistics, which allows formatting number in a localized way | `true` - enable; `false` - disable | `true`
+`$wgCitizenThemeColor` | The color defined in the `theme-color` meta tag | Hex color code | `#0d0e12`
+`$wgCitizenEnableARFonts` | Enable included Noto Naskh Arabic for wikis that serve Arabic | `true` - enable; `false` - disable | `false`
+`$wgCitizenEnableCJKFonts` | Enable included Noto Sans CJK for wikis that serves CJK languages | `true` - enable; `false` - disable | `false`
+`$wgCitizenEnablePreferences` | Enable the preferences menu | `true` - enable; `false` - disable | `true`
+`$wgCitizenOverflowInheritedClasses` | Defines css classes inherited by the overflow wrapper | List of css classes. Extend with `$wgCitizenOverflowInheritedClasses[] = 'my_class';` | `["floatleft", "floatright" ]`
+`$wgCitizenOverflowNowrapClasses` | Defines css classes ignored by the overflow wrapper | List of css classes. Extend with `$wgCitizenOverflowNowrapClasses[] = 'my_class';` | `["citizen-table-nowrap", "diff", "mw-changeslist-line", "mw-recentchanges-table", "infobox", "cargoDynamicTable", "dataTable", "srf-datatable", "smw-datatable", "mw-capiunto-infobox" ]`
+
+### Search suggestions
+Name | Description | Values | Default
+:--- | :--- | :--- | :---
+`$wgCitizenSearchModule` | Which ResourceLoader module to use for search suggestion | `skins.citizen.search`; `mediawiki.searchSuggest`; string | `skins.citizen.search`
+`$wgCitizenSearchGateway` | Which gateway to use for fetching search suggestion |`mwActionApi`; `mwRestApi`; `smwAskApi`; string | `mwActionApi`
+`$wgCitizenSearchDescriptionSource` | Source of description text on search suggestions (only takes effect if `$wgCitizenSearchGateway` is `mwActionApi`) | `wikidata` - Use description provided by [WikibaseLib](Extension:WikibaseLib) or [ShortDescription](https://www.mediawiki.org/wiki/Extension:ShortDescription); `textextracts` - Use description provided by [TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts); `pagedescription` - Use description provided by [Description2](https://www.mediawiki.org/wiki/Extension:Description2) or any other extension that sets the `description` page property | `textextracts`
+`$wgCitizenMaxSearchResults` | Max number of search suggestions | Integer > 0 | `6`
+
+### Webapp manifest
+Name | Description | Values | Default
+:--- | :--- | :--- | :---
+`$wgCitizenEnableManifest` | Enable or disable [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) | `true` - enable; `false` - disable | `true`
+`$wgCitizenManifestOptions` | Options of the web app manifest | - | See below
+
+```php
+$wgCitizenManifestOptions = [
+	'background_color' => '#0d0e12',
+	'description' => '',
+	'short_name' => '',
+	'theme_color' => "#0d0e12",
+	'icons' => [],
+];
+```
+
+## Requirements
+* [MediaWiki](https://www.mediawiki.org) 1.39.4 or later
+* For the legacy versions, check the other release branches.
+
+## Recommended extensions
+These extensions are optional. They are recommended to enable additional feature in Citizen.
+- [PageImages](https://www.mediawiki.org/wiki/Extension:PageImages) (bundled with MediaWiki) - Add image to search suggestion results
+- [TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts) (bundled with MediaWiki) - Add description to search suggestion results
+- [ShortDescription](https://www.mediawiki.org/wiki/Extension:ShortDescription) - Add short description to under page title and search suggestion results (needs to set `$wgCitizenSearchDescriptionSource` to `wikidata`)
+- [TemplateStylesExtender](https://www.mediawiki.org/wiki/Extension:TemplateStylesExtender) (if you use [TemplateStyles](https://www.mediawiki.org/wiki/Extension:TemplateStyles)) - Allow the use of CSS variables in TemplateStyles, including the ones provided by Citizen
 
 ## Extension styles
 Citizen overrides some extension styles through skinStyles that applies custom styling to extensions and core libraries.
@@ -70,7 +143,7 @@ Name | Grade | Version | Last updated
 [MsUpload](https://www.mediawiki.org/wiki/Extension:MsUpload) | A | REL1_35 `32eb420` | 2021-08-25
 [MultimediaViewer](https://www.mediawiki.org/wiki/Extension:MultimediaViewer) | A | REL1_39 `1b97775` | 2022-11-26
 [OAuth](https://www.mediawiki.org/wiki/Extension:OAuth) | B | REL1_35 `451ed95` | 2021-08-31
-[Popups](https://www.mediawiki.org/wiki/Extension:Popups) | A | REL1_39 `a40ebc1` | 2022-11-28
+[Popups](https://www.mediawiki.org/wiki/Extension:Popups) | A | REL1_39 `a40ebc1` | 2024-10-05
 [PortableInfobox](https://www.mediawiki.org/wiki/Extension:PortableInfobox) | A | 0.6 `16a77dc` | 2024-04-17
 [RelatedArticles](https://www.mediawiki.org/wiki/Extension:RelatedArticles) | A | REL1_39 `f513e5c` | 2022-11-16
 [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText) | B | REL1_39 `af4840a` | 2023-01-03
@@ -86,9 +159,10 @@ Name | Grade | Version | Last updated
 [SyntaxHighlight](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight) | A | REL1_35 `05598b3` | 2023-05-22
 [Tabs](https://www.mediawiki.org/wiki/Extension:Tabs) | A | REL1_39 `63ccef2` | 2023-07-11
 [Tabber](https://www.mediawiki.org/wiki/Extension:Tabber) | A | N/A | N/A
-[TabberNeue](https://www.mediawiki.org/wiki/Extension:TabberNeue) | A | 2.5.0 | 2024-08-31
+[TabberNeue](https://www.mediawiki.org/wiki/Extension:TabberNeue) | A | 2.6.0 | 2024-11-16
 [TemplateData](https://www.mediawiki.org/wiki/Extension:TemplateData) | A | REL1_39 `7f8c5a8` | 2024-08-19
 [TimedMediaHandler](https://www.mediawiki.org/wiki/Extension:TimedMediaHandler) | B | N/A | N/A
+[TinyMCE](https://www.mediawiki.org/wiki/Extension:TinyMCE) | A | 1.1.2 | 2024-12-19
 [Translate](https://www.mediawiki.org/wiki/Extension:Translate) | A | MLEB 2023.01 | 2023-02-17
 [TwoColConflict](https://www.mediawiki.org/wiki/Extension:TwoColConflict) | B | REL1_39 5a2a947 | 2023-01-09
 [UniversalLanguageSelector](https://www.mediawiki.org/wiki/Extension:UniversalLanguageSelector) | B | MLEB 2021.12 | 2022-05-17
@@ -103,52 +177,3 @@ Name | Grade | Version | Last updated
 
 Some of the field are tagged as N/A because the information was not tracked before.
 If you are interested in adding skinstyles, please check out [this page on the wiki](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/wiki/Adding-extension-SkinStyles)!
-
-## Installation
-1. [Download](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/archive/main.zip) place the file(s) in a directory called `Citizen` in your `skins/` folder.
-2. Add the following code at the bottom of your LocalSettings.php and **after all other extensions**:
-```php
-wfLoadSkin( 'Citizen' );
-```
-3. **✔️Done** - Navigate to Special:Version on your wiki to verify that the skin is successfully installed.
-
-## Configurations
-**The skin works out of the box without any configurations.**
-The config flags allow more customization on the specific features in the skin.
-Check out [this wiki page](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/wiki/Using-Citizen-styles) on how to adapt Citizen styles on your wiki.
-
-### Appearance
-Name | Description | Values | Default
-:--- | :--- | :--- | :---
-`$wgCitizenThemeDefault` | The default theme of the skin | `auto` - switch between light and dark according to OS/browser settings; `light`; `dark` | `auto`
-`$wgCitizenEnableCollapsibleSections` | Enables or disable collapsible sections on content pages | `true` - enable; `false` - disable | `true`
-`$wgCitizenShowPageTools` | The condition of page tools visibility | `true` - always visible; `login` - visible to logged-in users; `permission` - visible to users with the right permissions | `true`
-`$wgCitizenGlobalToolsPortlet` | ID of the portlet to attach the global tools | string |
-`$wgCitizenEnableDrawerSiteStats` | Enables the site statistics in drawer menu | `true` - enable; `false` - disable | `true`
-`$wgCitizenUseNumberFormatter` | Use NumberFormatter for site statistics, which allows formatting number in a localized way | `true` - enable; `false` - disable | `true`
-`$wgCitizenThemeColor` | The color defined in the `theme-color` meta tag | Hex color code | `#131a21`
-`$wgCitizenEnableARFonts` | Enable included Noto Naskh Arabic for wikis that serve Arabic | `true` - enable; `false` - disable | `false`
-`$wgCitizenEnableCJKFonts` | Enable included Noto Sans CJK for wikis that serves CJK languages | `true` - enable; `false` - disable | `false`
-`$wgCitizenEnablePreferences` | Enable the preferences menu | `true` - enable; `false` - disable | `true`
-`$wgCitizenOverflowInheritedClasses` | Defines css classes inherited by the overflow wrapper | List of css classes. Extend with `$wgCitizenOverflowInheritedClasses[] = 'my_class';` | `["floatleft", "floatright" ]`
-`$wgCitizenOverflowNowrapClasses` | Defines css classes ignored by the overflow wrapper | List of css classes. Extend with `$wgCitizenOverflowNowrapClasses[] = 'my_class';` | `["citizen-table-nowrap", "diff", "mw-changeslist-line", "mw-recentchanges-table", "infobox", "cargoDynamicTable", "dataTable", "srf-datatable", "smw-datatable", "mw-capiunto-infobox" ]`
-
-### Search suggestions
-Name | Description | Values | Default
-:--- | :--- | :--- | :---
-`$wgCitizenSearchModule` | Which ResourceLoader module to use for search suggestion | `skins.citizen.search`; `mediawiki.searchSuggest`; string | `skins.citizen.search`
-`$wgCitizenSearchGateway` | Which gateway to use for fetching search suggestion |`mwActionApi`; `mwRestApi`; `smwAskApi`; string | `mwActionApi`
-`$wgCitizenSearchDescriptionSource` | Source of description text on search suggestions (only takes effect if `$wgCitizenSearchGateway` is `mwActionApi`) | `wikidata` - Use description provided by [WikibaseLib](Extension:WikibaseLib) or [ShortDescription](https://www.mediawiki.org/wiki/Extension:ShortDescription); `textextracts` - Use description provided by [TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts); `pagedescription` - Use description provided by [Description2](https://www.mediawiki.org/wiki/Extension:Description2) or any other extension that sets the `description` page property | `textextracts`
-`$wgCitizenMaxSearchResults` | Max number of search suggestions | Integer > 0 | `6`
-
-### Webapp manifest
-Name | Description | Values | Default
-:--- | :--- | :--- | :---
-`$wgCitizenEnableManifest` | Enable or disable [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) | `true` - enable; `false` - disable | `true`
-`$wgCitizenManifestThemeColor` | [Theme color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) of the web app manifest | Hex color code | `#131a21`
-`$wgCitizenManifestBackgroundColor` | [Background color](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) of the web app manifest | Hex color code | `#131a21`
-
-## Requirements
-* [MediaWiki](https://www.mediawiki.org) 1.39.4 or later
-* For the legacy versions, check the other release branches.
-
