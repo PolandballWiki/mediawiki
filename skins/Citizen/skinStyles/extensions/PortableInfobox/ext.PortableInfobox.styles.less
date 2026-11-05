@@ -16,10 +16,44 @@
 @filter-glass: blur(20px) saturate(180%);
 
 // CSS
+ * Date: 2024-04-17
+*/
+
 :root {
 	--pi-background: var( --color-surface-2 );
 	--pi-border-color: var( --border-color-base );
 	--pi-secondary-background: var( --color-surface-3 );
+	--pi-margin: var( --space-md );
+}
+
+.pi-caption {
+	font-size: var( --font-size-x-small );
+	font-style: normal;
+	// Align with Citizen caption styles
+	color: var( --color-subtle );
+	letter-spacing: 0.025em;
+}
+
+.portable-infobox {
+	font-size: var( --font-size-small );
+}
+
+.portable-infobox .pi-title {
+	font-size: var( --font-size-x-large );
+	line-height: var( --line-height-xx-small );
+}
+
+.portable-infobox .pi-header {
+	font-size: var( --font-size-medium );
+	font-weight: var( --font-weight-semi-bold );
+	line-height: var( --line-height-xx-small );
+}
+
+.client-js .pi-collapse {
+	.pi-header:first-child {
+		// So that clicking the header won't highlight the entire section
+		user-select: none;
+	}
 }
 
 // Extension:PortableInfobox - WP
