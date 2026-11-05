@@ -410,6 +410,7 @@
 	"ResourceModuleSkinStyles": {
 		"citizen": {
 			"+codex-styles": "skinStyles/codex/codex.styles.less",
+			"+steller-styles": "resources/skins.steller/skin_steller.less",
 			"+ext.AccountInfo.special": "skinStyles/extensions/AccountInfo/ext.AccountInfo.special.less",
 			"+ext.advancedSearch.initialstyles": "skinStyles/extensions/AdvancedSearch/ext.advancedSearch.initialstyles.less",
 			"+ext.advancedSearch.styles": "skinStyles/extensions/AdvancedSearch/ext.advancedSearch.styles.less",
@@ -570,7 +571,7 @@
 			"+jquery.uls": "skinStyles/extensions/UniversalLanguageSelector/jquery.uls.less",
 			"+ext.CookieWarning.styles": "skinStyles/extensions/CookieWarning/ext.CookieWarning.styles.less",
 			"+ext.popups.main": "skinStyles/extensions/Popups/ext.popups.main.less",
-			"+ext.PortableInfobox.styles": "skinStyles/extensions/PortableInfobox/ext.PortableInfobox.styles.less",
+			"+ext.PortableInfobox.styles": "resources/skins.steller/extensions/PortableInfobox/ext.PortableInfobox.styles.less",
 			"+ext.Tabber": "skinStyles/extensions/Tabber/ext.Tabber.less",
 			"+ext.tabberNeue": "skinStyles/extensions/TabberNeue/ext.tabberNeue.less",
 			"+ext.tabberNeue.init.styles": "skinStyles/extensions/TabberNeue/ext.tabberNeue.init.styles.less",
