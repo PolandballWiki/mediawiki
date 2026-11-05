@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alistair3149",
+			"EmicraftNoob",
 			"Eulalio",
 			"Fitoschido",
 			"Galahad",
@@ -15,6 +16,8 @@
 	"citizen-drawer-toggle": "Menú alternativo",
 	"citizen-usermenu-toggle": "Menú alternativo personal",
 	"citizen-search-toggle": "Búsqueda alternativa",
+	"citizen-search-keyhint-exit": "Salir de la búsqueda",
+	"citizen-search-keyhint-open": "Abrir búsqueda",
 	"citizen-languages-toggle": "Más idiomas",
 	"citizen-actions-more-toggle": "Más acciones",
 	"citizen-sitestats-articles-label": "artículos",

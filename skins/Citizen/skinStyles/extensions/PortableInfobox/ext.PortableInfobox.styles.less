@@ -5,6 +5,17 @@
  * Module: ext.PortableInfobox.styles
  * Version: 0.6 16a77dc
  *
+ * Date: 2024-19-04
+ *
+ * User: Dark
+*/
+
+// Vars
+
+// LESS
+@filter-glass: blur(20px) saturate(180%);
+
+// CSS
  * Date: 2024-04-17
 */
 
@@ -29,13 +40,13 @@
 
 .portable-infobox .pi-title {
 	font-size: var( --font-size-x-large );
-	line-height: var( --line-height-sm );
+	line-height: var( --line-height-xx-small );
 }
 
 .portable-infobox .pi-header {
 	font-size: var( --font-size-medium );
-	font-weight: var( --font-weight-semibold );
-	line-height: var( --line-height-sm );
+	font-weight: var( --font-weight-semi-bold );
+	line-height: var( --line-height-xx-small );
 }
 
 .client-js .pi-collapse {
@@ -43,6 +54,55 @@
 		// So that clicking the header won't highlight the entire section
 		user-select: none;
 	}
+}
+
+// Extension:PortableInfobox - WP
+.portable-infobox {
+    border-radius: var(--border-radius--medium);
+    border: 1px solid var(--border-color-base);
+    background: var(--border-color-base);
+    backdrop-filter: @filter-glass;
+    transition: all 0.3s;
+    margin-top: 10px;
+
+    .pi-title {
+        background: var(--color-surface-2);
+        border-radius: var(--border-radius--medium);
+        border: 1px solid var(--border-color-base) !important;
+        margin: 5px !important;
+    }
+
+    .pi-image-thumbnail {
+        padding: 5px;
+        align-self: center;
+        border-radius: var(--border-radius--large);
+    }
+
+    .pi-group > p {
+        text-align: center;
+        font-weight: 500;
+        padding: 5px;
+        border: 1px solid var(--border-color-base);
+        background: var(--color-surface-2);
+        font-size: 18px;
+        border-radius: var(--border-radius--medium);
+        margin: 0 4px;
+    }
+    .pi-data-label {
+        display: none; // TODO: Check element
+    }
+    .pi-secondary-background {
+        background: none !important;
+    }
+    .pi-data-value {
+        padding: 8px 5px;
+    }
+
+    .pi-data > p {
+        padding: 0 5px;
+        width: fit-content;
+        white-space: nowrap;
+    }
 }
 
 .portable-infobox p {

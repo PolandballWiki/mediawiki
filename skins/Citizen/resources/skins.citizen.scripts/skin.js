@@ -1,12 +1,24 @@
 /**
- * Wait for first paint before calling this function.
- * (see T234570#5779890, T246419).
- *
- * @param {Document} document
  * @return {void}
  */
-function enableCssAnimations( document ) {
-	document.documentElement.classList.add( 'citizen-animations-ready' );
+function deferredTasks() {
+	const
+		setupObservers = require( './setupObservers.js' ),
+		speculationRules = require( './speculationRules.js' );
+
+	setupObservers.main();
+	speculationRules.init();
+	registerServiceWorker();
+
+	window.addEventListener( 'beforeunload', () => {
+		// Set up loading indicator
+		document.documentElement.classList.add( 'citizen-loading' );
+	}, false );
+
+	// Remove loading indicator once the page is unloaded/hidden
+	window.addEventListener( 'pagehide', () => {
+		document.documentElement.classList.remove( 'citizen-loading' );
+	} );
 }
 
 /**
@@ -16,20 +28,21 @@ function enableCssAnimations( document ) {
  */
 function registerServiceWorker() {
 	const scriptPath = mw.config.get( 'wgScriptPath' );
-
 	// Only allow serviceWorker when the scriptPath is at root because of its scope
 	// I can't figure out how to add the Service-Worker-Allowed HTTP header
 	// to change the default scope
-	if ( scriptPath === '' ) {
-		if ( 'serviceWorker' in navigator ) {
-			const SW_MODULE_NAME = 'skins.citizen.serviceWorker',
-				version = mw.loader.moduleRegistry[ SW_MODULE_NAME ].version,
-				// HACK: Faking a RL link
-				swUrl = scriptPath +
-					'/load.php?modules=' + SW_MODULE_NAME +
-					'&only=scripts&raw=true&skin=citizen&version=' + version;
-			navigator.serviceWorker.register( swUrl, { scope: '/' } );
-		}
+	if ( scriptPath !== '' ) {
+		return;
+	}
+
+	if ( 'serviceWorker' in navigator ) {
+		const SW_MODULE_NAME = 'skins.citizen.serviceWorker',
+			version = mw.loader.moduleRegistry[ SW_MODULE_NAME ].version,
+			// HACK: Faking a RL link
+			swUrl = scriptPath +
+				'/load.php?modules=' + SW_MODULE_NAME +
+				'&only=scripts&raw=true&skin=citizen&version=' + version;
+		navigator.serviceWorker.register( swUrl, { scope: '/' } );
 	}
 }
 
@@ -42,15 +55,12 @@ function registerServiceWorker() {
 function initBodyContent( bodyContent ) {
 	const
 		sections = require( './sections.js' ),
-		overflowElements = require( './overflowElements.js' ),
-		toc = require( './tableOfContents.js' );
+		overflowElements = require( './overflowElements.js' );
 
 	// Collapsable sections
 	sections.init( bodyContent );
 	// Overflow element enhancements
 	overflowElements.init( bodyContent );
-	// Table of contents
-	toc.init( bodyContent );
 }
 
 /**
@@ -63,15 +73,12 @@ function main( window ) {
 		echo = require( './echo.js' ),
 		search = require( './search.js' ),
 		dropdown = require( './dropdown.js' ),
-		stickyHeader = require( './stickyHeader.js' ),
 		lastModified = require( './lastModified.js' ),
 		share = require( './share.js' );
 
-	enableCssAnimations( window.document );
-	echo();
-	search.init( window );
 	dropdown.init();
-	stickyHeader.init();
+	search.init( window );
+	echo();
 	lastModified.init();
 	share.init();
 
@@ -82,21 +89,12 @@ function main( window ) {
 	} );
 
 	// Preference module
-	if ( config.wgCitizenEnablePreferences === true && typeof document.createElement( 'div' ).prepend === 'function' ) {
+	if ( config.wgCitizenEnablePreferences === true ) {
 		mw.loader.load( 'skins.citizen.preferences' );
 	}
 
-	registerServiceWorker();
-
-	window.addEventListener( 'beforeunload', () => {
-		// Set up loading indicator
-		document.documentElement.classList.add( 'citizen-loading' );
-	}, false );
-
-	// Remove loading indicator once the page is unloaded/hidden
-	window.addEventListener( 'pagehide', () => {
-		document.documentElement.classList.remove( 'citizen-loading' );
-	} );
+	// Defer non-essential tasks
+	mw.requestIdleCallback( deferredTasks, { timeout: 3000 } );
 }
 
 if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {

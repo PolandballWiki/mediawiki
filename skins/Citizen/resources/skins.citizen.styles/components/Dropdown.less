@@ -1,6 +1,28 @@
 .citizen-dropdown {
 	.citizen-menu__card {
 		z-index: @z-index-dropdown;
+		content-visibility: hidden;
+		min-width: 16rem;
+		max-width: 80vw;
+		transition-timing-function: var( --transition-timing-function-ease-in );
+		transition-duration: var( --transition-duration-base );
+		transition-property: transform, content-visibility;
+		transition-behavior: allow-discrete;
+
+		> * {
+			opacity: 0;
+			transition-timing-function: var( --transition-timing-function-ease-in );
+			transition-duration: var( --transition-duration-base );
+			transition-property: opacity;
+		}
+
+		&:empty {
+			display: none;
+		}
+
+		.citizen-ui-icon {
+			content-visibility: hidden;
+		}
 	}
 
 	&-summary {
@@ -48,15 +70,20 @@
 	&-details {
 		&[ open ] {
 			+ .citizen-menu__card {
-				transition: var( --transition-menu );
-				transition-property: transform;
+				content-visibility: visible;
+				transition-timing-function: var( --transition-timing-function-ease-out );
+				transition-duration: var( --transition-duration-medium );
 				transform: none;
 
 				> * {
 					opacity: 1;
-					transition: var( --transition-menu );
 					transition-delay: var( --transition-delay-menu );
-					transition-property: opacity;
+					transition-timing-function: var( --transition-timing-function-ease-out );
+					transition-duration: var( --transition-duration-medium );
+				}
+
+				.citizen-ui-icon {
+					content-visibility: visible;
 				}
 			}
 
@@ -70,7 +97,20 @@
 		}
 	}
 
+	.citizen-header__end & .citizen-menu__card {
+		.citizen-header-card( end );
+		transform-origin: var( --transform-origin-offset-end ) var( --transform-origin-offset-end );
+
+		@media ( min-width: @min-width-breakpoint-desktop ) {
+			transform-origin: var( --transform-origin-offset-start ) var( --transform-origin-offset-end );
+		}
+	}
+
 	@media ( max-width: @max-width-breakpoint-tablet ) {
+		.citizen-menu__card {
+			max-width: ~'calc( 100vw - var( --space-xs ) * 2 )';
+		}
+
 		// Add dismiss affordnance backdrop
 		&-details {
 			&::before {
@@ -79,6 +119,9 @@
 				-webkit-backdrop-filter: blur( 2px );
 				backdrop-filter: blur( 2px );
 				opacity: 0;
+				transition-timing-function: var( --transition-timing-function-ease );
+				transition-duration: var( --transition-duration-base );
+				transition-property: opacity;
 			}
 
 			&[ open ] {
@@ -87,8 +130,7 @@
 					inset: 0;
 					z-index: @z-index-off-canvas-backdrop;
 					opacity: 1;
-					transition: var( --transition-menu );
-					transition-property: opacity;
+					transition-duration: var( --transition-duration-medium );
 				}
 
 				> .citizen-dropdown-summary {

@@ -14,10 +14,6 @@
 		box-shadow: var( --box-shadow-drop-xx-large );
 		transform: scale( 0 );
 		contain: content;
-
-		> * {
-			opacity: 0;
-		}
 	}
 
 	&__heading {
@@ -36,7 +32,7 @@
 	}
 
 	.mw-list-item {
-		line-height: var( --line-height-xs );
+		line-height: var( --line-height-xx-small );
 
 		a {
 			display: flex;
@@ -76,8 +72,11 @@
 .citizen-ui-icon {
 	display: block;
 	width: var( --size-icon );
+	min-width: var( --size-icon );
 	height: var( --size-icon );
+	min-height: var( --size-icon );
 	contain: strict;
+	content-visibility: auto;
 
 	&::before {
 		display: block;

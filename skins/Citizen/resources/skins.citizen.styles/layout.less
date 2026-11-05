@@ -1,54 +1,38 @@
 .citizen-page-container {
-	display: flex; // Should fix weird margin issues
+	/* Include margin of child elements as part of the height */
+	display: flex;
 	flex-direction: column;
-	min-height: 100vh; // Ensure footer goes to the bottom of the page
-	min-height: stretch; // for iOS, excludes safe areas
+	/* Make page container take the whole page height on short page */
+	min-height: inherit;
 }
 
 .mw-body,
 .parsoid-body {
-	min-height: 100vh; // avoid footer being in the middle of the page
+	flex-grow: 1;
 }
 
 .citizen-body-container {
 	display: grid;
 	grid-template-areas:
- 'header'
-		'afterHeader'
-		'content'
+ 'content'
 		'footer';
 	// Using auto as min value will cause overflow
 	grid-template-columns: minmax( 0, var( --width-layout ) );
-	gap: 0 var( --space-xl );
+	gap: 0 var( --space-lg );
 	justify-content: center;
 	padding: 0 var( --padding-page );
-	margin: var( --space-xl ) 0; // don't collide with other components (e.g. notice)
-}
-
-.citizen-page-header {
-	z-index: @z-index-above-content;
-	display: flex;
-	flex-wrap: wrap;
-	grid-area: header;
-	gap: var( --space-md );
-	align-items: center;
-	padding-top: var( --space-md );
-	padding-bottom: var( --space-md );
-}
-
-.citizen-page-heading {
-	flex-grow: 1;
-}
-
-.firstHeading-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+	// Bottom margin is added because data-after-content cannot
+	margin-bottom: var( --space-xl );
 }
 
 .citizen-body {
 	z-index: @z-index-base; // Stop body content going over sticky header
 	grid-area: content;
+	word-wrap: break-word; // Fix overflow text (e.g. long single word text in <li>)
+}
+
+#mw-data-after-content:not( :empty ) {
+	margin-top: var( --space-xl );
 }
 
 @media ( min-width: @min-width-breakpoint-desktop ) {
@@ -60,19 +44,24 @@
 	.citizen-toc-enabled {
 		.citizen-body-container {
 			grid-template-areas:
- 'header header'
-				'afterHeader afterHeader'
-				'content sidebar'
+ 'content sidebar'
 				'footer footer';
 			grid-template-columns: minmax( 0, var( --width-layout ) ) var( --width-toc );
 		}
 	}
 
-	.citizen-animations-ready {
-		.citizen-body-container {
-			transition: var( --transition-menu );
-			transition-property: grid;
-		}
+	.citizen-page-header-inner,
+	.citizen-body-container {
+		transition-timing-function: var( --transition-timing-function-ease );
+		transition-duration: var( --transition-duration-medium );
+	}
+
+	.citizen-page-header-inner {
+		transition-property: max-width;
+	}
+
+	.citizen-body-container {
+		transition-property: grid;
 	}
 }
 

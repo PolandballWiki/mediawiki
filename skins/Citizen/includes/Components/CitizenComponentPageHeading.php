@@ -38,9 +38,9 @@ class CitizenComponentPageHeading implements CitizenComponent {
 
 	/**
 	 * @param MessageLocalizer $localizer
+	 * @param OutputPage $out
 	 * @param Language|StubUserLang $pageLang
 	 * @param Title $title
-	 * @param OutputPage $out
 	 * @param string $titleData
 	 * @param UserIdentity $user
 	 */
@@ -119,6 +119,7 @@ class CitizenComponentPageHeading implements CitizenComponent {
 
 			if ( $editCount ) {
 				$msgEditCount = $localizer->msg( 'usereditcount' )->numParams( sprintf( '%s', number_format( $editCount, 0 ) ) );
+				// TODO: Replace with SkinComponentUtils on 1.43
 				$editCountHref = SpecialPage::getTitleFor( 'Contributions', $user )->getLocalURL();
 				$tagline .= "<span id=\"citizen-tagline-user-editcount\" data-user-editcount=\"$editCount\"><a href=\"$editCountHref\">$msgEditCount</a></span>";
 			}
@@ -143,9 +144,10 @@ class CitizenComponentPageHeading implements CitizenComponent {
 	private function getPageHeading(): string {
 		$titleHtml = $this->titleData;
 		if ( $this->shouldAddParenthesis() ) {
-			// Look for the </span> to ensure that it is the last parenthesis of the title
-			$pattern = '/\s?(\p{Ps}.+\p{Pe})<\/span>/';
-			$replacement = ' <span class="mw-page-title-parenthesis">$1</span></span>';
+			// Look for the </span> or </h1> to ensure that it is the last parenthesis of the title
+			// </h1> occurs when the title is a displaytitle
+			$pattern = '/\s?(\p{Ps}.+\p{Pe})<\/(span|h1)>/';
+			$replacement = ' <span class="mw-page-title-parenthesis">$1</span></$2>';
 			$titleHtml = preg_replace( $pattern, $replacement, $this->titleData );
 		}
 		return $titleHtml;
@@ -191,7 +193,13 @@ class CitizenComponentPageHeading implements CitizenComponent {
 			return $localizer->msg( 'citizen-tagline-ns-talk' )->parse();
 		}
 
-		$isRootUserPage = $title->inNamespace( NS_USER ) || ( defined( 'NS_USER_WIKI' ) && $title->inNamespace( NS_USER_WIKI ) ) || ( defined( 'NS_USER_WIKI' ) && $title->inNamespace( NS_USER_PROFILE ) ) && !$title->isSubpage();
+		$isRootUserPage = (
+				$title->inNamespace( NS_USER ) ||
+				( defined( 'NS_USER_WIKI' ) && $title->inNamespace( NS_USER_WIKI ) ) ||
+				( defined( 'NS_USER_WIKI' ) && $title->inNamespace( NS_USER_PROFILE ) )
+			) &&
+			!$title->isSubpage();
+
 		if ( $isRootUserPage ) {
 			// Build user tagline if it is a top-level user page
 			return $this->buildUserTagline();

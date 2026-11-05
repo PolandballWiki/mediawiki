@@ -15,52 +15,6 @@
 	}
 }
 
-// Collaspe animation setup
-.citizen-card-hide(@position, @axis: '', @fadeChildren: true) {
-	pointer-events: none;
-	opacity: 0;
-	transform: ~'scale@{axis}( 0 )';
-	transform-origin: @position;
-
-	& when (@fadeChildren ) {
-		>* {
-			opacity: 0;
-		}
-	}
-}
-
-// Expand animiation setup
-// When using fadeChildren, the child elements need to have
-// opacity: 0 set manually
-.citizen-card-show(@fadeChildren: true) {
-	z-index: @z-index-dropdown;
-	pointer-events: auto;
-	opacity: 1;
-	// HACK: So that visiblity won't wait 250ms to become visible
-	transition-delay: 0ms;
-	transform: none;
-
-	& when (@fadeChildren ) {
-		>* {
-			.citizen-card-content-show;
-		}
-	}
-}
-
-// Fade content when users open the menu
-// But GTFO instantly when they close the menu
-.citizen-card-content-show() {
-	opacity: 1;
-	transition: var( --transition-menu );
-	transition-property: opacity;
-}
-
-// Transition animation
-.citizen-card-transition() {
-	transition: var( --transition-menu );
-	transition-property: transform, opacity;
-}
-
 // Header card popups
 .citizen-header-card(@position ) {
 	position: absolute;
@@ -94,28 +48,16 @@
 	}
 }
 
-.citizen-sticky-header(@bottomBorder: true, @zIndex: true) {
-	position: -webkit-sticky;
-	position: sticky;
-	top: var( --height-sticky-header );
-	transition: var( --transition-menu );
-	transition-property: top;
+.sticky-header-element {
+	top: var( --height-sticky-header ) !important;
+}
 
-	& when (@bottomBorder ) {
-		box-shadow: 0 1px 0 0 var( --border-color-base );
-	}
-
-	& when (@zIndex ) {
-		z-index: @z-index-sticky;
-	}
-
-	// HACK: Hide overflow
-	// This has an issue if parent has overflow set
+.citizen-sticky-header-background() {
 	&::before {
 		position: absolute;
 		top: 0;
-		right: ~'calc( var(--padding-page ) * -1 )';
-		left: ~'calc( var(--padding-page ) * -1 )';
+		right: 0;
+		left: 0;
 		z-index: @z-index-bottom;
 		height: 100%;
 		content: '';
@@ -123,6 +65,21 @@
 		filter: opacity( 0.9 );
 		-webkit-backdrop-filter: saturate( 50% ) blur( 16px );
 		backdrop-filter: saturate( 50% ) blur( 16px );
+	}
+}
+
+.citizen-sticky-header(@bottomBorder: true, @zIndex: true) {
+	position: -webkit-sticky;
+	position: sticky;
+	.sticky-header-element;
+	.citizen-sticky-header-background;
+
+	& when (@bottomBorder ) {
+		box-shadow: 0 1px 0 0 var( --border-color-base );
+	}
+
+	& when (@zIndex ) {
+		z-index: @z-index-sticky;
 	}
 }
 
@@ -139,8 +96,7 @@
 // Set content to be at the center
 .content-center() {
 	max-width: var( --width-layout );
-	margin-right: auto;
-	margin-left: auto;
+	margin-inline: auto;
 }
 
 .resource-loader-icon() {

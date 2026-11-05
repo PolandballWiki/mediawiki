@@ -70,8 +70,7 @@ class CitizenComponentUserInfo implements CitizenComponent {
 		}
 
 		$edits = (string)number_format( $edits, 0 );
-		$label = $this->localizer->msg( 'usereditcount' )->numParams( $edits )->text();
-		$label = str_replace( $edits, '', $label );
+		$label = $this->localizer->msg( 'citizen-sitestats-edits-label' )->text();
 
 		return [
 			'count' => $edits,
@@ -131,9 +130,9 @@ class CitizenComponentUserInfo implements CitizenComponent {
 		$userPageData = $this->userPageData;
 
 		$htmlItems = $userPageData['html-items'];
-		$realname = $user->getRealName();
+		$realname = htmlspecialchars( $user->getRealName(), ENT_QUOTES );
 		if ( !empty( $realname ) ) {
-			$username = $user->getName();
+			$username = htmlspecialchars( $user->getName(), ENT_QUOTES );
 			$innerHtml = <<<HTML
 				<span id="pt-userpage-realname">$realname</span>
 				<span id="pt-userpage-username">$username</span>

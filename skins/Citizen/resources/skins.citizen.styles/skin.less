@@ -6,15 +6,14 @@
 // Common
 @import 'tokens.less';
 @import 'fonts.less';
-@import 'common/cssvariables.less';
 @import 'common/typography.less';
+@import 'common/viewTransition.less';
 @import 'skinning/elements.less';
 
 // FIXME: It is not great to load both Parsoid and Parsoid legacy media styles
 // Maybe there is a way to detect it without introducing a new RL module?
 @import 'skinning/content.media-common.less';
 @import 'skinning/content.thumbnails-common.less';
-@import 'skinning/i18n-all-lists-margins.less';
 @import 'skinning/interface-subtitle.less';
 
 @media screen {
@@ -46,6 +45,8 @@
 	@import 'components/OverflowElements.less';
 	@import 'components/UserInfo.less';
 	@import 'components/Wordmark.less';
+	@import 'components/KeyboardHint.less';
+	@import 'components/IconAnimation.less';
 
 	// Mediawiki.skinning
 	// This get loaded regardless so we don't have to use skinStyles to target them
@@ -59,6 +60,7 @@
 	@import 'skinning/content.thumbnails-screen.less';
 	@import 'skinning/interface-edit-section-links.less';
 	@import 'skinning/interface-message-box.less';
+	@import 'skinning/interface-user-message.less';
 	@import 'skinning/interface-site-notice.less';
 	@import 'skinning/interface.category.less';
 }
